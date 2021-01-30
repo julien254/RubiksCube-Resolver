@@ -20,8 +20,14 @@
 
 }
 
+body{
+
+margin-top: 10vw;
+
+}
+
 #container {
-	
+
 	width: 60vw;
 	height:60vw;
 	border:solid 1px black;
@@ -62,14 +68,14 @@
 	background: white;
 	transform: rotateX(-90deg);
 	transform-origin: top center;
-		
+
 }
 
 #cube1fH6Fond {
 
 	transform: rotateX(-90deg) translateZ(0.01vw);
 	transform-origin: top center;
-		
+
 }
 
 #cube1fG2 {
@@ -126,7 +132,7 @@
 #fondY1 {
 
 	transform: rotateY(90deg) translateX(10vw);
-	border-radius:0; 
+	border-radius:0;
 
 }
 
@@ -161,14 +167,14 @@
 	background: white;
 	transform: rotateX(-90deg);
 	transform-origin: top center;
-		
+
 }
 
 #cube2fH7Fond {
 
 	transform: rotateX(-90deg) translateZ(0.01vw);
 	transform-origin: top center;
-		
+
 }
 
 #cube2fG {
@@ -217,7 +223,7 @@
 #fondY2 {
 
 	transform: rotateY(90deg) translateX(10vw);
-	border-radius:0; 
+	border-radius:0;
 
 }
 
@@ -252,14 +258,14 @@
 	background: white;
 	transform: rotateX(-90deg);
 	transform-origin: top center;
-		
+
 }
 
 #cube3fH8Fond {
 
 	transform: rotateX(-90deg) translateZ(0.01vw);
 	transform-origin: top center;
-		
+
 }
 
 #cube3fG {
@@ -316,7 +322,7 @@
 #fondY3 {
 
 	transform: rotateY(90deg) translateX(10vw);
-	border-radius:0; 
+	border-radius:0;
 
 }
 
@@ -350,11 +356,11 @@
 
 	transform: rotateX(-90deg);
 	transform-origin: top center;
-		
+
 }
 
 #cube4fG5 {
-	
+
 	background: green;
 	transform: rotateY(90deg);
 	transform-origin: center left;
@@ -407,6 +413,6 @@
 #fondY4 {
 
 	transform: rotateY(90deg) translateX(10vw);
-	border-radius:0; 
+	border-radius:0;
 
 }
