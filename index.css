@@ -1,0 +1,412 @@
+
+
+/* --------------- Animations --------------- */
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg), rotateX(0deg);
+  }
+
+  to {
+    transform: rotate3d(1, 1, 0, 360deg);
+  }
+}
+
+/* ----------------- Body ---------------- */
+
+.black {
+
+	background-color: black;
+
+}
+
+#container {
+	
+	width: 60vw;
+	height:60vw;
+	border:solid 1px black;
+	margin:auto;
+	transform-style: preserve-3d;
+	animation: rotate 10s linear infinite;
+	perspective: 0;
+}
+
+/*------------ Cube 1 ------------*/
+
+.cube1 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:0;
+	left:0;
+	border-radius: 15%;
+
+}
+
+#cube1fA0 {
+
+	background:red ;
+
+}
+
+#cube1fA0Fond {
+
+	transform:translateZ(-0.01vw);
+
+}
+
+#cube1fH6 {
+
+	background: white;
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+		
+}
+
+#cube1fH6Fond {
+
+	transform: rotateX(-90deg) translateZ(0.01vw);
+	transform-origin: top center;
+		
+}
+
+#cube1fG2 {
+
+	background: green;
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube1fG2Fond {
+
+	transform: rotateY(90deg) translateZ(0.01vw);
+	transform-origin: center left;
+
+}
+
+
+#cube1fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube1fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+
+#cube1fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX1 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ1 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY1 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0; 
+
+}
+
+/*------------ Cube 2 ------------*/
+
+.cube2 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:0;
+	left:20vw;
+	border-radius: 15%;
+
+}
+
+#cube2fA1 {
+
+	background:red ;
+
+}
+
+#cube2fA1Fond {
+
+	transform:translateZ(-0.01vw);
+
+}
+
+#cube2fH7 {
+
+	background: white;
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+		
+}
+
+#cube2fH7Fond {
+
+	transform: rotateX(-90deg) translateZ(0.01vw);
+	transform-origin: top center;
+		
+}
+
+#cube2fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+
+#cube2fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube2fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+
+#cube2fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX2 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ2 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY2 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0; 
+
+}
+
+/*------------ Cube 3 ------------*/
+
+.cube3 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:0;
+	left:40vw;
+	border-radius: 15%;
+
+}
+
+#cube3fA2 {
+
+	background: red;
+
+}
+
+#cube3fA2Fond {
+
+	transform:translateZ(-0.01vw);
+
+}
+
+#cube3fH8 {
+
+	background: white;
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+		
+}
+
+#cube3fH8Fond {
+
+	transform: rotateX(-90deg) translateZ(0.01vw);
+	transform-origin: top center;
+		
+}
+
+#cube3fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+
+#cube3fD0 {
+
+	background: blue;
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube3fD0Fond {
+
+	transform: rotateY(-90deg) translateZ(0.01vw);
+	transform-origin: center right;
+
+}
+
+#cube3fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+
+#cube3fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX3 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ3 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY3 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0; 
+
+}
+
+/*------------ Cube 4 ------------*/
+
+.cube4 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:20vw;
+	left:0vw;
+	border-radius: 15%;
+
+}
+
+#cube4fA3 {
+
+	background: red;
+
+}
+
+#cube4fA3Fond {
+
+	transform:translateZ(-0.01vw);
+
+}
+
+#cube4fH {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+		
+}
+
+#cube4fG5 {
+	
+	background: green;
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube4fG5Fond {
+
+	transform: rotateY(90deg) translateZ(0.01vw);
+	transform-origin: center left;
+
+}
+
+
+#cube4fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube4fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+
+#cube4fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX4 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ4 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY4 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0; 
+
+}
