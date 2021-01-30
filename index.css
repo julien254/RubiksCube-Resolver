@@ -59,7 +59,7 @@ margin-top: 50vw;
 
 #cube1fA0Fond {
 
-	transform:translateZ(-0.01vw);
+	transform:translateZ(-0.02vw);
 
 }
 
@@ -73,7 +73,7 @@ margin-top: 50vw;
 
 #cube1fH6Fond {
 
-	transform: rotateX(-90deg) translateZ(0.01vw);
+	transform: rotateX(-90deg) translateZ(0.02vw);
 	transform-origin: top center;
 
 }
@@ -88,7 +88,7 @@ margin-top: 50vw;
 
 #cube1fG2Fond {
 
-	transform: rotateY(90deg) translateZ(0.01vw);
+	transform: rotateY(90deg) translateZ(0.02vw);
 	transform-origin: center left;
 
 }
@@ -158,7 +158,7 @@ margin-top: 50vw;
 
 #cube2fA1Fond {
 
-	transform:translateZ(-0.01vw);
+	transform:translateZ(-0.02vw);
 
 }
 
@@ -172,7 +172,7 @@ margin-top: 50vw;
 
 #cube2fH7Fond {
 
-	transform: rotateX(-90deg) translateZ(0.01vw);
+	transform: rotateX(-90deg) translateZ(0.02vw);
 	transform-origin: top center;
 
 }
@@ -249,7 +249,7 @@ margin-top: 50vw;
 
 #cube3fA2Fond {
 
-	transform:translateZ(-0.01vw);
+	transform:translateZ(-0.02vw);
 
 }
 
@@ -263,7 +263,7 @@ margin-top: 50vw;
 
 #cube3fH8Fond {
 
-	transform: rotateX(-90deg) translateZ(0.01vw);
+	transform: rotateX(-90deg) translateZ(0.02vw);
 	transform-origin: top center;
 
 }
@@ -286,7 +286,7 @@ margin-top: 50vw;
 
 #cube3fD0Fond {
 
-	transform: rotateY(-90deg) translateZ(0.01vw);
+	transform: rotateY(-90deg) translateZ(0.02vw);
 	transform-origin: center right;
 
 }
@@ -348,7 +348,7 @@ margin-top: 50vw;
 
 #cube4fA3Fond {
 
-	transform:translateZ(-0.01vw);
+	transform:translateZ(-0.02vw);
 
 }
 
@@ -369,7 +369,7 @@ margin-top: 50vw;
 
 #cube4fG5Fond {
 
-	transform: rotateY(90deg) translateZ(0.01vw);
+	transform: rotateY(90deg) translateZ(0.02vw);
 	transform-origin: center left;
 
 }
@@ -411,6 +411,179 @@ margin-top: 50vw;
 }
 
 #fondY4 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 5 ------------*/
+
+.cube5 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:20vw;
+	left:20vw;
+	border-radius: 15%;
+
+}
+
+#cube5fA4 {
+
+	background: red;
+
+}
+
+#cube5fA4Fond {
+
+	transform:translateZ(-0.02vw);
+
+}
+
+#cube5fH {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube5fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube5fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube5fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+
+#cube5fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX5 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ5 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY5 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 3 ------------*/
+
+.cube6 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:20vw;
+	left:40vw;
+	border-radius: 15%;
+
+}
+
+#cube6fA5 {
+
+	background: red;
+
+}
+
+#cube6fA5Fond {
+
+	transform:translateZ(-0.02vw);
+
+}
+
+#cube6fH {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube6fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+
+#cube6fD3 {
+
+	background: blue;
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube6fD3Fond {
+
+	transform: rotateY(-90deg) translateZ(0.02vw);
+	transform-origin: center right;
+
+}
+
+#cube6fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+
+#cube6fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX6 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ6 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY6 {
 
 	transform: rotateY(90deg) translateX(10vw);
 	border-radius:0;
