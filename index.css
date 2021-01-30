@@ -1,32 +1,45 @@
 
 
+
+
 /* --------------- Animations --------------- */
+
 
 @keyframes rotate {
   from {
     transform: rotateY(0deg), rotateX(0deg);
   }
 
+
   to {
     transform: rotate3d(1, 1, 0, 360deg);
   }
 }
 
+
 /* ----------------- Body ---------------- */
+
 
 .black {
 
+
 	background-color: black;
 
+
 }
+
 
 body{
 
+
 margin-top: 50vw;
+
 
 }
 
+
 #container {
+
 
 	width: 60vw;
 	height:60vw;
@@ -37,9 +50,12 @@ margin-top: 50vw;
 	perspective: 0;
 }
 
+
 /*------------ Cube 1 ------------*/
 
+
 .cube1 {
+
 
 	border:solid 1.5vw black;
 	width:17vw;
@@ -49,96 +65,138 @@ margin-top: 50vw;
 	left:0;
 	border-radius: 15%;
 
+
 }
+
 
 #cube1fA0 {
 
+
 	background:red ;
 
+
 }
+
 
 #cube1fA0Fond {
 
+
 	transform:translateZ(-0.02vw);
+
 
 }
 
+
 #cube1fH6 {
+
 
 	background: white;
 	transform: rotateX(-90deg);
 	transform-origin: top center;
 
+
 }
 
+
 #cube1fH6Fond {
+
 
 	transform: rotateX(-90deg) translateZ(0.02vw);
 	transform-origin: top center;
 
+
 }
 
+
 #cube1fG2 {
+
 
 	background: green;
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
+
 }
 
+
 #cube1fG2Fond {
+
 
 	transform: rotateY(90deg) translateZ(0.02vw);
 	transform-origin: center left;
 
+
 }
+
+
 
 
 #cube1fD {
 
+
 	transform: rotateY(-90deg);
 	transform-origin: center right;
 
+
 }
+
 
 #cube1fP {
 
+
 	transform: rotateX(-180deg) translateZ(20vw);
 
+
 }
+
+
 
 
 #cube1fB {
 
+
 	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
+
 }
 
+
 #fondX1 {
+
 
 	transform: rotateX(90deg) translateY(-10vw);
 	border-radius:0;
 
+
 }
 
+
 #fondZ1 {
+
 
 	transform:translateZ(-10vw);
 	border-radius:0;
 
+
 }
 
+
 #fondY1 {
+
 
 	transform: rotateY(90deg) translateX(10vw);
 	border-radius:0;
 
+
 }
+
 
 /*------------ Cube 2 ------------*/
 
+
 .cube2 {
+
 
 	border:solid 1.5vw black;
 	width:17vw;
@@ -148,88 +206,127 @@ margin-top: 50vw;
 	left:20vw;
 	border-radius: 15%;
 
+
 }
+
 
 #cube2fA1 {
 
+
 	background:red ;
 
+
 }
+
 
 #cube2fA1Fond {
 
+
 	transform:translateZ(-0.02vw);
+
 
 }
 
+
 #cube2fH7 {
+
 
 	background: white;
 	transform: rotateX(-90deg);
 	transform-origin: top center;
 
+
 }
 
+
 #cube2fH7Fond {
+
 
 	transform: rotateX(-90deg) translateZ(0.02vw);
 	transform-origin: top center;
 
+
 }
 
+
 #cube2fG {
+
 
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
+
 }
+
+
 
 
 #cube2fD {
 
+
 	transform: rotateY(-90deg);
 	transform-origin: center right;
 
+
 }
+
 
 #cube2fP {
 
+
 	transform: rotateX(-180deg) translateZ(20vw);
 
+
 }
+
+
 
 
 #cube2fB {
 
+
 	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
+
 }
 
+
 #fondX2 {
+
 
 	transform: rotateX(90deg) translateY(-10vw);
 	border-radius:0;
 
+
 }
 
+
 #fondZ2 {
+
 
 	transform:translateZ(-10vw);
 	border-radius:0;
 
+
 }
 
+
 #fondY2 {
+
 
 	transform: rotateY(90deg) translateX(10vw);
 	border-radius:0;
 
+
 }
+
 
 /*------------ Cube 3 ------------*/
 
+
 .cube3 {
+
 
 	border:solid 1.5vw black;
 	width:17vw;
@@ -239,96 +336,138 @@ margin-top: 50vw;
 	left:40vw;
 	border-radius: 15%;
 
+
 }
+
 
 #cube3fA2 {
 
+
 	background: red;
 
+
 }
+
 
 #cube3fA2Fond {
 
+
 	transform:translateZ(-0.02vw);
+
 
 }
 
+
 #cube3fH8 {
+
 
 	background: white;
 	transform: rotateX(-90deg);
 	transform-origin: top center;
 
+
 }
 
+
 #cube3fH8Fond {
+
 
 	transform: rotateX(-90deg) translateZ(0.02vw);
 	transform-origin: top center;
 
+
 }
 
+
 #cube3fG {
+
 
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
+
 }
 
 
+
+
 #cube3fD0 {
+
 
 	background: blue;
 	transform: rotateY(-90deg);
 	transform-origin: center right;
 
+
 }
 
+
 #cube3fD0Fond {
+
 
 	transform: rotateY(-90deg) translateZ(0.02vw);
 	transform-origin: center right;
 
+
 }
+
 
 #cube3fP {
 
+
 	transform: rotateX(-180deg) translateZ(20vw);
 
+
 }
+
+
 
 
 #cube3fB {
 
+
 	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
+
 }
 
+
 #fondX3 {
+
 
 	transform: rotateX(90deg) translateY(-10vw);
 	border-radius:0;
 
+
 }
 
+
 #fondZ3 {
+
 
 	transform:translateZ(-10vw);
 	border-radius:0;
 
+
 }
 
+
 #fondY3 {
+
 
 	transform: rotateY(90deg) translateX(10vw);
 	border-radius:0;
 
+
 }
+
 
 /*------------ Cube 4 ------------*/
 
+
 .cube4 {
+
 
 	border:solid 1.5vw black;
 	width:17vw;
@@ -338,88 +477,127 @@ margin-top: 50vw;
 	left:0vw;
 	border-radius: 15%;
 
+
 }
+
 
 #cube4fA3 {
 
+
 	background: red;
 
+
 }
+
 
 #cube4fA3Fond {
 
+
 	transform:translateZ(-0.02vw);
+
 
 }
 
+
 #cube4fH {
+
 
 	transform: rotateX(-90deg);
 	transform-origin: top center;
 
+
 }
 
+
 #cube4fG5 {
+
 
 	background: green;
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
+
 }
 
+
 #cube4fG5Fond {
+
 
 	transform: rotateY(90deg) translateZ(0.02vw);
 	transform-origin: center left;
 
+
 }
+
+
 
 
 #cube4fD {
 
+
 	transform: rotateY(-90deg);
 	transform-origin: center right;
 
+
 }
+
 
 #cube4fP {
 
+
 	transform: rotateX(-180deg) translateZ(20vw);
 
+
 }
+
+
 
 
 #cube4fB {
 
+
 	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
+
 }
 
+
 #fondX4 {
+
 
 	transform: rotateX(90deg) translateY(-10vw);
 	border-radius:0;
 
+
 }
 
+
 #fondZ4 {
+
 
 	transform:translateZ(-10vw);
 	border-radius:0;
 
+
 }
 
+
 #fondY4 {
+
 
 	transform: rotateY(90deg) translateX(10vw);
 	border-radius:0;
 
+
 }
+
 
 /*------------ Cube 5 ------------*/
 
+
 .cube5 {
+
 
 	border:solid 1.5vw black;
 	width:17vw;
@@ -429,79 +607,114 @@ margin-top: 50vw;
 	left:20vw;
 	border-radius: 15%;
 
+
 }
+
 
 #cube5fA4 {
 
+
 	background: red;
 
+
 }
+
 
 #cube5fA4Fond {
 
+
 	transform:translateZ(-0.02vw);
+
 
 }
 
+
 #cube5fH {
+
 
 	transform: rotateX(-90deg);
 	transform-origin: top center;
 
+
 }
 
+
 #cube5fG {
+
 
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
+
 }
 
+
 #cube5fD {
+
 
 	transform: rotateY(-90deg);
 	transform-origin: center right;
 
+
 }
+
 
 #cube5fP {
 
+
 	transform: rotateX(-180deg) translateZ(20vw);
 
+
 }
+
+
 
 
 #cube5fB {
 
+
 	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
+
 }
 
+
 #fondX5 {
+
 
 	transform: rotateX(90deg) translateY(-10vw);
 	border-radius:0;
 
+
 }
 
+
 #fondZ5 {
+
 
 	transform:translateZ(-10vw);
 	border-radius:0;
 
+
 }
 
+
 #fondY5 {
+
 
 	transform: rotateY(90deg) translateX(10vw);
 	border-radius:0;
 
+
 }
+
 
 /*------------ Cube 3 ------------*/
 
+
 .cube6 {
+
 
 	border:solid 1.5vw black;
 	width:17vw;
@@ -511,81 +724,117 @@ margin-top: 50vw;
 	left:40vw;
 	border-radius: 15%;
 
+
 }
+
 
 #cube6fA5 {
 
+
 	background: red;
 
+
 }
+
 
 #cube6fA5Fond {
 
+
 	transform:translateZ(-0.02vw);
+
 
 }
 
+
 #cube6fH {
+
 
 	transform: rotateX(-90deg);
 	transform-origin: top center;
 
+
 }
 
+
 #cube6fG {
+
 
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
+
 }
 
 
+
+
 #cube6fD3 {
+
 
 	background: blue;
 	transform: rotateY(-90deg);
 	transform-origin: center right;
 
+
 }
 
+
 #cube6fD3Fond {
+
 
 	transform: rotateY(-90deg) translateZ(0.02vw);
 	transform-origin: center right;
 
+
 }
+
 
 #cube6fP {
 
+
 	transform: rotateX(-180deg) translateZ(20vw);
 
+
 }
+
+
 
 
 #cube6fB {
 
+
 	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
+
 }
 
+
 #fondX6 {
+
 
 	transform: rotateX(90deg) translateY(-10vw);
 	border-radius:0;
 
+
 }
 
+
 #fondZ6 {
+
 
 	transform:translateZ(-10vw);
 	border-radius:0;
 
+
 }
+
 
 #fondY6 {
 
+
 	transform: rotateY(90deg) translateX(10vw);
 	border-radius:0;
+
 
 }
