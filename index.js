@@ -20,3 +20,9 @@ divTurn.appendChild(cube6);
 divTurn.appendChild(cube7);
 divTurn.appendChild(cube8);
 divTurn.appendChild(cube9);
+
+function switchCube() {
+
+  container.style.transform =  "rotateY(-47deg) rotateX(180deg)"
+
+}
