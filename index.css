@@ -31,8 +31,8 @@ body{
 
 #containerAxeY {
 
-	width: 60vw;
-	height:60vw;
+	width: 30vw;
+	height:30vw;
 	margin:auto;
 	transform-style: preserve-3d;
 	transform: rotateY(-45deg);
@@ -41,8 +41,8 @@ body{
 
 #containerAxeX {
 
-	width: 60vw;
-	height:60vw;
+	width: 30vw;
+	height:30vw;
 	margin:auto;
 	transform-style: preserve-3d;
 	transform: rotateX(-25deg);
@@ -52,8 +52,8 @@ body{
 .cube {
 
   transform-style: preserve-3d;
-  width:20vw;
-	height:20vw;
+  width:10vw;
+	height:10vw;
 	position:absolute;
 	top:0;
 	left:0;
@@ -62,19 +62,19 @@ body{
 
 .cubeAvant {
 
-  transform: translateZ(30vw);
+  transform: translateZ(15vw);
 
 }
 
 .cubeMilieu {
 
-  transform: translateZ(10vw);
+  transform: translateZ(5vw);
 
 }
 
 .cubeDos {
 
-  transform: translateZ(-10vw);
+  transform: translateZ(-5vw);
 
 }
 
@@ -88,9 +88,9 @@ body{
 
 .cube1 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
 	top:0;
 	left:0;
@@ -149,7 +149,7 @@ body{
 
 #cube1fP {
 
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
@@ -164,12 +164,12 @@ body{
 
 .cube2 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
 	top:0;
-	left:20vw;
+	left:10vw;
 	border-radius: 15%;
 
 }
@@ -217,7 +217,7 @@ body{
 
 #cube2fP {
 
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
@@ -232,12 +232,12 @@ body{
 
 .cube3 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
 	top:0;
-	left:40vw;
+	left:20vw;
 	border-radius: 15%;
 
 }
@@ -293,7 +293,7 @@ body{
 
 #cube3fP {
 
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
@@ -308,11 +308,11 @@ body{
 
 .cube4 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
-	top:20vw;
+	top:10vw;
 	left:0vw;
 	border-radius: 15%;
 
@@ -361,7 +361,7 @@ body{
 
 #cube4fP {
 
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
@@ -376,12 +376,12 @@ body{
 
 .cube5 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
-	top:20vw;
-	left:20vw;
+	top:10vw;
+	left:10vw;
 	border-radius: 15%;
 
 }
@@ -421,7 +421,7 @@ body{
 
 #cube5fP {
 
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
@@ -436,12 +436,12 @@ body{
 
 .cube6 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
-	top:20vw;
-	left:40vw;
+	top:10vw;
+	left:20vw;
 	border-radius: 15%;
 
 }
@@ -489,7 +489,7 @@ body{
 
 #cube6fP {
 
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
@@ -504,11 +504,11 @@ body{
 
 .cube7 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
-	top:40vw;
+	top:20vw;
 	left:0;
 	border-radius: 15%;
 
@@ -557,7 +557,7 @@ body{
 
 #cube7fP {
 
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
@@ -580,12 +580,12 @@ body{
 
 .cube8 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
-	top:40vw;
-	left:20vw;
+	top:20vw;
+	left:10vw;
 	border-radius: 15%;
 
 }
@@ -625,7 +625,7 @@ body{
 
 #cube8fP {
 
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
@@ -648,12 +648,12 @@ body{
 
 .cube9 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
-	top:40vw;
-	left:40vw;
+	top:20vw;
+	left:20vw;
 	border-radius: 15%;
 
 }
@@ -701,7 +701,7 @@ body{
 
 #cube9fP {
 
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
@@ -724,9 +724,9 @@ body{
 
 .cube10 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
 	top:0;
 	left:0;
@@ -774,7 +774,7 @@ body{
 
 #cube10fP {
 
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
@@ -789,12 +789,12 @@ body{
 
 .cube11 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
 	top:0;
-	left:20vw;
+	left:10vw;
 	border-radius: 15%;
 
 }
@@ -830,7 +830,7 @@ body{
 
 #cube11fP {
 
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
@@ -845,12 +845,12 @@ body{
 
 .cube12 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
 	top:0;
-	left:40vw;
+	left:20vw;
 	border-radius: 15%;
 
 }
@@ -894,7 +894,7 @@ body{
 
 #cube12fP {
 
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
@@ -909,11 +909,11 @@ body{
 
 .cube13 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
-	top:20vw;
+	top:10vw;
 	left:0vw;
 	border-radius: 15%;
 
@@ -950,7 +950,7 @@ body{
 
 #cube13fP {
 
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
@@ -965,12 +965,12 @@ body{
 
 .cube15 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
-	top:20vw;
-	left:40vw;
+	top:10vw;
+	left:20vw;
 	border-radius: 15%;
 
 }
@@ -1006,7 +1006,7 @@ body{
 
 #cube15fP {
 
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
@@ -1021,11 +1021,11 @@ body{
 
 .cube16 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
-	top:40vw;
+	top:20vw;
 	left:0;
 	border-radius: 15%;
 
@@ -1062,7 +1062,7 @@ body{
 
 #cube16fP {
 
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
@@ -1085,12 +1085,12 @@ body{
 
 .cube17 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
-	top:40vw;
-	left:20vw;
+	top:20vw;
+	left:10vw;
 	border-radius: 15%;
 
 }
@@ -1118,7 +1118,7 @@ body{
 
 #cube17fP {
 
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
@@ -1141,12 +1141,12 @@ body{
 
 .cube18 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
-	top:40vw;
-	left:40vw;
+	top:20vw;
+	left:20vw;
 	border-radius: 15%;
 
 }
@@ -1182,7 +1182,7 @@ body{
 
 #cube18fP {
 
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
@@ -1205,9 +1205,9 @@ body{
 
 .cube19 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
 	top:0;
 	left:0;
@@ -1256,13 +1256,13 @@ body{
 #cube19fP2 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
 #cube19fP2Fond {
 
-	transform: translateZ(-20vw);
+	transform: translateZ(-10vw);
 
 }
 
@@ -1277,12 +1277,12 @@ body{
 
 .cube20 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
 	top:0;
-	left:20vw;
+	left:10vw;
 	border-radius: 15%;
 
 }
@@ -1319,13 +1319,13 @@ body{
 #cube20fP1 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
 #cube20fP1Fond {
 
-	transform:translateZ(-20vw);
+	transform:translateZ(-10vw);
 
 }
 
@@ -1340,12 +1340,12 @@ body{
 
 .cube21 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
 	top:0;
-	left:40vw;
+	left:20vw;
 	border-radius: 15%;
 
 }
@@ -1390,12 +1390,12 @@ body{
 #cube21fP0 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 #cube21fP0Fond {
 
-	transform: translateZ(-20vw);
+	transform: translateZ(-10vw);
 
 }
 
@@ -1410,11 +1410,11 @@ body{
 
 .cube22 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
-	top:20vw;
+	top:10vw;
 	left:0vw;
 	border-radius: 15%;
 
@@ -1452,13 +1452,13 @@ body{
 #cube22fP5 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
 #cube22fP5Fond {
 
-	transform: translateZ(-20vw);
+	transform: translateZ(-10vw);
 
 }
 
@@ -1473,12 +1473,12 @@ body{
 
 .cube23 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
-	top:20vw;
-	left:20vw;
+	top:10vw;
+	left:10vw;
 	border-radius: 15%;
 
 }
@@ -1507,13 +1507,13 @@ body{
 #cube23fP4 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
 #cube23fP4Fond {
 
-	transform: translateZ(-20vw);
+	transform: translateZ(-10vw);
 
 }
 
@@ -1528,12 +1528,12 @@ body{
 
 .cube24 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
-	top:20vw;
-	left:40vw;
+	top:10vw;
+	left:20vw;
 	border-radius: 15%;
 
 }
@@ -1570,13 +1570,13 @@ body{
 #cube24fP3 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
 #cube24fP3Fond {
 
-	transform: translateZ(-20vw);
+	transform: translateZ(-10vw);
 
 }
 
@@ -1591,11 +1591,11 @@ body{
 
 .cube25 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
-	top:40vw;
+	top:20vw;
 	left:0;
 	border-radius: 15%;
 
@@ -1633,13 +1633,13 @@ body{
 #cube25fP8 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
 #cube25fP8Fond {
 
-	transform: translateZ(-20vw);
+	transform: translateZ(-10vw);
 
 }
 
@@ -1662,12 +1662,12 @@ body{
 
 .cube26 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
-	top:40vw;
-	left:20vw;
+	top:20vw;
+	left:10vw;
 	border-radius: 15%;
 
 }
@@ -1696,13 +1696,13 @@ body{
 #cube26fP7 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
 #cube26fP7Fond {
 
-	transform: translateZ(-20vw);
+	transform: translateZ(-10vw);
 
 }
 
@@ -1725,12 +1725,12 @@ body{
 
 .cube27 {
 
-	border:solid 1.5vw black;
-	width:17vw;
-	height:17vw;
+	border:solid 0.75vw black;
+	width:8.5vw;
+	height:8.5vw;
 	position:absolute;
-	top:40vw;
-	left:40vw;
+	top:20vw;
+	left:20vw;
 	border-radius: 15%;
 
 }
@@ -1767,13 +1767,13 @@ body{
 #cube27fP6 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(20vw);
+	transform: rotateX(-180deg) translateZ(10vw);
 
 }
 
 #cube27fP6Fond {
 
-	transform: translateZ(-20vw);
+	transform: translateZ(-10vw);
 
 }
 
@@ -1794,8 +1794,8 @@ body{
 
 #divTurn {
 
-  height: 60vw;
-  width: 60vw;
+  height: 30vw;
+  width: 30vw;
   transform-style: preserve-3d;
   transform-origin: center center;
   will-change: transform;
