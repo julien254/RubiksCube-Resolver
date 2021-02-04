@@ -1,61 +1,917 @@
 
-
-
-
 /* --------------- Animations --------------- */
 
 
-@keyframes rotate {
+@keyframes rotateFace {
   from {
-    transform: rotateY(0deg), rotateX(0deg);
+    transform: rotate(0deg);
   }
 
-
   to {
-    transform: rotate3d(1, 1, 0, 360deg);
+    transform: rotate(360deg);
   }
 }
 
 
 /* ----------------- Body ---------------- */
 
-
 .black {
-
 
 	background-color: black;
 
-
 }
-
 
 body{
 
-
-margin-top: 50vw;
-
+  margin-top: 50vw;
+  margin-bottom: 50vw;
 
 }
 
 
-#container {
-
+#containerAxeY {
 
 	width: 60vw;
 	height:60vw;
-	border:solid 1px black;
 	margin:auto;
 	transform-style: preserve-3d;
-	animation: rotate 10s linear infinite;
-	perspective: 0;
+	transform: rotateY(-45deg);
+
 }
 
+#containerAxeX {
+
+	width: 60vw;
+	height:60vw;
+	margin:auto;
+	transform-style: preserve-3d;
+	transform: rotateX(-25deg);
+
+}
+
+.cube {
+
+  transform-style: preserve-3d;
+  width:20vw;
+	height:20vw;
+	position:absolute;
+	top:0;
+	left:0;
+
+}
+
+.cubeAvant {
+
+  transform: translateZ(30vw);
+
+}
+
+.cubeMilieu {
+
+  transform: translateZ(10vw);
+
+}
+
+.cubeDos {
+
+  transform: translateZ(-10vw);
+
+}
+
+.fond {
+
+  border:solid 1.45vw black!important;
+
+}
 
 /*------------ Cube 1 ------------*/
 
-
 .cube1 {
 
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:0;
+	left:0;
+	border-radius: 15%;
+
+}
+
+#cube1fA0 {
+
+	background:red ;
+
+}
+
+#cube1fA0Fond {
+
+	transform:rotateY(180deg);
+
+}
+
+#cube1fH6 {
+
+	background: white;
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube1fH6Fond {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube1fG2 {
+
+	background: green;
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube1fG2Fond {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube1fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube1fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube1fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX1 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ1 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY1 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 2 ------------*/
+
+.cube2 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:0;
+	left:20vw;
+	border-radius: 15%;
+
+}
+
+#cube2fA1 {
+
+	background:red ;
+
+}
+
+#cube2fA1Fond {
+
+	transform: rotateY(180deg);
+
+}
+
+#cube2fH7 {
+
+	background: white;
+	transform: rotateX(-90deg) rotateY(180deg);
+	transform-origin: top center;
+
+}
+
+#cube2fH7Fond {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube2fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube2fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube2fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube2fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX2 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ2 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY2 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 3 ------------*/
+
+.cube3 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:0;
+	left:40vw;
+	border-radius: 15%;
+
+}
+
+#cube3fA2 {
+
+	background: red;
+
+}
+
+#cube3fA2Fond {
+
+	transform: rotateY(180deg);
+
+}
+
+#cube3fH8 {
+
+	background: white;
+	transform: rotateX(-90deg)  rotateY(180deg);
+	transform-origin: top center;
+
+}
+
+#cube3fH8Fond {
+
+	transform: rotateX(-90deg) ;
+	transform-origin: top center;
+
+}
+
+#cube3fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube3fD0 {
+
+	background: blue;
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube3fD0Fond {
+
+	transform: rotateY(-90deg) ;
+	transform-origin: center right;
+
+}
+
+#cube3fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube3fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX3 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ3 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY3 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 4 ------------*/
+
+.cube4 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:20vw;
+	left:0vw;
+	border-radius: 15%;
+
+}
+
+#cube4fA3 {
+
+	background: red;
+
+}
+
+#cube4fA3Fond {
+
+	transform: rotateY(180deg);
+
+}
+
+#cube4fH {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube4fG5 {
+
+	background: green;
+	transform: rotateY(90deg)  rotateX(180deg);
+	transform-origin: center left;
+
+}
+
+#cube4fG5Fond {
+
+	transform: rotateY(90deg) ;
+	transform-origin: center left;
+
+}
+
+#cube4fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube4fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube4fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX4 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ4 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY4 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 5 ------------*/
+
+.cube5 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:20vw;
+	left:20vw;
+	border-radius: 15%;
+
+}
+
+#cube5fA4 {
+
+	background: red;
+
+}
+
+#cube5fA4Fond {
+
+	transform: rotateY(180deg) ;
+
+}
+
+#cube5fH {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube5fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube5fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube5fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube5fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX5 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ5 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY5 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 6 ------------*/
+
+.cube6 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:20vw;
+	left:40vw;
+	border-radius: 15%;
+
+}
+
+#cube6fA5 {
+
+	background: red;
+
+}
+
+#cube6fA5Fond {
+
+	transform: rotateY(180deg);
+
+}
+
+#cube6fH {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube6fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube6fD3 {
+
+	background: blue;
+	transform: rotateY(-90deg) rotateX(180deg);
+	transform-origin: center right;
+
+}
+
+#cube6fD3Fond {
+
+	transform: rotateY(-90deg) ;
+	transform-origin: center right;
+
+}
+
+#cube6fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube6fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX6 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ6 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY6 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 7 ------------*/
+
+.cube7 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:40vw;
+	left:0;
+	border-radius: 15%;
+
+}
+
+#cube7fA6 {
+
+	background:red ;
+
+}
+
+#cube7fA6Fond {
+
+	transform:rotateY(180deg);
+
+}
+
+#cube7fH {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube7fG8 {
+
+	background: green;
+	transform: rotateY(90deg) rotateX(180deg);
+	transform-origin: center left;
+
+}
+
+#cube7fG8Fond {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube7fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube7fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube7fB0 {
+
+  background: yellow;
+	transform: rotateX(90deg) rotateY(180deg);
+	transform-origin: bottom center;
+
+}
+
+#cube7fB0Fond {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX7 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ7{
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY7 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 8 ------------*/
+
+.cube8 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:40vw;
+	left:20vw;
+	border-radius: 15%;
+
+}
+
+#cube8fA7 {
+
+	background:red ;
+
+}
+
+#cube8fA7Fond {
+
+	transform: rotateY(180deg);
+
+}
+
+#cube8fH {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube8fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube8fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube8fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube8fB1 {
+
+  background: Yellow;
+	transform: rotateX(90deg) rotateY(180deg);
+	transform-origin: bottom center;
+
+}
+
+#cube8fB1Fond {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX8 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ8 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY8 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 9 ------------*/
+
+.cube9 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:40vw;
+	left:40vw;
+	border-radius: 15%;
+
+}
+
+#cube9fA8 {
+
+	background: red;
+
+}
+
+#cube9fA8Fond {
+
+	transform: rotateY(180deg);
+
+}
+
+#cube9fH {
+
+	transform: rotateX(-90deg)  rotateY(180deg);
+	transform-origin: top center;
+
+}
+
+#cube9fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube9fD6 {
+
+	background: blue;
+	transform: rotateY(-90deg) rotateX(180deg);
+	transform-origin: center right;
+
+}
+
+#cube9fD6Fond {
+
+	transform: rotateY(-90deg) ;
+	transform-origin: center right;
+
+}
+
+#cube9fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube9fB2 {
+
+  background: yellow;
+	transform: rotateX(90deg) rotateY(180deg);
+	transform-origin: bottom center;
+
+}
+
+#cube9fB2Fond {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX9 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ9 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY9 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 10 ------------*/
+
+.cube10 {
 
 	border:solid 1.5vw black;
 	width:17vw;
@@ -68,135 +924,80 @@ margin-top: 50vw;
 
 }
 
-
-#cube1fA0 {
-
-
-	background:red ;
-
-
-}
-
-
-#cube1fA0Fond {
-
-
-	transform:translateZ(-0.02vw);
-
-
-}
-
-
-#cube1fH6 {
-
+#cube10fH3 {
 
 	background: white;
+	transform: rotateX(-90deg) rotateY(180deg);
+	transform-origin: top center;
+
+}
+
+#cube10fH3Fond {
+
 	transform: rotateX(-90deg);
 	transform-origin: top center;
 
-
 }
 
-
-#cube1fH6Fond {
-
-
-	transform: rotateX(-90deg) translateZ(0.02vw);
-	transform-origin: top center;
-
-
-}
-
-
-#cube1fG2 {
-
+#cube10fG1 {
 
 	background: green;
+	transform: rotateY(90deg) rotateX(180deg);
+	transform-origin: center left;
+
+}
+
+#cube10fG1Fond {
+
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
-
 }
 
-
-#cube1fG2Fond {
-
-
-	transform: rotateY(90deg) translateZ(0.02vw);
-	transform-origin: center left;
-
-
-}
-
-
-
-
-#cube1fD {
-
+#cube10fD {
 
 	transform: rotateY(-90deg);
 	transform-origin: center right;
 
-
 }
 
-
-#cube1fP {
-
+#cube10fP {
 
 	transform: rotateX(-180deg) translateZ(20vw);
 
-
 }
 
-
-
-
-#cube1fB {
-
+#cube10fB {
 
 	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
-
 }
 
-
-#fondX1 {
-
+#fondX10 {
 
 	transform: rotateX(90deg) translateY(-10vw);
 	border-radius:0;
 
-
 }
 
-
-#fondZ1 {
-
+#fondZ10 {
 
 	transform:translateZ(-10vw);
 	border-radius:0;
 
-
 }
 
-
-#fondY1 {
-
+#fondY10 {
 
 	transform: rotateY(90deg) translateX(10vw);
 	border-radius:0;
 
-
 }
 
+/*------------ Cube 11 ------------*/
 
-/*------------ Cube 2 ------------*/
-
-
-.cube2 {
-
+.cube11 {
 
 	border:solid 1.5vw black;
 	width:17vw;
@@ -206,127 +1007,74 @@ margin-top: 50vw;
 	left:20vw;
 	border-radius: 15%;
 
-
 }
 
-
-#cube2fA1 {
-
-
-	background:red ;
-
-
-}
-
-
-#cube2fA1Fond {
-
-
-	transform:translateZ(-0.02vw);
-
-
-}
-
-
-#cube2fH7 {
-
+#cube11fH4 {
 
 	background: white;
+	transform: rotateX(-90deg) rotateY(180deg);
+	transform-origin: top center;
+
+}
+
+#cube11fH4Fond {
+
 	transform: rotateX(-90deg);
 	transform-origin: top center;
 
-
 }
 
-
-#cube2fH7Fond {
-
-
-	transform: rotateX(-90deg) translateZ(0.02vw);
-	transform-origin: top center;
-
-
-}
-
-
-#cube2fG {
-
+#cube11fG {
 
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
-
 }
 
-
-
-
-#cube2fD {
-
+#cube11fD {
 
 	transform: rotateY(-90deg);
 	transform-origin: center right;
 
-
 }
 
-
-#cube2fP {
-
+#cube11fP {
 
 	transform: rotateX(-180deg) translateZ(20vw);
 
-
 }
 
-
-
-
-#cube2fB {
-
+#cube11fB {
 
 	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
-
 }
 
-
-#fondX2 {
-
+#fondX11 {
 
 	transform: rotateX(90deg) translateY(-10vw);
 	border-radius:0;
 
-
 }
 
-
-#fondZ2 {
-
+#fondZ11 {
 
 	transform:translateZ(-10vw);
 	border-radius:0;
 
-
 }
 
-
-#fondY2 {
-
+#fondY11 {
 
 	transform: rotateY(90deg) translateX(10vw);
 	border-radius:0;
 
-
 }
 
+/*------------ Cube 12 ------------*/
 
-/*------------ Cube 3 ------------*/
-
-
-.cube3 {
-
+.cube12 {
 
 	border:solid 1.5vw black;
 	width:17vw;
@@ -336,138 +1084,82 @@ margin-top: 50vw;
 	left:40vw;
 	border-radius: 15%;
 
-
 }
 
-
-#cube3fA2 {
-
-
-	background: red;
-
-
-}
-
-
-#cube3fA2Fond {
-
-
-	transform:translateZ(-0.02vw);
-
-
-}
-
-
-#cube3fH8 {
-
+#cube12fH5 {
 
 	background: white;
-	transform: rotateX(-90deg);
+	transform: rotateX(-90deg)  rotateY(180deg);
 	transform-origin: top center;
-
 
 }
 
+#cube12fH5Fond {
 
-#cube3fH8Fond {
-
-
-	transform: rotateX(-90deg) translateZ(0.02vw);
+	transform: rotateX(-90deg) ;
 	transform-origin: top center;
-
 
 }
 
-
-#cube3fG {
-
+#cube12fG {
 
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
-
 }
 
-
-
-
-#cube3fD0 {
-
+#cube12fD1 {
 
 	background: blue;
-	transform: rotateY(-90deg);
+	transform: rotateY(-90deg) rotateX(180deg);
 	transform-origin: center right;
-
 
 }
 
+#cube12fD1Fond {
 
-#cube3fD0Fond {
-
-
-	transform: rotateY(-90deg) translateZ(0.02vw);
+	transform: rotateY(-90deg) ;
 	transform-origin: center right;
-
 
 }
 
-
-#cube3fP {
-
+#cube12fP {
 
 	transform: rotateX(-180deg) translateZ(20vw);
 
-
 }
 
-
-
-
-#cube3fB {
-
+#cube12fB {
 
 	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
-
 }
 
-
-#fondX3 {
-
+#fondX12 {
 
 	transform: rotateX(90deg) translateY(-10vw);
 	border-radius:0;
 
-
 }
 
-
-#fondZ3 {
-
+#fondZ12 {
 
 	transform:translateZ(-10vw);
 	border-radius:0;
 
-
 }
 
-
-#fondY3 {
-
+#fondY12 {
 
 	transform: rotateY(90deg) translateX(10vw);
 	border-radius:0;
 
-
 }
 
+/*------------ Cube 13 ------------*/
 
-/*------------ Cube 4 ------------*/
-
-
-.cube4 {
-
+.cube13 {
 
 	border:solid 1.5vw black;
 	width:17vw;
@@ -477,127 +1169,74 @@ margin-top: 50vw;
 	left:0vw;
 	border-radius: 15%;
 
-
 }
 
-
-#cube4fA3 {
-
-
-	background: red;
-
-
-}
-
-
-#cube4fA3Fond {
-
-
-	transform:translateZ(-0.02vw);
-
-
-}
-
-
-#cube4fH {
-
+#cube13fH {
 
 	transform: rotateX(-90deg);
 	transform-origin: top center;
 
-
 }
 
-
-#cube4fG5 {
-
+#cube13fG4 {
 
 	background: green;
-	transform: rotateY(90deg);
+	transform: rotateY(90deg)  rotateX(180deg);
 	transform-origin: center left;
-
 
 }
 
+#cube13fG4Fond {
 
-#cube4fG5Fond {
-
-
-	transform: rotateY(90deg) translateZ(0.02vw);
+	transform: rotateY(90deg) ;
 	transform-origin: center left;
-
 
 }
 
-
-
-
-#cube4fD {
-
+#cube13fD {
 
 	transform: rotateY(-90deg);
 	transform-origin: center right;
 
-
 }
 
-
-#cube4fP {
-
+#cube13fP {
 
 	transform: rotateX(-180deg) translateZ(20vw);
 
-
 }
 
-
-
-
-#cube4fB {
-
+#cube13fB {
 
 	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
-
 }
 
-
-#fondX4 {
-
+#fondX13 {
 
 	transform: rotateX(90deg) translateY(-10vw);
 	border-radius:0;
 
-
 }
 
-
-#fondZ4 {
-
+#fondZ13 {
 
 	transform:translateZ(-10vw);
 	border-radius:0;
 
-
 }
 
-
-#fondY4 {
-
+#fondY13 {
 
 	transform: rotateY(90deg) translateX(10vw);
 	border-radius:0;
 
-
 }
 
+/*------------ Cube 14 ------------*/
 
-/*------------ Cube 5 ------------*/
-
-
-.cube5 {
-
+.cube14 {
 
 	border:solid 1.5vw black;
 	width:17vw;
@@ -607,114 +1246,66 @@ margin-top: 50vw;
 	left:20vw;
 	border-radius: 15%;
 
-
 }
 
-
-#cube5fA4 {
-
-
-	background: red;
-
-
-}
-
-
-#cube5fA4Fond {
-
-
-	transform:translateZ(-0.02vw);
-
-
-}
-
-
-#cube5fH {
-
+#cube14fH {
 
 	transform: rotateX(-90deg);
 	transform-origin: top center;
 
-
 }
 
-
-#cube5fG {
-
+#cube14fG {
 
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
-
 }
 
-
-#cube5fD {
-
+#cube14fD {
 
 	transform: rotateY(-90deg);
 	transform-origin: center right;
 
-
 }
 
-
-#cube5fP {
-
+#cube14fP {
 
 	transform: rotateX(-180deg) translateZ(20vw);
 
-
 }
 
-
-
-
-#cube5fB {
-
+#cube14fB {
 
 	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
-
 }
 
-
-#fondX5 {
-
+#fondX14 {
 
 	transform: rotateX(90deg) translateY(-10vw);
 	border-radius:0;
 
-
 }
 
-
-#fondZ5 {
-
+#fondZ14 {
 
 	transform:translateZ(-10vw);
 	border-radius:0;
 
-
 }
 
-
-#fondY5 {
-
+#fondY14 {
 
 	transform: rotateY(90deg) translateX(10vw);
 	border-radius:0;
 
-
 }
 
+/*------------ Cube 15 ------------*/
 
-/*------------ Cube 3 ------------*/
-
-
-.cube6 {
-
+.cube15 {
 
 	border:solid 1.5vw black;
 	width:17vw;
@@ -724,117 +1315,1104 @@ margin-top: 50vw;
 	left:40vw;
 	border-radius: 15%;
 
-
 }
 
-
-#cube6fA5 {
-
-
-	background: red;
-
-
-}
-
-
-#cube6fA5Fond {
-
-
-	transform:translateZ(-0.02vw);
-
-
-}
-
-
-#cube6fH {
-
+#cube15fH {
 
 	transform: rotateX(-90deg);
 	transform-origin: top center;
 
-
 }
 
-
-#cube6fG {
-
+#cube15fG {
 
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
-
 }
 
-
-
-
-#cube6fD3 {
-
+#cube15fD4 {
 
 	background: blue;
-	transform: rotateY(-90deg);
+	transform: rotateY(-90deg) rotateX(180deg);
 	transform-origin: center right;
-
 
 }
 
+#cube15fD4Fond {
 
-#cube6fD3Fond {
-
-
-	transform: rotateY(-90deg) translateZ(0.02vw);
+	transform: rotateY(-90deg) ;
 	transform-origin: center right;
-
 
 }
 
-
-#cube6fP {
-
+#cube15fP {
 
 	transform: rotateX(-180deg) translateZ(20vw);
 
-
 }
 
-
-
-
-#cube6fB {
-
+#cube15fB {
 
 	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
-
 }
 
-
-#fondX6 {
-
+#fondX15 {
 
 	transform: rotateX(90deg) translateY(-10vw);
 	border-radius:0;
 
-
 }
 
-
-#fondZ6 {
-
+#fondZ15 {
 
 	transform:translateZ(-10vw);
 	border-radius:0;
 
-
 }
 
-
-#fondY6 {
-
+#fondY15 {
 
 	transform: rotateY(90deg) translateX(10vw);
 	border-radius:0;
 
+}
 
+/*------------ Cube 16 ------------*/
+
+.cube16 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:40vw;
+	left:0;
+	border-radius: 15%;
+
+}
+
+#cube16fH {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube16fG7 {
+
+	background: green;
+	transform: rotateY(90deg) rotateX(180deg);
+	transform-origin: center left;
+
+}
+
+#cube16fG7Fond {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube16fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube16fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube16fB3 {
+
+  background: yellow;
+	transform: rotateX(90deg) rotateY(180deg);
+	transform-origin: bottom center;
+
+}
+
+#cube16fB3Fond {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX16 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ16{
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY16 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 17 ------------*/
+
+.cube17 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:40vw;
+	left:20vw;
+	border-radius: 15%;
+
+}
+
+#cube17fH {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube17fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube17fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube17fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube17fB4 {
+
+  background: Yellow;
+	transform: rotateX(90deg) rotateY(180deg);
+	transform-origin: bottom center;
+
+}
+
+#cube17fB4Fond {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX17 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ17 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY17 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 18 ------------*/
+
+.cube18 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:40vw;
+	left:40vw;
+	border-radius: 15%;
+
+}
+
+#cube18fH {
+
+	transform: rotateX(-90deg)  rotateY(180deg);
+	transform-origin: top center;
+
+}
+
+#cube18fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube18fD7 {
+
+	background: blue;
+	transform: rotateY(-90deg) rotateX(180deg);
+	transform-origin: center right;
+
+}
+
+#cube18fD7Fond {
+
+	transform: rotateY(-90deg) ;
+	transform-origin: center right;
+
+}
+
+#cube18fP {
+
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube18fB5 {
+
+  background: yellow;
+	transform: rotateX(90deg) rotateY(180deg);
+	transform-origin: bottom center;
+
+}
+
+#cube18fB5Fond {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX18 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ18 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY18 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 19 ------------*/
+
+.cube19 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:0;
+	left:0;
+	border-radius: 15%;
+
+
+}
+
+#cube19fH0 {
+
+	background: white;
+	transform: rotateX(-90deg) rotateY(180deg);
+	transform-origin: top center;
+
+}
+
+#cube19fH0Fond {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube19fG0 {
+
+	background: green;
+	transform: rotateY(90deg) rotateX(180deg);
+	transform-origin: center left;
+
+}
+
+#cube19fG0Fond {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube19fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube19fP2 {
+
+  background: orange;
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube19fP2Fond {
+
+	transform: translateZ(-20vw);
+
+}
+
+#cube19fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX19 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ19 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY19 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 20 ------------*/
+
+.cube20 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:0;
+	left:20vw;
+	border-radius: 15%;
+
+}
+
+#cube20fH1 {
+
+	background: white;
+	transform: rotateX(-90deg) rotateY(180deg);
+	transform-origin: top center;
+
+}
+
+#cube20fH1Fond {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube20fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube20fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube20fP1 {
+
+  background: orange;
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube20fP1Fond {
+
+	transform:translateZ(-20vw);
+
+}
+
+#cube20fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX20 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ20 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY20 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 21 ------------*/
+
+.cube21 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:0;
+	left:40vw;
+	border-radius: 15%;
+
+}
+
+#cube21fH2 {
+
+	background: white;
+	transform: rotateX(-90deg)  rotateY(180deg);
+	transform-origin: top center;
+
+}
+
+#cube21fH2Fond {
+
+	transform: rotateX(-90deg) ;
+	transform-origin: top center;
+
+}
+
+#cube21fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube21fD2 {
+
+	background: blue;
+	transform: rotateY(-90deg) rotateX(-180deg);
+	transform-origin: center right;
+
+}
+
+#cube21fD2Fond {
+
+	transform: rotateY(-90deg) ;
+	transform-origin: center right;
+
+}
+
+#cube21fP0 {
+
+  background: orange;
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+#cube21fP0Fond {
+
+	transform: translateZ(-20vw);
+
+}
+
+#cube21fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX21 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ21 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY21 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 22 ------------*/
+
+.cube22 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:20vw;
+	left:0vw;
+	border-radius: 15%;
+
+}
+
+#cube22fH {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube22fG3 {
+
+	background: green;
+	transform: rotateY(90deg)  rotateX(180deg);
+	transform-origin: center left;
+
+}
+
+#cube22fG3Fond {
+
+	transform: rotateY(90deg) ;
+	transform-origin: center left;
+
+}
+
+#cube22fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube22fP5 {
+
+  background: orange;
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube22fP5Fond {
+
+	transform: translateZ(-20vw);
+
+}
+
+#cube22fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX22 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ22 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY22 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 23 ------------*/
+
+.cube23 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:20vw;
+	left:20vw;
+	border-radius: 15%;
+
+}
+
+#cube23fH {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube23fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube23fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube23fP4 {
+
+  background: orange;
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube23fP4Fond {
+
+	transform: translateZ(-20vw);
+
+}
+
+#cube23fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX23 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ23 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY23 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 24 ------------*/
+
+.cube24 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:20vw;
+	left:40vw;
+	border-radius: 15%;
+
+}
+
+#cube24fH {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube24fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube24fD5 {
+
+	background: blue;
+	transform: rotateY(-90deg) rotateX(180deg);
+	transform-origin: center right;
+
+}
+
+#cube24fD5Fond {
+
+	transform: rotateY(-90deg) ;
+	transform-origin: center right;
+
+}
+
+#cube24fP3 {
+
+  background: orange;
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube24fP3Fond {
+
+	transform: translateZ(-20vw);
+
+}
+
+#cube24fB {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX24 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ24 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY24 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 25 ------------*/
+
+.cube25 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:40vw;
+	left:0;
+	border-radius: 15%;
+
+}
+
+#cube25fH {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube25fG6 {
+
+	background: green;
+	transform: rotateY(90deg) rotateX(180deg);
+	transform-origin: center left;
+
+}
+
+#cube25fG6Fond {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube25fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube25fP8 {
+
+  background: orange;
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube25fP8Fond {
+
+	transform: translateZ(-20vw);
+
+}
+
+#cube25fB6 {
+
+  background: yellow;
+	transform: rotateX(90deg) rotateY(180deg);
+	transform-origin: bottom center;
+
+}
+
+#cube25fB6Fond {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX25 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ25{
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY25 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 26 ------------*/
+
+.cube26 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:40vw;
+	left:20vw;
+	border-radius: 15%;
+
+}
+
+#cube26fH {
+
+	transform: rotateX(-90deg);
+	transform-origin: top center;
+
+}
+
+#cube26fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube26fD {
+
+	transform: rotateY(-90deg);
+	transform-origin: center right;
+
+}
+
+#cube26fP7 {
+
+  background: orange;
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube26fP7Fond {
+
+	transform: translateZ(-20vw);
+
+}
+
+#cube26fB7 {
+
+  background: Yellow;
+	transform: rotateX(90deg) rotateY(180deg);
+	transform-origin: bottom center;
+
+}
+
+#cube26fB7Fond {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX26 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ26 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY26 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+/*------------ Cube 27 ------------*/
+
+.cube27 {
+
+	border:solid 1.5vw black;
+	width:17vw;
+	height:17vw;
+	position:absolute;
+	top:40vw;
+	left:40vw;
+	border-radius: 15%;
+
+}
+
+#cube27fH {
+
+	transform: rotateX(-90deg)  rotateY(180deg);
+	transform-origin: top center;
+
+}
+
+#cube27fG {
+
+	transform: rotateY(90deg);
+	transform-origin: center left;
+
+}
+
+#cube27fD8 {
+
+	background: blue;
+	transform: rotateY(-90deg) rotateX(180deg);
+	transform-origin: center right;
+
+}
+
+#cube27fD8Fond {
+
+	transform: rotateY(-90deg) ;
+	transform-origin: center right;
+
+}
+
+#cube27fP6 {
+
+  background: orange;
+	transform: rotateX(-180deg) translateZ(20vw);
+
+}
+
+#cube27fP6Fond {
+
+	transform: translateZ(-20vw);
+
+}
+
+#cube27fB8 {
+
+  background: yellow;
+	transform: rotateX(90deg) rotateY(180deg);
+	transform-origin: bottom center;
+
+}
+
+#cube27fB8Fond {
+
+	transform: rotateX(90deg);
+	transform-origin: bottom center;
+
+}
+
+#fondX27 {
+
+	transform: rotateX(90deg) translateY(-10vw);
+	border-radius:0;
+
+}
+
+#fondZ27 {
+
+	transform:translateZ(-10vw);
+	border-radius:0;
+
+}
+
+#fondY27 {
+
+	transform: rotateY(90deg) translateX(10vw);
+	border-radius:0;
+
+}
+
+
+#divTurn {
+
+  height: 60vw;
+  width: 60vw;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  animation: rotateFace 3s linear infinite;
 }

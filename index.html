@@ -1,145 +1,464 @@
 <!doctype html>
 
 <html lang="fr">
-<!doctype html>
-
-
-<html lang="fr">
-
 
 	<head>
 
-
 		<meta charset="utf-8">
-				<meta name="theme-color" content="DarkRed">
+		<meta name="theme-color" content="DarkRed">
 		<title>Rubik's Cube Resolver</title>
 		<link rel="stylesheet" href="index.css">
-		<script src="index.js"></script>
 
 
 	</head>
 
-
 	<body>
 
-
-		<header>
-
-
-
-
+		<header id="body">
 
 
 		</header>
-			<div>
-		<div id="container" >
 
+		<div id="containerAxeX">
+			<div id="containerAxeY" >
 
-<!-- --------------------------- Cube 1 ----------------------------- -->
+	<!-- --------------------------- Cube 1 ----------------------------- -->
 
+				<div id="cube1" class="cube cubeAvant">
+					<div id="cube1fA0" class="cube1" ></div>
+					<div id="cube1fA0Fond" class="cube1 black" ></div>
+					<div id="cube1fH6" class="cube1" ></div>
+					<div id="cube1fH6Fond" class="cube1 black" ></div>
+					<div id="cube1fG2" class="cube1" ></div>
+					<div id="cube1fG2Fond" class="cube1 black" ></div>
+					<div id="cube1fD" class="cube1 black" ></div>
+					<div id="cube1fP" class="cube1 black" ></div>
+					<div id="cube1fB" class="cube1 black" ></div>
+					<div id="fondX1" class="cube1 fond black" ></div>
+					<div id="fondZ1" class="cube1 fond black" ></div>
+					<div id="fondY1" class="cube1 fond black" ></div>
+				</div>
 
-			<div id="cube1fA0" class="cube1" ></div>
-			<div id="cube1fA0Fond" class="cube1 black" ></div>
-			<div id="cube1fH6" class="cube1" ></div>
-			<div id="cube1fH6Fond" class="cube1 black" ></div>
-			<div id="cube1fG2" class="cube1" ></div>
-			<div id="cube1fG2Fond" class="cube1 black" ></div>
-			<div id="cube1fD" class="cube1 black" ></div>
-			<div id="cube1fP" class="cube1 black" ></div>
-			<div id="cube1fB" class="cube1 black" ></div>
-			<div id="fondX1" class="cube1 black" ></div>
-			<div id="fondZ1" class="cube1 black" ></div>
-			<div id="fondY1" class="cube1 black" ></div>
+	<!-- ---------------------------- Cube 2 ---------------------------- -->
 
+				<div id="cube2" class="cube cubeAvant">
+					<div id="cube2fA1" class="cube2" ></div>
+					<div id="cube2fA1Fond" class="cube2 black" ></div>
+					<div id="cube2fH7" class="cube2" ></div>
+					<div id="cube2fH7Fond" class="cube2 black" ></div>
+					<div id="cube2fG" class="cube2 black" ></div>
+					<div id="cube2fD" class="cube2 black" ></div>
+					<div id="cube2fP" class="cube2 black" ></div>
+					<div id="cube2fB" class="cube2 black" ></div>
+					<div id="fondX2" class="cube2 fond black" ></div>
+					<div id="fondZ2" class="cube2 fond black" ></div>
+					<div id="fondY2" class="cube2 fond black" ></div>
+				</div>
 
+	<!-- ---------------------------- Cube 3 ---------------------------- -->
 
+				<div id="cube3" class="cube cubeAvant">
+					<div id="cube3fA2" class="cube3" ></div>
+					<div id="cube3fA2Fond" class="cube3 black" ></div>
+					<div id="cube3fH8" class="cube3" ></div>
+					<div id="cube3fH8Fond" class="cube3 black" ></div>
+					<div id="cube3fD0" class="cube3" ></div>
+					<div id="cube3fD0Fond" class="cube3 black" ></div>
+					<div id="cube3fG" class="cube3 black" ></div>
+					<div id="cube3fP" class="cube3 black" ></div>
+					<div id="cube3fB" class="cube3 black" ></div>
+					<div id="fondX3" class="cube3 fond black" ></div>
+					<div id="fondZ3" class="cube3 fond black" ></div>
+					<div id="fondY3" class="cube3 fond black" ></div>
+				</div>
 
-<!-- ---------------------------- Cube 2 ---------------------------- -->
+	<!-- ---------------------------- Cube 4 ---------------------------- -->
 
+				<div id="cube4" class="cube cubeAvant">
+					<div id="cube4fA3" class="cube4" ></div>
+					<div id="cube4fA3Fond" class="cube4 black" ></div>
+					<div id="cube4fH" class="cube4 black" ></div>
+					<div id="cube4fD" class="cube4 black" ></div>
+					<div id="cube4fG5" class="cube4" ></div>
+					<div id="cube4fG5Fond" class="cube4 black" ></div>
+					<div id="cube4fP" class="cube4 black" ></div>
+					<div id="cube4fB" class="cube4 black" ></div>
+					<div id="fondX4" class="cube4 fond black" ></div>
+					<div id="fondZ4" class="cube4 fond black" ></div>
+					<div id="fondY4" class="cube4 fond black" ></div>
+				</div>
 
-			<div id="cube2fA1" class="cube2" ></div>
-			<div id="cube2fA1Fond" class="cube2 black" ></div>
-			<div id="cube2fH7" class="cube2" ></div>
-			<div id="cube2fH7Fond" class="cube2 black" ></div>
-			<div id="cube2fG" class="cube2 black" ></div>
-			<div id="cube2fD" class="cube2 black" ></div>
-			<div id="cube2fP" class="cube2 black" ></div>
-			<div id="cube2fB" class="cube2 black" ></div>
-			<div id="fondX2" class="cube2 black" ></div>
-			<div id="fondZ2" class="cube2 black" ></div>
-			<div id="fondY2" class="cube2 black" ></div>
+	<!-- ---------------------------- Cube 5 ---------------------------- -->
 
+				<div id="cube5" class="cube cubeAvant">
+					<div id="cube5fA4" class="cube5" ></div>
+					<div id="cube5fA4Fond" class="cube5 black" ></div>
+					<div id="cube5fH" class="cube5 black" ></div>
+					<div id="cube5fD" class="cube5 black" ></div>
+					<div id="cube5fG" class="cube5 black" ></div>
+					<div id="cube5fP" class="cube5 black" ></div>
+					<div id="cube5fB" class="cube5 black" ></div>
+					<div id="fondX5" class="cube5 fond black" ></div>
+					<div id="fondZ5" class="cube5 fond black" ></div>
+					<div id="fondY5" class="cube5 fond black" ></div>
+				</div>
 
-<!-- ---------------------------- Cube 3 ---------------------------- -->
+	<!-- ---------------------------- Cube 6 ---------------------------- -->
 
+				<div id="cube6" class="cube cubeAvant">
+					<div id="cube6fA5" class="cube6" ></div>
+					<div id="cube6fA5Fond" class="cube6 black" ></div>
+					<div id="cube6fH" class="cube6 black" ></div>
+					<div id="cube6fD3" class="cube6" ></div>
+					<div id="cube6fD3Fond" class="cube6 black" ></div>
+					<div id="cube6fG" class="cube6 black" ></div>
+					<div id="cube6fP" class="cube6 black" ></div>
+					<div id="cube6fB" class="cube6 black" ></div>
+					<div id="fondX6" class="cube6 fond black" ></div>
+					<div id="fondZ6" class="cube6 fond black" ></div>
+					<div id="fondY6" class="cube6 fond black" ></div>
+				</div>
 
-			<div id="cube3fA2" class="cube3" ></div>
-			<div id="cube3fA2Fond" class="cube3 black" ></div>
-			<div id="cube3fH8" class="cube3" ></div>
-			<div id="cube3fH8Fond" class="cube3 black" ></div>
-			<div id="cube3fD0" class="cube3" ></div>
-			<div id="cube3fD0Fond" class="cube3 black" ></div>
-			<div id="cube3fG" class="cube3 black" ></div>
-			<div id="cube3fP" class="cube3 black" ></div>
-			<div id="cube3fB" class="cube3 black" ></div>
-			<div id="fondX3" class="cube3 black" ></div>
-			<div id="fondZ3" class="cube3 black" ></div>
-			<div id="fondY3" class="cube3 black" ></div>
+	<!-- --------------------------- Cube 7 --------------------------- -->
 
+				<div id="cube7" class="cube cubeAvant">
+					<div id="cube7fA6" class="cube7" ></div>
+					<div id="cube7fA6Fond" class="cube7 black" ></div>
+					<div id="cube7fH" class="cube7 black" ></div>
+					<div id="cube7fG8" class="cube7" ></div>
+					<div id="cube7fG8Fond" class="cube7 black" ></div>
+					<div id="cube7fD" class="cube7 black" ></div>
+					<div id="cube7fP" class="cube7 black" ></div>
+					<div id="cube7fB0" class="cube7" ></div>
+					<div id="cube7fB0Fond" class="cube7 black" ></div>
+					<div id="fondX7" class="cube7 fond black" ></div>
+					<div id="fondZ7" class="cube7 fond black" ></div>
+					<div id="fondY7" class="cube7 fond black" ></div>
+				</div>
 
-<!-- ---------------------------- Cube 4 ---------------------------- -->
+	<!-- ---------------------------- Cube 8 ---------------------------- -->
 
+				<div id="cube8" class="cube cubeAvant">
+					<div id="cube8fA7" class="cube8" ></div>
+					<div id="cube8fA7Fond" class="cube8 black" ></div>
+					<div id="cube8fH" class="cube8 black" ></div>
+					<div id="cube8fG" class="cube8 black" ></div>
+					<div id="cube8fD" class="cube8 black" ></div>
+					<div id="cube8fP" class="cube8 black" ></div>
+					<div id="cube8fB1" class="cube8" ></div>
+					<div id="cube8fB1Fond" class="cube8 black" ></div>
+					<div id="fondX8" class="cube8 fond black" ></div>
+					<div id="fondZ8" class="cube8 fond black" ></div>
+					<div id="fondY8" class="cube8 fond black" ></div>
+				</div>
 
-			<div id="cube4fA3" class="cube4" ></div>
-			<div id="cube4fA3Fond" class="cube4 black" ></div>
-			<div id="cube4fH" class="cube4 black" ></div>
-			<div id="cube4fD" class="cube4 black" ></div>
-			<div id="cube4fG5" class="cube4" ></div>
-			<div id="cube4fG5Fond" class="cube4 black" ></div>
-			<div id="cube4fP" class="cube4 black" ></div>
-			<div id="cube4fB" class="cube4 black" ></div>
-			<div id="fondX4" class="cube4 black" ></div>
-			<div id="fondZ4" class="cube4 black" ></div>
-			<div id="fondY4" class="cube4 black" ></div>
+	<!-- ---------------------------- Cube 9 ---------------------------- -->
 
+				<div id="cube9" class="cube cubeAvant">
+					<div id="cube9fA8" class="cube9" ></div>
+					<div id="cube9fA8Fond" class="cube9 black" ></div>
+					<div id="cube9fH" class="cube9 black" ></div>
+					<div id="cube9fD6" class="cube9" ></div>
+					<div id="cube9fD6Fond" class="cube9 black" ></div>
+					<div id="cube9fG" class="cube9 black" ></div>
+					<div id="cube9fP" class="cube9 black" ></div>
+					<div id="cube9fB2" class="cube9" ></div>
+					<div id="cube9fB2Fond" class="cube9 black" ></div>
+					<div id="fondX9" class="cube9 fond black" ></div>
+					<div id="fondZ9" class="cube9 fond black" ></div>
+					<div id="fondY9" class="cube9 fond black" ></div>
+				</div>
 
-<!-- ---------------------------- Cube 5 ---------------------------- -->
+	<!-- --------------------------- Cube 10 ----------------------------- -->
 
+				<div id="cube10" class="cube cubeMilieu">
+					<div id="cube10fA" class="cube10 black" ></div>
+					<div id="cube10fH3" class="cube10" ></div>
+					<div id="cube10fH3Fond" class="cube10 black" ></div>
+					<div id="cube10fG1" class="cube10" ></div>
+					<div id="cube10fG1Fond" class="cube10 black" ></div>
+					<div id="cube10fD" class="cube10 black" ></div>
+					<div id="cube10fP" class="cube10 black" ></div>
+					<div id="cube10fB" class="cube10 black" ></div>
+					<div id="fondX10" class="cube10 fond black" ></div>
+					<div id="fondZ10" class="cube10 fond black" ></div>
+					<div id="fondY10" class="cube10 fond black" ></div>
+				</div>
 
-			<div id="cube5fA4" class="cube5" ></div>
-			<div id="cube5fA4Fond" class="cube5 black" ></div>
-			<div id="cube5fH" class="cube5 black" ></div>
-			<div id="cube5fD" class="cube5 black" ></div>
-			<div id="cube5fG" class="cube5 black" ></div>
-			<div id="cube5fP" class="cube5 black" ></div>
-			<div id="cube5fB" class="cube5 black" ></div>
-			<div id="fondX5" class="cube5 black" ></div>
-			<div id="fondZ5" class="cube5 black" ></div>
-			<div id="fondY5" class="cube5 black" ></div>
+	<!-- ---------------------------- Cube 11 ---------------------------- -->
 
+				<div id="cube11" class="cube cubeMilieu">
+					<div id="cube11fA" class="cube11 black" ></div>
+					<div id="cube11fH4" class="cube11" ></div>
+					<div id="cube11fH4Fond" class="cube11 black" ></div>
+					<div id="cube11fG" class="cube11 black" ></div>
+					<div id="cube11fD" class="cube11 black" ></div>
+					<div id="cube11fP" class="cube11 black" ></div>
+					<div id="cube11fB" class="cube11 black" ></div>
+					<div id="fondX11" class="cube11 fond black" ></div>
+					<div id="fondZ11" class="cube11 fond black" ></div>
+					<div id="fondY11" class="cube11 fond black" ></div>
+				</div>
 
-<!-- ---------------------------- Cube 3 ---------------------------- -->
+	<!-- ---------------------------- Cube 12 ---------------------------- -->
 
+				<div id="cube12" class="cube cubeMilieu">
+					<div id="cube12fA" class="cube12 black" ></div>
+					<div id="cube12fH5" class="cube12" ></div>
+					<div id="cube12fH5Fond" class="cube12 black" ></div>
+					<div id="cube12fD1" class="cube12" ></div>
+					<div id="cube12fD1Fond" class="cube12 black" ></div>
+					<div id="cube12fG" class="cube12 black" ></div>
+					<div id="cube12fP" class="cube12 black" ></div>
+					<div id="cube12fB" class="cube12 black" ></div>
+					<div id="fondX12" class="cube12 fond black" ></div>
+					<div id="fondZ12" class="cube12 fond black" ></div>
+					<div id="fondY12" class="cube12 fond black" ></div>
+				</div>
 
-			<div id="cube6fA5" class="cube6" ></div>
-			<div id="cube6fA5Fond" class="cube6 black" ></div>
-			<div id="cube6fH" class="cube6 black" ></div>
-			<div id="cube6fD3" class="cube6" ></div>
-			<div id="cube6fD3Fond" class="cube6 black" ></div>
-			<div id="cube6fG" class="cube6 black" ></div>
-			<div id="cube6fP" class="cube6 black" ></div>
-			<div id="cube6fB" class="cube6 black" ></div>
-			<div id="fondX6" class="cube6 black" ></div>
-			<div id="fondZ6" class="cube6 black" ></div>
-			<div id="fondY6" class="cube6 black" ></div>
+	<!-- ---------------------------- Cube 13 ---------------------------- -->
 
+				<div id="cube13" class="cube cubeMilieu">
+					<div id="cube13fA" class="cube13 black" ></div>
+					<div id="cube13fH" class="cube13 black" ></div>
+					<div id="cube13fD" class="cube13 black" ></div>
+					<div id="cube13fG4" class="cube13" ></div>
+					<div id="cube13fG4Fond" class="cube13 black" ></div>
+					<div id="cube13fP" class="cube13 black" ></div>
+					<div id="cube13fB" class="cube13 black" ></div>
+					<div id="fondX13" class="cube13 fond black" ></div>
+					<div id="fondZ13" class="cube13 fond black" ></div>
+					<div id="fondY13" class="cube13 fond black" ></div>
+				</div>
 
+	<!-- ---------------------------- Cube 14 ---------------------------- -->
 
+				<div id="cube14" class="cube cubeMilieu">
+					<div id="cube14fA" class="cube14 black" ></div>
+					<div id="cube14fH" class="cube14 black" ></div>
+					<div id="cube14fD" class="cube14 black" ></div>
+					<div id="cube14fG" class="cube14 black" ></div>
+					<div id="cube14fP" class="cube14 black" ></div>
+					<div id="cube14fB" class="cube14 black" ></div>
+					<div id="fondX14" class="cube14 fond black" ></div>
+					<div id="fondZ14" class="cube14 fond black" ></div>
+					<div id="fondY14" class="cube14 fond black" ></div>
+				</div>
+
+	<!-- ---------------------------- Cube 15 ---------------------------- -->
+
+				<div id="cube15" class="cube cubeMilieu">
+					<div id="cube15fA" class="cube15 black" ></div>
+					<div id="cube15fH" class="cube15 black" ></div>
+					<div id="cube15fD4" class="cube15" ></div>
+					<div id="cube15fD4Fond" class="cube15 black" ></div>
+					<div id="cube15fG" class="cube15 black" ></div>
+					<div id="cube15fP" class="cube15 black" ></div>
+					<div id="cube15fB" class="cube15 black" ></div>
+					<div id="fondX15" class="cube15 fond black" ></div>
+					<div id="fondZ15" class="cube15 fond black" ></div>
+					<div id="fondY15" class="cube15 fond black" ></div>
+				</div>
+
+	<!-- --------------------------- Cube 16 --------------------------- -->
+
+				<div id="cube16" class="cube cubeMilieu">
+					<div id="cube16fA" class="cube16 black" ></div>
+					<div id="cube16fH" class="cube16 black" ></div>
+					<div id="cube16fG7" class="cube16" ></div>
+					<div id="cube16fG7Fond" class="cube16 black" ></div>
+					<div id="cube16fD" class="cube16 black" ></div>
+					<div id="cube16fP" class="cube16 black" ></div>
+					<div id="cube16fB3" class="cube16" ></div>
+					<div id="cube16fB3Fond" class="cube16 black" ></div>
+					<div id="fondX16" class="cube16 fond black" ></div>
+					<div id="fondZ16" class="cube16 fond black" ></div>
+					<div id="fondY16" class="cube16 fond black" ></div>
+				</div>
+
+	<!-- ---------------------------- Cube 17 ---------------------------- -->
+
+				<div id="cube17" class="cube cubeMilieu">
+					<div id="cube17fA" class="cube17 black" ></div>
+					<div id="cube17fH" class="cube17 black" ></div>
+					<div id="cube17fG" class="cube17 black" ></div>
+					<div id="cube17fD" class="cube17 black" ></div>
+					<div id="cube17fP" class="cube17 black" ></div>
+					<div id="cube17fB4" class="cube17" ></div>
+					<div id="cube17fB4Fond" class="cube17 black" ></div>
+					<div id="fondX17" class="cube17 fond black" ></div>
+					<div id="fondZ17" class="cube17 fond black" ></div>
+					<div id="fondY17" class="cube17 fond black" ></div>
+				</div>
+
+	<!-- ---------------------------- Cube 18 ---------------------------- -->
+
+				<div id="cube18" class="cube cubeMilieu">
+					<div id="cube18fA" class="cube18 black" ></div>
+					<div id="cube18fH" class="cube18 black" ></div>
+					<div id="cube18fD7" class="cube18" ></div>
+					<div id="cube18fD7Fond" class="cube18 black" ></div>
+					<div id="cube18fG" class="cube18 black" ></div>
+					<div id="cube18fP" class="cube18 black" ></div>
+					<div id="cube18fB5" class="cube18" ></div>
+					<div id="cube18fB5Fond" class="cube18 black" ></div>
+					<div id="fondX18" class="cube18 fond black" ></div>
+					<div id="fondZ18" class="cube18 fond black" ></div>
+					<div id="fondY18" class="cube18 fond black" ></div>
+				</div>
+
+	<!-- --------------------------- Cube 19 ----------------------------- -->
+
+				<div id="cube19" class="cube cubeDos">
+					<div id="cube19fA" class="cube19 black" ></div>
+					<div id="cube19fH0" class="cube19" ></div>
+					<div id="cube19fH0Fond" class="cube19 black" ></div>
+					<div id="cube19fG0" class="cube19" ></div>
+					<div id="cube19fG0Fond" class="cube19 black" ></div>
+					<div id="cube19fD" class="cube19 black" ></div>
+					<div id="cube19fP2" class="cube19" ></div>
+					<div id="cube19fP2Fond" class="cube19 black" ></div>
+					<div id="cube19fB" class="cube19 black" ></div>
+					<div id="fondX19" class="cube19 fond black" ></div>
+					<div id="fondZ19" class="cube19 fond black" ></div>
+					<div id="fondY19" class="cube19 fond black" ></div>
+				</div>
+
+	<!-- ---------------------------- Cube 20 ---------------------------- -->
+
+				<div id="cube20" class="cube cubeDos">
+					<div id="cube20fA" class="cube20 black" ></div>
+					<div id="cube20fH1" class="cube20" ></div>
+					<div id="cube20fH1Fond" class="cube20 black" ></div>
+					<div id="cube20fG" class="cube20 black" ></div>
+					<div id="cube20fD" class="cube20 black" ></div>
+					<div id="cube20fP1" class="cube20" ></div>
+					<div id="cube20fP1Fond" class="cube20 black" ></div>
+					<div id="cube20fB" class="cube20 black" ></div>
+					<div id="fondX20" class="cube20 fond black" ></div>
+					<div id="fondZ20" class="cube20 fond black" ></div>
+					<div id="fondY20" class="cube20 fond black" ></div>
+				</div>
+
+	<!-- ---------------------------- Cube 21 ---------------------------- -->
+
+				<div id="cube21" class="cube cubeDos">
+					<div id="cube21fA" class="cube21 black" ></div>
+					<div id="cube21fH2" class="cube21" ></div>
+					<div id="cube21fH2Fond" class="cube21 black" ></div>
+					<div id="cube21fD2" class="cube21" ></div>
+					<div id="cube21fD2Fond" class="cube21 black" ></div>
+					<div id="cube21fG" class="cube21 black" ></div>
+					<div id="cube21fP0" class="cube21" ></div>
+					<div id="cube21fP0Fond" class="cube21 black" ></div>
+					<div id="cube21fB" class="cube21 black" ></div>
+					<div id="fondX21" class="cube21 fond black" ></div>
+					<div id="fondZ21" class="cube21 fond black" ></div>
+					<div id="fondY21" class="cube21 fond black" ></div>
+				</div>
+
+	<!-- ---------------------------- Cube 22 ---------------------------- -->
+
+				<div id="cube22" class="cube cubeDos">
+					<div id="cube22fA" class="cube22 black" ></div>
+					<div id="cube22fH" class="cube22 black" ></div>
+					<div id="cube22fD" class="cube22 black" ></div>
+					<div id="cube22fG3" class="cube22" ></div>
+					<div id="cube22fG3Fond" class="cube22 black" ></div>
+					<div id="cube22fP5" class="cube22" ></div>
+					<div id="cube22fP5Fond" class="cube22 black" ></div>
+					<div id="cube22fB" class="cube22 black" ></div>
+					<div id="fondX22" class="cube22 fond black" ></div>
+					<div id="fondZ22" class="cube22 fond black" ></div>
+					<div id="fondY22" class="cube22 fond black" ></div>
+				</div>
+
+	<!-- ---------------------------- Cube 23 ---------------------------- -->
+
+				<div id="cube23" class="cube cubeDos">
+					<div id="cube23fA" class="cube23 black" ></div>
+					<div id="cube23fH" class="cube23 black" ></div>
+					<div id="cube23fD" class="cube23 black" ></div>
+					<div id="cube23fG" class="cube23 black" ></div>
+					<div id="cube23fP4" class="cube23" ></div>
+					<div id="cube23fP4Fond" class="cube23 black" ></div>
+					<div id="cube23fB" class="cube23 black" ></div>
+					<div id="fondX23" class="cube23 fond black" ></div>
+					<div id="fondZ23" class="cube23 fond black" ></div>
+					<div id="fondY23" class="cube23 fond black" ></div>
+				</div>
+
+	<!-- ---------------------------- Cube 24 ---------------------------- -->
+
+				<div id="cube24" class="cube cubeDos">
+					<div id="cube24fA" class="cube24 black" ></div>
+					<div id="cube24fH" class="cube24 black" ></div>
+					<div id="cube24fD5" class="cube24" ></div>
+					<div id="cube24fD5Fond" class="cube24 black" ></div>
+					<div id="cube24fG" class="cube24 black" ></div>
+					<div id="cube24fP3" class="cube24" ></div>
+					<div id="cube24fP3Fond" class="cube24 black" ></div>
+					<div id="cube24fB" class="cube24 black" ></div>
+					<div id="fondX24" class="cube24 fond black" ></div>
+					<div id="fondZ24" class="cube24 fond black" ></div>
+					<div id="fondY24" class="cube24 fond black" ></div>
+				</div>
+
+	<!-- --------------------------- Cube 25 --------------------------- -->
+
+				<div id="cube25" class="cube cubeDos">
+					<div id="cube25fA" class="cube25 black" ></div>
+					<div id="cube25fH" class="cube25 black" ></div>
+					<div id="cube25fG6" class="cube25" ></div>
+					<div id="cube25fG6Fond" class="cube25 black" ></div>
+					<div id="cube25fD" class="cube25 black" ></div>
+					<div id="cube25fP8" class="cube25" ></div>
+					<div id="cube25fP8Fond" class="cube25 black" ></div>
+					<div id="cube25fB6" class="cube25" ></div>
+					<div id="cube25fB6Fond" class="cube25 black" ></div>
+					<div id="fondX25" class="cube25 fond black" ></div>
+					<div id="fondZ25" class="cube25 fond black" ></div>
+					<div id="fondY25" class="cube25 fond black" ></div>
+				</div>
+
+	<!-- ---------------------------- Cube 26 ---------------------------- -->
+
+				<div id="cube26" class="cube cubeDos">
+					<div id="cube26fA" class="cube26 black" ></div>
+					<div id="cube26fH" class="cube26 black" ></div>
+					<div id="cube26fG" class="cube26 black" ></div>
+					<div id="cube26fD" class="cube26 black" ></div>
+					<div id="cube26fP7" class="cube26" ></div>
+					<div id="cube26fP7Fond" class="cube26 black" ></div>
+					<div id="cube26fB7" class="cube26" ></div>
+					<div id="cube26fB7Fond" class="cube26 black" ></div>
+					<div id="fondX26" class="cube26 fond black" ></div>
+					<div id="fondZ26" class="cube26 fond black" ></div>
+					<div id="fondY26" class="cube26 fond black" ></div>
+				</div>
+
+	<!-- ---------------------------- Cube 27 ---------------------------- -->
+
+				<div id="cube27" class="cube cubeDos">
+					<div id="cube27fA" class="cube27 black" ></div>
+					<div id="cube27fH" class="cube27 black" ></div>
+					<div id="cube27fD8" class="cube27" ></div>
+					<div id="cube27fD8Fond" class="cube27 black" ></div>
+					<div id="cube27fG" class="cube27 black" ></div>
+					<div id="cube27fP6" class="cube27" ></div>
+					<div id="cube27fP6Fond" class="cube27 black" ></div>
+					<div id="cube27fB8" class="cube27" ></div>
+					<div id="cube27fB8Fond" class="cube27 black" ></div>
+					<div id="fondX27" class="cube27 fond black" ></div>
+					<div id="fondZ27" class="cube27 fond black" ></div>
+					<div id="fondY27" class="cube27 fond black" ></div>
+				</div>
+
+			</div>
 
 		</div>
 
-
+		<script src="index.js"></script>
 	</body>
-
 
 </html>
