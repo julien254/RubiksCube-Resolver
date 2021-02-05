@@ -36,7 +36,7 @@ body{
 	margin:auto;
 	transform-style: preserve-3d;
 	transform: rotateY(-47deg) rotateX(0);
-  transition: transform 3s ease;
+  transition: transform 2s ease;
 
 }
 
@@ -1794,6 +1794,7 @@ body{
   width: 30vw;
   transform-style: preserve-3d;
   transform-origin: center center;
+
 }
 
 #btnSwitch {

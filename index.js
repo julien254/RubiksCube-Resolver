@@ -21,8 +21,33 @@ divTurn.appendChild(cube7);
 divTurn.appendChild(cube8);
 divTurn.appendChild(cube9);
 
+
+var check = true;
+var ready = true
+
 function switchCube() {
 
-  container.style.transform =  "rotateY(-47deg) rotateX(180deg)"
+  if (check && ready) {
+
+    container.style.transition =  "transform 2s ease";
+    container.style.transform =  "rotateY(-47deg) rotateX(180deg)";
+    check = false;
+    ready = false;
+    setTimeout(function() {ready = true;}, 2000);
+
+  } else if (ready){
+
+    container.style.transform =  "rotateY(-47deg) rotateX(360deg)";
+    ready = false;
+    setTimeout(function() {
+
+        container.style.transition =  "none";
+        container.style.transform =  "rotateY(-47deg) rotateX(0deg)";
+        check = true;
+        ready = true;
+
+    }, 2000);
+
+  }
 
 }
