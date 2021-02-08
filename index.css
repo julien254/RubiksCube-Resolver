@@ -80,6 +80,13 @@ body{
 
 }
 
+.liste_couleurs {
+
+	height : 100%;
+	width : 100%;
+	opacity : 0;
+}
+
 
 /*------------ Cube 1 ------------*/
 
@@ -103,7 +110,7 @@ body{
 
 #cube1fA0Fond {
 
-	transform:rotateY(180deg);
+	transform:translateZ(-0.05vw);
 
 }
 
@@ -117,7 +124,7 @@ body{
 
 #cube1fH6Fond {
 
-	transform: rotateX(-90deg);
+	transform: rotateX(-90deg) translateZ(0.05vw);
 	transform-origin: top center;
 
 }
@@ -132,7 +139,7 @@ body{
 
 #cube1fG2Fond {
 
-	transform: rotateY(90deg);
+	transform: rotateY(90deg) translateZ(0.05vw);
 	transform-origin: center left;
 
 }
@@ -179,7 +186,7 @@ body{
 
 #cube2fA1Fond {
 
-	transform: rotateY(180deg);
+	transform: translateZ(-0.05vw);
 
 }
 
@@ -193,7 +200,7 @@ body{
 
 #cube2fH7Fond {
 
-	transform: rotateX(-90deg);
+	transform: rotateX(-90deg) translateZ(0.05vw);
 	transform-origin: top center;
 
 }
@@ -247,21 +254,21 @@ body{
 
 #cube3fA2Fond {
 
-	transform: rotateY(180deg);
+	transform: translateZ(-0.05vw);
 
 }
 
 #cube3fH8 {
 
 	background: white;
-	transform: rotateX(-90deg)  rotateY(180deg);
+	transform: rotateX(-90deg);
 	transform-origin: top center;
 
 }
 
 #cube3fH8Fond {
 
-	transform: rotateX(-90deg) ;
+	transform: rotateX(-90deg) translateZ(0.05vw);
 	transform-origin: top center;
 
 }
@@ -283,7 +290,7 @@ body{
 
 #cube3fD0Fond {
 
-	transform: rotateY(-90deg) ;
+	transform: rotateY(-90deg) translateZ(0.05vw);
 	transform-origin: center right;
 
 }
@@ -323,7 +330,7 @@ body{
 
 #cube4fA3Fond {
 
-	transform: rotateY(180deg);
+	transform: translateZ(-0.05vw);
 
 }
 
@@ -337,14 +344,14 @@ body{
 #cube4fG5 {
 
 	background: green;
-	transform: rotateY(90deg)  rotateX(180deg);
+	transform: rotateY(90deg);
 	transform-origin: center left;
 
 }
 
 #cube4fG5Fond {
 
-	transform: rotateY(90deg) ;
+	transform: rotateY(90deg) translateZ(0.05vw);
 	transform-origin: center left;
 
 }
@@ -391,7 +398,7 @@ body{
 
 #cube5fA4Fond {
 
-	transform: rotateY(180deg) ;
+	transform: translateZ(-0.05vw) ;
 
 }
 
@@ -451,7 +458,7 @@ body{
 
 #cube6fA5Fond {
 
-	transform: rotateY(180deg);
+	transform:translateZ(-0.05vw);
 
 }
 
@@ -472,14 +479,14 @@ body{
 #cube6fD3 {
 
 	background: blue;
-	transform: rotateY(-90deg) rotateX(180deg);
+	transform: rotateY(-90deg);
 	transform-origin: center right;
 
 }
 
 #cube6fD3Fond {
 
-	transform: rotateY(-90deg) ;
+	transform: rotateY(-90deg) translateZ(0.05vw);
 	transform-origin: center right;
 
 }
@@ -519,7 +526,7 @@ body{
 
 #cube7fA6Fond {
 
-	transform:rotateY(180deg);
+	transform:translateZ(-0.05vw);
 
 }
 
@@ -533,14 +540,14 @@ body{
 #cube7fG8 {
 
 	background: green;
-	transform: rotateY(90deg) rotateX(180deg);
+	transform: rotateY(90deg);
 	transform-origin: center left;
 
 }
 
 #cube7fG8Fond {
 
-	transform: rotateY(90deg);
+	transform: rotateY(90deg) translateZ(0.05vw);
 	transform-origin: center left;
 
 }
@@ -561,14 +568,14 @@ body{
 #cube7fB0 {
 
   background: yellow;
-	transform: rotateX(90deg) rotateY(180deg);
+	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
 }
 
 #cube7fB0Fond {
 
-	transform: rotateX(90deg);
+	transform: rotateX(90deg) translateZ(0.05vw);
 	transform-origin: bottom center;
 
 }
@@ -595,7 +602,7 @@ body{
 
 #cube8fA7Fond {
 
-	transform: rotateY(180deg);
+	transform: translateZ(-0.05vw);
 
 }
 
@@ -629,14 +636,14 @@ body{
 #cube8fB1 {
 
   background: Yellow;
-	transform: rotateX(90deg) rotateY(180deg);
+	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
 }
 
 #cube8fB1Fond {
 
-	transform: rotateX(90deg);
+	transform: rotateX(90deg) translateZ(0.05vw);
 	transform-origin: bottom center;
 
 }
@@ -663,13 +670,13 @@ body{
 
 #cube9fA8Fond {
 
-	transform: rotateY(180deg);
+	transform: translateZ(-0.05vw);
 
 }
 
 #cube9fH {
 
-	transform: rotateX(-90deg)  rotateY(180deg);
+	transform: rotateX(-90deg);
 	transform-origin: top center;
 
 }
@@ -684,14 +691,14 @@ body{
 #cube9fD6 {
 
 	background: blue;
-	transform: rotateY(-90deg) rotateX(180deg);
+	transform: rotateY(-90deg);
 	transform-origin: center right;
 
 }
 
 #cube9fD6Fond {
 
-	transform: rotateY(-90deg) ;
+	transform: rotateY(-90deg) translateZ(0.05vw);
 	transform-origin: center right;
 
 }
@@ -705,14 +712,14 @@ body{
 #cube9fB2 {
 
   background: yellow;
-	transform: rotateX(90deg) rotateY(180deg);
+	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
 }
 
 #cube9fB2Fond {
 
-	transform: rotateX(90deg);
+	transform: rotateX(90deg) translateZ(0.05vw);
 	transform-origin: bottom center;
 
 }
@@ -735,14 +742,14 @@ body{
 #cube10fH3 {
 
 	background: white;
-	transform: rotateX(-90deg) rotateY(180deg);
+	transform: rotateX(-90deg);
 	transform-origin: top center;
 
 }
 
 #cube10fH3Fond {
 
-	transform: rotateX(-90deg);
+	transform: rotateX(-90deg) translateZ(0.05vw);
 	transform-origin: top center;
 
 }
@@ -750,14 +757,14 @@ body{
 #cube10fG1 {
 
 	background: green;
-	transform: rotateY(90deg) rotateX(180deg);
+	transform: rotateY(90deg);
 	transform-origin: center left;
 
 }
 
 #cube10fG1Fond {
 
-	transform: rotateY(90deg);
+	transform: rotateY(90deg) translateZ(0.05vw);
 	transform-origin: center left;
 
 }
@@ -799,14 +806,14 @@ body{
 #cube11fH4 {
 
 	background: white;
-	transform: rotateX(-90deg) rotateY(180deg);
+	transform: rotateX(-90deg);
 	transform-origin: top center;
 
 }
 
 #cube11fH4Fond {
 
-	transform: rotateX(-90deg);
+	transform: rotateX(-90deg) translateZ(0.05vw);
 	transform-origin: top center;
 
 }
@@ -855,14 +862,14 @@ body{
 #cube12fH5 {
 
 	background: white;
-	transform: rotateX(-90deg)  rotateY(180deg);
+	transform: rotateX(-90deg);
 	transform-origin: top center;
 
 }
 
 #cube12fH5Fond {
 
-	transform: rotateX(-90deg) ;
+	transform: rotateX(-90deg) translateZ(0.05vw);
 	transform-origin: top center;
 
 }
@@ -877,14 +884,14 @@ body{
 #cube12fD1 {
 
 	background: blue;
-	transform: rotateY(-90deg) rotateX(180deg);
+	transform: rotateY(-90deg);
 	transform-origin: center right;
 
 }
 
 #cube12fD1Fond {
 
-	transform: rotateY(-90deg) ;
+	transform: rotateY(-90deg) translateZ(0.05vw);
 	transform-origin: center right;
 
 }
@@ -926,14 +933,14 @@ body{
 #cube13fG4 {
 
 	background: green;
-	transform: rotateY(90deg)  rotateX(180deg);
+	transform: rotateY(90deg);
 	transform-origin: center left;
 
 }
 
 #cube13fG4Fond {
 
-	transform: rotateY(90deg) ;
+	transform: rotateY(90deg) translateZ(0.05vw);
 	transform-origin: center left;
 
 }
@@ -989,14 +996,14 @@ body{
 #cube15fD4 {
 
 	background: blue;
-	transform: rotateY(-90deg) rotateX(180deg);
+	transform: rotateY(-90deg);
 	transform-origin: center right;
 
 }
 
 #cube15fD4Fond {
 
-	transform: rotateY(-90deg) ;
+	transform: rotateY(-90deg) translateZ(0.05vw);
 	transform-origin: center right;
 
 }
@@ -1038,14 +1045,14 @@ body{
 #cube16fG7 {
 
 	background: green;
-	transform: rotateY(90deg) rotateX(180deg);
+	transform: rotateY(90deg);
 	transform-origin: center left;
 
 }
 
 #cube16fG7Fond {
 
-	transform: rotateY(90deg);
+	transform: rotateY(90deg) translateZ(0.05vw);
 	transform-origin: center left;
 
 }
@@ -1066,14 +1073,14 @@ body{
 #cube16fB3 {
 
   background: yellow;
-	transform: rotateX(90deg) rotateY(180deg);
+	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
 }
 
 #cube16fB3Fond {
 
-	transform: rotateX(90deg);
+	transform: rotateX(90deg) translateZ(0.05vw);
 	transform-origin: bottom center;
 
 }
@@ -1122,14 +1129,14 @@ body{
 #cube17fB4 {
 
   background: Yellow;
-	transform: rotateX(90deg) rotateY(180deg);
+	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
 }
 
 #cube17fB4Fond {
 
-	transform: rotateX(90deg);
+	transform: rotateX(90deg) translateZ(0.05vw);
 	transform-origin: bottom center;
 
 }
@@ -1150,7 +1157,7 @@ body{
 
 #cube18fH {
 
-	transform: rotateX(-90deg)  rotateY(180deg);
+	transform: rotateX(-90deg);
 	transform-origin: top center;
 
 }
@@ -1165,14 +1172,14 @@ body{
 #cube18fD7 {
 
 	background: blue;
-	transform: rotateY(-90deg) rotateX(180deg);
+	transform: rotateY(-90deg);
 	transform-origin: center right;
 
 }
 
 #cube18fD7Fond {
 
-	transform: rotateY(-90deg) ;
+	transform: rotateY(-90deg) translateZ(0.05vw);
 	transform-origin: center right;
 
 }
@@ -1186,14 +1193,14 @@ body{
 #cube18fB5 {
 
   background: yellow;
-	transform: rotateX(90deg) rotateY(180deg);
+	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
 }
 
 #cube18fB5Fond {
 
-	transform: rotateX(90deg);
+	transform: rotateX(90deg) translateZ(0.05vw);
 	transform-origin: bottom center;
 
 }
@@ -1216,14 +1223,14 @@ body{
 #cube19fH0 {
 
 	background: white;
-	transform: rotateX(-90deg) rotateY(180deg);
+	transform: rotateX(-90deg);
 	transform-origin: top center;
 
 }
 
 #cube19fH0Fond {
 
-	transform: rotateX(-90deg);
+	transform: rotateX(-90deg) translateZ(0.05vw);
 	transform-origin: top center;
 
 }
@@ -1231,14 +1238,14 @@ body{
 #cube19fG0 {
 
 	background: green;
-	transform: rotateY(90deg) rotateX(180deg);
+	transform: rotateY(90deg);
 	transform-origin: center left;
 
 }
 
 #cube19fG0Fond {
 
-	transform: rotateY(90deg);
+	transform: rotateY(90deg) translateZ(0.05vw);
 	transform-origin: center left;
 
 }
@@ -1253,13 +1260,13 @@ body{
 #cube19fP2 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(10vw);
+	transform:translateZ(-10vw);
 
 }
 
 #cube19fP2Fond {
 
-	transform: translateZ(-10vw);
+	transform: translateZ(-9.95vw);
 
 }
 
@@ -1287,14 +1294,14 @@ body{
 #cube20fH1 {
 
 	background: white;
-	transform: rotateX(-90deg) rotateY(180deg);
+	transform: rotateX(-90deg);
 	transform-origin: top center;
 
 }
 
 #cube20fH1Fond {
 
-	transform: rotateX(-90deg);
+	transform: rotateX(-90deg) translateZ(0.05vw);
 	transform-origin: top center;
 
 }
@@ -1316,13 +1323,13 @@ body{
 #cube20fP1 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(10vw);
+	transform: translateZ(-10vw);
 
 }
 
 #cube20fP1Fond {
 
-	transform:translateZ(-10vw);
+	transform:translateZ(-9.95vw);
 
 }
 
@@ -1350,14 +1357,14 @@ body{
 #cube21fH2 {
 
 	background: white;
-	transform: rotateX(-90deg)  rotateY(180deg);
+	transform: rotateX(-90deg);
 	transform-origin: top center;
 
 }
 
 #cube21fH2Fond {
 
-	transform: rotateX(-90deg) ;
+	transform: rotateX(-90deg) translateZ(0.05vw);
 	transform-origin: top center;
 
 }
@@ -1372,14 +1379,14 @@ body{
 #cube21fD2 {
 
 	background: blue;
-	transform: rotateY(-90deg) rotateX(-180deg);
+	transform: rotateY(-90deg);
 	transform-origin: center right;
 
 }
 
 #cube21fD2Fond {
 
-	transform: rotateY(-90deg) ;
+	transform: rotateY(-90deg) translateZ(0.05vw);
 	transform-origin: center right;
 
 }
@@ -1387,12 +1394,12 @@ body{
 #cube21fP0 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(10vw);
+	transform:translateZ(-10vw);
 
 }
 #cube21fP0Fond {
 
-	transform: translateZ(-10vw);
+	transform: translateZ(-9.95vw);
 
 }
 
@@ -1427,14 +1434,14 @@ body{
 #cube22fG3 {
 
 	background: green;
-	transform: rotateY(90deg)  rotateX(180deg);
+	transform: rotateY(90deg);
 	transform-origin: center left;
 
 }
 
 #cube22fG3Fond {
 
-	transform: rotateY(90deg) ;
+	transform: rotateY(90deg) translateZ(0.05vw);
 	transform-origin: center left;
 
 }
@@ -1449,13 +1456,13 @@ body{
 #cube22fP5 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(10vw);
+	transform: translateZ(-10vw);
 
 }
 
 #cube22fP5Fond {
 
-	transform: translateZ(-10vw);
+	transform: translateZ(-9.95vw);
 
 }
 
@@ -1504,13 +1511,13 @@ body{
 #cube23fP4 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(10vw);
+	transform: translateZ(-10vw);
 
 }
 
 #cube23fP4Fond {
 
-	transform: translateZ(-10vw);
+	transform: translateZ(-9.95vw);
 
 }
 
@@ -1552,14 +1559,14 @@ body{
 #cube24fD5 {
 
 	background: blue;
-	transform: rotateY(-90deg) rotateX(180deg);
+	transform: rotateY(-90deg);
 	transform-origin: center right;
 
 }
 
 #cube24fD5Fond {
 
-	transform: rotateY(-90deg) ;
+	transform: rotateY(-90deg) translateZ(0.05vw);
 	transform-origin: center right;
 
 }
@@ -1567,13 +1574,13 @@ body{
 #cube24fP3 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(10vw);
+	transform: translateZ(-10vw);
 
 }
 
 #cube24fP3Fond {
 
-	transform: translateZ(-10vw);
+	transform: translateZ(-9.95vw);
 
 }
 
@@ -1608,14 +1615,14 @@ body{
 #cube25fG6 {
 
 	background: green;
-	transform: rotateY(90deg) rotateX(180deg);
+	transform: rotateY(90deg);
 	transform-origin: center left;
 
 }
 
 #cube25fG6Fond {
 
-	transform: rotateY(90deg);
+	transform: rotateY(90deg) translateZ(0.05vw);
 	transform-origin: center left;
 
 }
@@ -1630,27 +1637,27 @@ body{
 #cube25fP8 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(10vw);
+	transform: translateZ(-10vw);
 
 }
 
 #cube25fP8Fond {
 
-	transform: translateZ(-10vw);
+	transform: translateZ(-9.95vw);
 
 }
 
 #cube25fB6 {
 
   background: yellow;
-	transform: rotateX(90deg) rotateY(180deg);
+	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
 }
 
 #cube25fB6Fond {
 
-	transform: rotateX(90deg);
+	transform: rotateX(90deg) translateZ(0.05vw);
 	transform-origin: bottom center;
 
 }
@@ -1693,27 +1700,27 @@ body{
 #cube26fP7 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(10vw);
+	transform: translateZ(-10vw);
 
 }
 
 #cube26fP7Fond {
 
-	transform: translateZ(-10vw);
+	transform: translateZ(-9.95vw);
 
 }
 
 #cube26fB7 {
 
   background: Yellow;
-	transform: rotateX(90deg) rotateY(180deg);
+	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
 }
 
 #cube26fB7Fond {
 
-	transform: rotateX(90deg);
+	transform: rotateX(90deg) translateZ(0.05vw);
 	transform-origin: bottom center;
 
 }
@@ -1734,7 +1741,7 @@ body{
 
 #cube27fH {
 
-	transform: rotateX(-90deg)  rotateY(180deg);
+	transform: rotateX(-90deg);
 	transform-origin: top center;
 
 }
@@ -1749,14 +1756,14 @@ body{
 #cube27fD8 {
 
 	background: blue;
-	transform: rotateY(-90deg) rotateX(180deg);
+	transform: rotateY(-90deg);
 	transform-origin: center right;
 
 }
 
 #cube27fD8Fond {
 
-	transform: rotateY(-90deg) ;
+	transform: rotateY(-90deg) translateZ(0.05vw);
 	transform-origin: center right;
 
 }
@@ -1764,27 +1771,27 @@ body{
 #cube27fP6 {
 
   background: orange;
-	transform: rotateX(-180deg) translateZ(10vw);
+	transform: translateZ(-10vw);
 
 }
 
 #cube27fP6Fond {
 
-	transform: translateZ(-10vw);
+	transform: translateZ(-9.95vw);
 
 }
 
 #cube27fB8 {
 
   background: yellow;
-	transform: rotateX(90deg) rotateY(180deg);
+	transform: rotateX(90deg);
 	transform-origin: bottom center;
 
 }
 
 #cube27fB8Fond {
 
-	transform: rotateX(90deg);
+	transform: rotateX(90deg) translateZ(0.05vw);
 	transform-origin: bottom center;
 
 }

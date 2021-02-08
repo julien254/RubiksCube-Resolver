@@ -39,7 +39,18 @@
 	<!-- ---------------------------- Cube 2 ---------------------------- -->
 
 				<div id="cube2" class="cube cubeAvant">
-					<div id="cube2fA1" class="cube2" ></div>
+					<div id="cube2fA1" class="cube2" >
+						<select id="choiceFA1" class="liste_couleurs" name="color_choiceFA1" onChange="color_switch('choiceFA1', 'cube2fA1', 'fA[1]')">
+						
+							<option value="bla">Blanc</option>
+							<option selected="selected" value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+						
+						</select>	
+					</div>
 					<div id="cube2fA1Fond" class="cube2 black" ></div>
 					<div id="cube2fH7" class="cube2" ></div>
 					<div id="cube2fH7Fond" class="cube2 black" ></div>
@@ -131,6 +142,16 @@
 	<!-- ---------------------------- Cube 9 ---------------------------- -->
 
 				<div id="cube9" class="cube cubeAvant">
+					<select id="choiceFA0" class="liste_couleurs" name="color_choiceFA0" onChange="color_switch('choiceFA0', 'cube1fA0', 'fA[0]')">
+
+					<option value="bla">Blanc</option>
+					<option selected="selected" value="r">Rouge</option>
+					<option value="ble">Bleu</option>
+					<option value="o">Orange</option>
+					<option value="v">Vert</option>
+					<option value="j">Jaune</option>
+
+					</select>
 					<div id="cube9fA8" class="cube9" ></div>
 					<div id="cube9fA8Fond" class="cube9 black" ></div>
 					<div id="cube9fH" class="cube9 black" ></div>
@@ -368,7 +389,7 @@
 
 		<button type="button">Gauche</button>
 		<button onclick="switchCube()" id="btnSwitch" type="button">Switch</button>
-		<button type="button">Droite</button>
+		<button onclick="turnRightCube()" type="button">Droite</button>
 
 		<script src="index.js"></script>
 	</body>
