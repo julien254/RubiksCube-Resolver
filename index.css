@@ -104,7 +104,7 @@ body{
 
 #cube1fA0 {
 
-	background:red ;
+	background:#f00202 ;
 
 }
 
@@ -131,7 +131,7 @@ body{
 
 #cube1fG2 {
 
-	background: green;
+	background: #0a9900;
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
@@ -180,7 +180,7 @@ body{
 
 #cube2fA1 {
 
-	background:red ;
+	background:#f00202 ;
 
 }
 
@@ -248,7 +248,7 @@ body{
 
 #cube3fA2 {
 
-	background: red;
+	background: #f00202;
 
 }
 
@@ -324,7 +324,7 @@ body{
 
 #cube4fA3 {
 
-	background: red;
+	background: #f00202;
 
 }
 
@@ -343,7 +343,7 @@ body{
 
 #cube4fG5 {
 
-	background: green;
+	background: #0a9900;
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
@@ -392,7 +392,7 @@ body{
 
 #cube5fA4 {
 
-	background: red;
+	background: #f00202;
 
 }
 
@@ -452,7 +452,7 @@ body{
 
 #cube6fA5 {
 
-	background: red;
+	background: #f00202;
 
 }
 
@@ -520,7 +520,7 @@ body{
 
 #cube7fA6 {
 
-	background:red ;
+	background:#f00202 ;
 
 }
 
@@ -539,7 +539,7 @@ body{
 
 #cube7fG8 {
 
-	background: green;
+	background: #0a9900;
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
@@ -547,7 +547,7 @@ body{
 
 #cube7fG8Fond {
 
-	transform: rotateY(90deg) translateZ(0.05vw);
+	transform: rotateY(90deg) translateZ(0.10vw);
 	transform-origin: center left;
 
 }
@@ -596,7 +596,7 @@ body{
 
 #cube8fA7 {
 
-	background:red ;
+	background:#f00202 ;
 
 }
 
@@ -664,7 +664,7 @@ body{
 
 #cube9fA8 {
 
-	background: red;
+	background: #f00202;
 
 }
 
@@ -756,7 +756,7 @@ body{
 
 #cube10fG1 {
 
-	background: green;
+	background: #0a9900;
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
@@ -932,7 +932,7 @@ body{
 
 #cube13fG4 {
 
-	background: green;
+	background: #0a9900;
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
@@ -1044,7 +1044,7 @@ body{
 
 #cube16fG7 {
 
-	background: green;
+	background: #0a9900;
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
@@ -1237,7 +1237,7 @@ body{
 
 #cube19fG0 {
 
-	background: green;
+	background: #0a9900;
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
@@ -1259,7 +1259,7 @@ body{
 
 #cube19fP2 {
 
-  background: orange;
+  background: #ff6200;
 	transform:translateZ(-10vw);
 
 }
@@ -1322,7 +1322,7 @@ body{
 
 #cube20fP1 {
 
-  background: orange;
+  background: #ff6200;
 	transform: translateZ(-10vw);
 
 }
@@ -1393,7 +1393,7 @@ body{
 
 #cube21fP0 {
 
-  background: orange;
+  background: #ff6200;
 	transform:translateZ(-10vw);
 
 }
@@ -1433,7 +1433,7 @@ body{
 
 #cube22fG3 {
 
-	background: green;
+	background: #0a9900;
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
@@ -1455,7 +1455,7 @@ body{
 
 #cube22fP5 {
 
-  background: orange;
+  background: #ff6200;
 	transform: translateZ(-10vw);
 
 }
@@ -1510,7 +1510,7 @@ body{
 
 #cube23fP4 {
 
-  background: orange;
+  background: #ff6200;
 	transform: translateZ(-10vw);
 
 }
@@ -1573,7 +1573,7 @@ body{
 
 #cube24fP3 {
 
-  background: orange;
+  background: #ff6200;
 	transform: translateZ(-10vw);
 
 }
@@ -1614,7 +1614,7 @@ body{
 
 #cube25fG6 {
 
-	background: green;
+	background: #0a9900;
 	transform: rotateY(90deg);
 	transform-origin: center left;
 
@@ -1636,7 +1636,7 @@ body{
 
 #cube25fP8 {
 
-  background: orange;
+  background: #ff6200;
 	transform: translateZ(-10vw);
 
 }
@@ -1699,7 +1699,7 @@ body{
 
 #cube26fP7 {
 
-  background: orange;
+  background: #ff6200;
 	transform: translateZ(-10vw);
 
 }
@@ -1770,7 +1770,7 @@ body{
 
 #cube27fP6 {
 
-  background: orange;
+  background: #ff6200;
 	transform: translateZ(-10vw);
 
 }

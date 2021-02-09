@@ -1,4 +1,4 @@
-console.log("SW: Service Telechargé et activé !");
+console.log("SW: Service Telechargé!");
 
 self.addEventListener("fetch", (event) => {
    event.respondWith(caches.open("mon-cache").then(cache =>

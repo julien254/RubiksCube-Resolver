@@ -72,7 +72,7 @@ var blanc = {
 var rouge = {
 
 	nom : "r",
-	couleur : "red"
+	couleur : "#f00202"
 
 }
 var bleu = {
@@ -84,13 +84,13 @@ var bleu = {
 var orange = {
 
 	nom : "o",
-	couleur : "#E48F04"
+	couleur : "#ff6200"
 
 }
 var vert = {
 
 	nom : "v",
-	couleur : "#2ECB0E"
+	couleur : "#0a9900"
 
 }
 var jaune = {
@@ -266,12 +266,12 @@ function switchCube() {
 
   if (check && ready) {
 
-    container.style.transition =  "transform 2s ease";
+    container.style.transition =  "transform 1s ease";
     container.style.transform =  "rotateY(" + degY + "deg) rotateX(" + (degX + 180) + "deg)";
     degX += 180;
     check = false;
     ready = false;
-    setTimeout(() => {ready = true;}, 2000);
+    setTimeout(() => {ready = true;}, 1000);
 
   } else if (ready){
 
@@ -285,9 +285,25 @@ function switchCube() {
         check = true;
         ready = true;
 
-    }, 2000);
+    }, 1000);
 
   }
+
+}
+
+function turnLeftCube() {
+
+	if (ready) {
+
+		ready = false;
+		container.style.transition =  "transform 1s ease";
+		container.style.transform =  "rotateY(" + (degY + -90) + "deg) rotateX(" + degX + "deg)";
+		degY += -90;
+		setTimeout(() => {ready = true;}, 1000);
+
+
+
+	}
 
 }
 
@@ -296,17 +312,15 @@ function turnRightCube() {
 	if (ready) {
 
 		ready = false;
-		container.style.transition =  "transform 2s ease";
-		container.style.transform =  "rotateY(" + (degY + -90) + "deg) rotateX(" + degX + "deg)";
-		degY += -90;
-		setTimeout(() => {ready = true;}, 2000);
+		container.style.transition =  "transform 1s ease";
+		container.style.transform =  "rotateY(" + (degY + 90) + "deg) rotateX(" + degX + "deg)";
+		degY += 90;
+		setTimeout(() => {ready = true;}, 1000);
 
 
 
 	}
-
 }
-
 
 //////////////////////////// Service Worker ///////////////////////////
 

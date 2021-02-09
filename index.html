@@ -14,7 +14,7 @@
 
 	<body>
 
-		<header id="body">
+		<header>
 
 
 		</header>
@@ -27,9 +27,31 @@
 				<div id="cube1" class="cube cubeAvant">
 					<div id="cube1fA0" class="cube1" ></div>
 					<div id="cube1fA0Fond" class="cube1 black" ></div>
-					<div id="cube1fH6" class="cube1" ></div>
+					<div id="cube1fH6" class="cube1" >
+						<select id="choiceFH6" class="liste_couleurs" name="color_choiceFH6" onChange="color_switch('choiceFH6', 'cube1fH6', 'fH[6]')">
+
+							<option selected="selected" value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube1fH6Fond" class="cube1 black" ></div>
-					<div id="cube1fG2" class="cube1" ></div>
+					<div id="cube1fG2" class="cube1" >
+						<select id="choiceFG2" class="liste_couleurs" name="color_choiceFG2" onChange="color_switch('choiceFG2', 'cube1fG2', 'fG[2]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option selected="selected" value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube1fG2Fond" class="cube1 black" ></div>
 					<div id="cube1fD" class="cube1 black" ></div>
 					<div id="cube1fP" class="cube1 black" ></div>
@@ -52,7 +74,18 @@
 						</select>
 					</div>
 					<div id="cube2fA1Fond" class="cube2 black" ></div>
-					<div id="cube2fH7" class="cube2" ></div>
+					<div id="cube2fH7" class="cube2" >
+						<select id="choiceFH7" class="liste_couleurs" name="color_choiceFH7" onChange="color_switch('choiceFH7', 'cube2fH7', 'fH[7]')">
+
+							<option selected="selected" value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube2fH7Fond" class="cube2 black" ></div>
 					<div id="cube2fG" class="cube2 black" ></div>
 					<div id="cube2fD" class="cube2 black" ></div>
@@ -76,9 +109,31 @@
 						</select>
 					</div>
 					<div id="cube3fA2Fond" class="cube3 black" ></div>
-					<div id="cube3fH8" class="cube3" ></div>
+					<div id="cube3fH8" class="cube3" >
+						<select id="choiceFH8" class="liste_couleurs" name="color_choiceFH8" onChange="color_switch('choiceFH8', 'cube3fH8', 'fH[8]')">
+
+							<option selected="selected" value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube3fH8Fond" class="cube3 black" ></div>
-					<div id="cube3fD0" class="cube3" ></div>
+					<div id="cube3fD0" class="cube3" >
+						<select id="choiceFD0" class="liste_couleurs" name="color_choiceFD0" onChange="color_switch('choiceFD0', 'cube3fD0', 'fD[0]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option selected="selected" value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube3fD0Fond" class="cube3 black" ></div>
 					<div id="cube3fG" class="cube3 black" ></div>
 					<div id="cube3fP" class="cube3 black" ></div>
@@ -103,7 +158,18 @@
 					<div id="cube4fA3Fond" class="cube4 black" ></div>
 					<div id="cube4fH" class="cube4 black" ></div>
 					<div id="cube4fD" class="cube4 black" ></div>
-					<div id="cube4fG5" class="cube4" ></div>
+					<div id="cube4fG5" class="cube4" >
+						<select id="choiceFG5" class="liste_couleurs" name="color_choiceFG5" onChange="color_switch('choiceFG5', 'cube4fG5', 'fG[5]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option selected="selected" value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube4fG5Fond" class="cube4 black" ></div>
 					<div id="cube4fP" class="cube4 black" ></div>
 					<div id="cube4fB" class="cube4 black" ></div>
@@ -124,10 +190,32 @@
 	<!-- ---------------------------- Cube 6 ---------------------------- -->
 
 				<div id="cube6" class="cube cubeAvant">
-					<div id="cube6fA5" class="cube6" ></div>
+					<div id="cube6fA5" class="cube6" >
+						<select id="choiceFA5" class="liste_couleurs" name="color_choiceFA5" onChange="color_switch('choiceFA5', 'cube6fA5', 'fA[5]')">
+
+							<option value="bla">Blanc</option>
+							<option selected="selected" value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube6fA5Fond" class="cube6 black" ></div>
 					<div id="cube6fH" class="cube6 black" ></div>
-					<div id="cube6fD3" class="cube6" ></div>
+					<div id="cube6fD3" class="cube6" >
+						<select id="choiceFD3" class="liste_couleurs" name="color_choiceFD3" onChange="color_switch('choiceFD3', 'cube6fD3', 'fD[3]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option selected="selected" value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube6fD3Fond" class="cube6 black" ></div>
 					<div id="cube6fG" class="cube6 black" ></div>
 					<div id="cube6fP" class="cube6 black" ></div>
@@ -137,27 +225,82 @@
 	<!-- --------------------------- Cube 7 --------------------------- -->
 
 				<div id="cube7" class="cube cubeAvant">
-					<div id="cube7fA6" class="cube7" ></div>
+					<div id="cube7fA6" class="cube7" >
+						<select id="choiceFA6" class="liste_couleurs" name="color_choiceFA6" onChange="color_switch('choiceFA6', 'cube7fA6', 'fA[6]')">
+
+							<option value="bla">Blanc</option>
+							<option selected="selected" value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube7fA6Fond" class="cube7 black" ></div>
 					<div id="cube7fH" class="cube7 black" ></div>
-					<div id="cube7fG8" class="cube7" ></div>
+					<div id="cube7fG8" class="cube7" >
+						<select id="choiceFG8" class="liste_couleurs" name="color_choiceFG8" onChange="color_switch('choiceFG8', 'cube7fG8', 'fG[8]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option selected="selected" value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube7fG8Fond" class="cube7 black" ></div>
 					<div id="cube7fD" class="cube7 black" ></div>
 					<div id="cube7fP" class="cube7 black" ></div>
-					<div id="cube7fB0" class="cube7" ></div>
+					<div id="cube7fB0" class="cube7" >
+						<select id="choiceFB0" class="liste_couleurs" name="color_choiceFB0" onChange="color_switch('choiceFB0', 'cube7fB0', 'fB[0]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option selected="selected" value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube7fB0Fond" class="cube7 black" ></div>
 				</div>
 
 	<!-- ---------------------------- Cube 8 ---------------------------- -->
 
 				<div id="cube8" class="cube cubeAvant">
-					<div id="cube8fA7" class="cube8" ></div>
+					<div id="cube8fA7" class="cube8" >
+						<select id="choiceFA7" class="liste_couleurs" name="color_choiceFA7" onChange="color_switch('choiceFA7', 'cube8fA7', 'fA[7]')">
+
+							<option value="bla">Blanc</option>
+							<option selected="selected" value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube8fA7Fond" class="cube8 black" ></div>
 					<div id="cube8fH" class="cube8 black" ></div>
 					<div id="cube8fG" class="cube8 black" ></div>
 					<div id="cube8fD" class="cube8 black" ></div>
 					<div id="cube8fP" class="cube8 black" ></div>
-					<div id="cube8fB1" class="cube8" ></div>
+					<div id="cube8fB1" class="cube8" >
+						<select id="choiceFB1" class="liste_couleurs" name="color_choiceFB1" onChange="color_switch('choiceFB1', 'cube8fB1', 'fB[1]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option selected="selected" value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube8fB1Fond" class="cube8 black" ></div>
 				</div>
 
@@ -174,14 +317,46 @@
 					<option value="j">Jaune</option>
 
 					</select>
-					<div id="cube9fA8" class="cube9" ></div>
+					<div id="cube9fA8" class="cube9" >
+						<select id="choiceFA8" class="liste_couleurs" name="color_choiceFA8" onChange="color_switch('choiceFA8', 'cube9fA8', 'fA[8]')">
+
+							<option value="bla">Blanc</option>
+							<option selected="selected" value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select></div>
 					<div id="cube9fA8Fond" class="cube9 black" ></div>
 					<div id="cube9fH" class="cube9 black" ></div>
-					<div id="cube9fD6" class="cube9" ></div>
+					<div id="cube9fD6" class="cube9" >
+						<select id="choiceFD6" class="liste_couleurs" name="color_choiceFD6" onChange="color_switch('choiceFD6', 'cube9fD6', 'fD[6]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option selected="selected" value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube9fD6Fond" class="cube9 black" ></div>
 					<div id="cube9fG" class="cube9 black" ></div>
 					<div id="cube9fP" class="cube9 black" ></div>
-					<div id="cube9fB2" class="cube9" ></div>
+					<div id="cube9fB2" class="cube9" >
+						<select id="choiceFB2" class="liste_couleurs" name="color_choiceFB2" onChange="color_switch('choiceFB2', 'cube9fB2', 'fB[2]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option selected="selected" value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube9fB2Fond" class="cube9 black" ></div>
 				</div>
 
@@ -189,9 +364,31 @@
 
 				<div id="cube10" class="cube cubeMilieu">
 					<div id="cube10fA" class="cube10 black" ></div>
-					<div id="cube10fH3" class="cube10" ></div>
+					<div id="cube10fH3" class="cube10" >
+						<select id="choiceFH3" class="liste_couleurs" name="color_choiceFH3" onChange="color_switch('choiceFH3', 'cube10fH3', 'fH[3]')">
+
+							<option selected="selected" value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube10fH3Fond" class="cube10 black" ></div>
-					<div id="cube10fG1" class="cube10" ></div>
+					<div id="cube10fG1" class="cube10" >
+						<select id="choiceFG1" class="liste_couleurs" name="color_choiceFG1" onChange="color_switch('choiceFG1', 'cube10fG1', 'fG[1]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option selected="selected" value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube10fG1Fond" class="cube10 black" ></div>
 					<div id="cube10fD" class="cube10 black" ></div>
 					<div id="cube10fP" class="cube10 black" ></div>
@@ -214,9 +411,31 @@
 
 				<div id="cube12" class="cube cubeMilieu">
 					<div id="cube12fA" class="cube12 black" ></div>
-					<div id="cube12fH5" class="cube12" ></div>
+					<div id="cube12fH5" class="cube12" >
+						<select id="choiceFH5" class="liste_couleurs" name="color_choiceFH5" onChange="color_switch('choiceFH5', 'cube12fH5', 'fH[5]')">
+
+							<option selected="selected" value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube12fH5Fond" class="cube12 black" ></div>
-					<div id="cube12fD1" class="cube12" ></div>
+					<div id="cube12fD1" class="cube12" >
+						<select id="choiceFD1" class="liste_couleurs" name="color_choiceFD1" onChange="color_switch('choiceFD1', 'cube12fD1', 'fD[1]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option selected="selected" value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube12fD1Fond" class="cube12 black" ></div>
 					<div id="cube12fG" class="cube12 black" ></div>
 					<div id="cube12fP" class="cube12 black" ></div>
@@ -252,11 +471,33 @@
 				<div id="cube16" class="cube cubeMilieu">
 					<div id="cube16fA" class="cube16 black" ></div>
 					<div id="cube16fH" class="cube16 black" ></div>
-					<div id="cube16fG7" class="cube16" ></div>
+					<div id="cube16fG7" class="cube16" >
+						<select id="choiceFG7" class="liste_couleurs" name="color_choiceFG7" onChange="color_switch('choiceFG7', 'cube16fG7', 'fG[7]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option selected="selected" value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube16fG7Fond" class="cube16 black" ></div>
 					<div id="cube16fD" class="cube16 black" ></div>
 					<div id="cube16fP" class="cube16 black" ></div>
-					<div id="cube16fB3" class="cube16" ></div>
+					<div id="cube16fB3" class="cube16" >
+						<select id="choiceFB3" class="liste_couleurs" name="color_choiceFB3" onChange="color_switch('choiceFB3', 'cube16fB3', 'fB[3]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option selected="selected" value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube16fB3Fond" class="cube16 black" ></div>
 				</div>
 
@@ -277,11 +518,33 @@
 				<div id="cube18" class="cube cubeMilieu">
 					<div id="cube18fA" class="cube18 black" ></div>
 					<div id="cube18fH" class="cube18 black" ></div>
-					<div id="cube18fD7" class="cube18" ></div>
+					<div id="cube18fD7" class="cube18" >
+						<select id="choiceFD7" class="liste_couleurs" name="color_choiceFD7" onChange="color_switch('choiceFD7', 'cube18fD7', 'fD[7]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option selected="selected" value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube18fD7Fond" class="cube18 black" ></div>
 					<div id="cube18fG" class="cube18 black" ></div>
 					<div id="cube18fP" class="cube18 black" ></div>
-					<div id="cube18fB5" class="cube18" ></div>
+					<div id="cube18fB5" class="cube18" >
+						<select id="choiceFB5" class="liste_couleurs" name="color_choiceFB5" onChange="color_switch('choiceFB5', 'cube18fB5', 'fB[5]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option selected="selected" value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube18fB5Fond" class="cube18 black" ></div>
 				</div>
 
@@ -289,12 +552,45 @@
 
 				<div id="cube19" class="cube cubeDos">
 					<div id="cube19fA" class="cube19 black" ></div>
-					<div id="cube19fH0" class="cube19" ></div>
+					<div id="cube19fH0" class="cube19" >
+						<select id="choiceFH0" class="liste_couleurs" name="color_choiceFH0" onChange="color_switch('choiceFH0', 'cube19fH0', 'fH[0]')">
+
+							<option selected="selected" value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube19fH0Fond" class="cube19 black" ></div>
-					<div id="cube19fG0" class="cube19" ></div>
+					<div id="cube19fG0" class="cube19" >
+						<select id="choiceFG0" class="liste_couleurs" name="color_choiceFG0" onChange="color_switch('choiceFG0', 'cube19fG0', 'fG[0]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option selected="selected" value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube19fG0Fond" class="cube19 black" ></div>
 					<div id="cube19fD" class="cube19 black" ></div>
-					<div id="cube19fP2" class="cube19" ></div>
+					<div id="cube19fP2" class="cube19" >
+						<select id="choiceFP2" class="liste_couleurs" name="color_choiceFP2" onChange="color_switch('choiceFP2', 'cube19fP2', 'fD[2]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option selected="selected" value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube19fP2Fond" class="cube19 black" ></div>
 					<div id="cube19fB" class="cube19 black" ></div>
 				</div>
@@ -303,11 +599,33 @@
 
 				<div id="cube20" class="cube cubeDos">
 					<div id="cube20fA" class="cube20 black" ></div>
-					<div id="cube20fH1" class="cube20" ></div>
+					<div id="cube20fH1" class="cube20" >
+						<select id="choiceFH1" class="liste_couleurs" name="color_choiceFH1" onChange="color_switch('choiceFH1', 'cube20fH1', 'fH[1]')">
+
+							<option selected="selected" value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube20fH1Fond" class="cube20 black" ></div>
 					<div id="cube20fG" class="cube20 black" ></div>
 					<div id="cube20fD" class="cube20 black" ></div>
-					<div id="cube20fP1" class="cube20" ></div>
+					<div id="cube20fP1" class="cube20" >
+						<select id="choiceFP1" class="liste_couleurs" name="color_choiceFP1" onChange="color_switch('choiceFP1', 'cube20fP1', 'fD[1]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option selected="selected" value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube20fP1Fond" class="cube20 black" ></div>
 					<div id="cube20fB" class="cube20 black" ></div>
 				</div>
@@ -316,12 +634,45 @@
 
 				<div id="cube21" class="cube cubeDos">
 					<div id="cube21fA" class="cube21 black" ></div>
-					<div id="cube21fH2" class="cube21" ></div>
+					<div id="cube21fH2" class="cube21" >
+						<select id="choiceFH2" class="liste_couleurs" name="color_choiceFH2" onChange="color_switch('choiceFH2', 'cube21fH2', 'fH[2]')">
+
+							<option selected="selected" value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube21fH2Fond" class="cube21 black" ></div>
-					<div id="cube21fD2" class="cube21" ></div>
+					<div id="cube21fD2" class="cube21" >
+						<select id="choiceFD2" class="liste_couleurs" name="color_choiceFD2" onChange="color_switch('choiceFD2', 'cube21fD2', 'fD[2]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option selected="selected" value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube21fD2Fond" class="cube21 black" ></div>
 					<div id="cube21fG" class="cube21 black" ></div>
-					<div id="cube21fP0" class="cube21" ></div>
+					<div id="cube21fP0" class="cube21" >
+						<select id="choiceFP0" class="liste_couleurs" name="color_choiceFP0" onChange="color_switch('choiceFP0', 'cube21fP0', 'fD[0]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option selected="selected" value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube21fP0Fond" class="cube21 black" ></div>
 					<div id="cube21fB" class="cube21 black" ></div>
 				</div>
@@ -332,9 +683,31 @@
 					<div id="cube22fA" class="cube22 black" ></div>
 					<div id="cube22fH" class="cube22 black" ></div>
 					<div id="cube22fD" class="cube22 black" ></div>
-					<div id="cube22fG3" class="cube22" ></div>
+					<div id="cube22fG3" class="cube22" >
+						<select id="choiceFG3" class="liste_couleurs" name="color_choiceFG3" onChange="color_switch('choiceFG3', 'cube22fG3', 'fG[3]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option selected="selected" value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube22fG3Fond" class="cube22 black" ></div>
-					<div id="cube22fP5" class="cube22" ></div>
+					<div id="cube22fP5" class="cube22" >
+						<select id="choiceFP5" class="liste_couleurs" name="color_choiceFP5" onChange="color_switch('choiceFP5', 'cube22fP5', 'fD[5]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option selected="selected" value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube22fP5Fond" class="cube22 black" ></div>
 					<div id="cube22fB" class="cube22 black" ></div>
 				</div>
@@ -356,10 +729,32 @@
 				<div id="cube24" class="cube cubeDos">
 					<div id="cube24fA" class="cube24 black" ></div>
 					<div id="cube24fH" class="cube24 black" ></div>
-					<div id="cube24fD5" class="cube24" ></div>
+					<div id="cube24fD5" class="cube24" >
+						<select id="choiceFD5" class="liste_couleurs" name="color_choiceFD5" onChange="color_switch('choiceFD5', 'cube24fD5', 'fD[5]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option selected="selected" value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube24fD5Fond" class="cube24 black" ></div>
 					<div id="cube24fG" class="cube24 black" ></div>
-					<div id="cube24fP3" class="cube24" ></div>
+					<div id="cube24fP3" class="cube24" >
+						<select id="choiceFP3" class="liste_couleurs" name="color_choiceFP3" onChange="color_switch('choiceFP3', 'cube24fP3', 'fD[3]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option selected="selected" value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube24fP3Fond" class="cube24 black" ></div>
 					<div id="cube24fB" class="cube24 black" ></div>
 				</div>
@@ -367,15 +762,48 @@
 	<!-- --------------------------- Cube 25 --------------------------- -->
 
 				<div id="cube25" class="cube cubeDos">
-					<div id="cube25fA" class="cube25 black" ></div>
-					<div id="cube25fH" class="cube25 black" ></div>
-					<div id="cube25fG6" class="cube25" ></div>
-					<div id="cube25fG6Fond" class="cube25 black" ></div>
-					<div id="cube25fD" class="cube25 black" ></div>
-					<div id="cube25fP8" class="cube25" ></div>
-					<div id="cube25fP8Fond" class="cube25 black" ></div>
-					<div id="cube25fB6" class="cube25" ></div>
-					<div id="cube25fB6Fond" class="cube25 black" ></div>
+					<div id="cube25fA" class="cube25 black"></div>
+					<div id="cube25fH" class="cube25 black"></div>
+					<div id="cube25fG6" class="cube25">
+						<select id="choiceFG6" class="liste_couleurs" name="color_choiceFG6" onChange="color_switch('choiceFG6', 'cube25fG6', 'fG[6]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option selected="selected" value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
+					<div id="cube25fG6Fond" class="cube25 black"></div>
+					<div id="cube25fD" class="cube25 black"></div>
+					<div id="cube25fP8" class="cube25">
+						<select id="choiceFP8" class="liste_couleurs" name="color_choiceFP8" onChange="color_switch('choiceFP8', 'cube25fP8', 'fD[8]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option selected="selected" value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
+					<div id="cube25fP8Fond" class="cube25 black"></div>
+					<div id="cube25fB6" class="cube25">
+						<select id="choiceFB6" class="liste_couleurs" name="color_choiceFB6" onChange="color_switch('choiceFB6', 'cube25fB6', 'fB[6]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option selected="selected" value="j">Jaune</option>
+
+						</select>
+					</div>
+					<div id="cube25fB6Fond" class="cube25 black"></div>
 				</div>
 
 	<!-- ---------------------------- Cube 26 ---------------------------- -->
@@ -385,9 +813,31 @@
 					<div id="cube26fH" class="cube26 black" ></div>
 					<div id="cube26fG" class="cube26 black" ></div>
 					<div id="cube26fD" class="cube26 black" ></div>
-					<div id="cube26fP7" class="cube26" ></div>
+					<div id="cube26fP7" class="cube26" >
+						<select id="choiceFP7" class="liste_couleurs" name="color_choiceFP7" onChange="color_switch('choiceFP7', 'cube26fP7', 'fD[7]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option selected="selected" value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube26fP7Fond" class="cube26 black" ></div>
-					<div id="cube26fB7" class="cube26" ></div>
+					<div id="cube26fB7" class="cube26" >
+						<select id="choiceFB7" class="liste_couleurs" name="color_choiceFB7" onChange="color_switch('choiceFB7', 'cube26fB7', 'fB[7]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option selected="selected" value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube26fB7Fond" class="cube26 black" ></div>
 				</div>
 
@@ -396,12 +846,45 @@
 				<div id="cube27" class="cube cubeDos">
 					<div id="cube27fA" class="cube27 black" ></div>
 					<div id="cube27fH" class="cube27 black" ></div>
-					<div id="cube27fD8" class="cube27" ></div>
+					<div id="cube27fD8" class="cube27" >
+						<select id="choiceFD8" class="liste_couleurs" name="color_choiceFD8" onChange="color_switch('choiceFD8', 'cube27fD8', 'fD[8]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option selected="selected" value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube27fD8Fond" class="cube27 black" ></div>
 					<div id="cube27fG" class="cube27 black" ></div>
-					<div id="cube27fP6" class="cube27" ></div>
+					<div id="cube27fP6" class="cube27" >
+						<select id="choiceFP6" class="liste_couleurs" name="color_choiceFP6" onChange="color_switch('choiceFP6', 'cube27fP6', 'fD[6]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option selected="selected" value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube27fP6Fond" class="cube27 black" ></div>
-					<div id="cube27fB8" class="cube27" ></div>
+					<div id="cube27fB8" class="cube27" >
+						<select id="choiceFB8" class="liste_couleurs" name="color_choiceFB8" onChange="color_switch('choiceFB8', 'cube27fB8', 'fB[8]')">
+
+							<option value="bla">Blanc</option>
+							<option value="r">Rouge</option>
+							<option value="ble">Bleu</option>
+							<option value="o">Orange</option>
+							<option value="v">Vert</option>
+							<option selected="selected" value="j">Jaune</option>
+
+						</select>
+					</div>
 					<div id="cube27fB8Fond" class="cube27 black" ></div>
 				</div>
 
@@ -409,7 +892,7 @@
 
 		</div>
 
-		<button type="button">Gauche</button>
+		<button onclick="turnLeftCube()" type="button">Gauche</button>
 		<button onclick="switchCube()" id="btnSwitch" type="button">Switch</button>
 		<button onclick="turnRightCube()" type="button">Droite</button>
 
