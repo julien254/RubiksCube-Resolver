@@ -2,15 +2,6 @@
 /* --------------- Animations --------------- */
 
 
-@keyframes rotateFace {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 
 /* ----------------- Body ---------------- */
@@ -99,6 +90,7 @@ body{
 	top:0;
 	left:0;
 	border-radius: 15%;
+  z-index:9999;
 
 }
 
@@ -659,6 +651,7 @@ body{
 	top:20vw;
 	left:20vw;
 	border-radius: 15%;
+  z-index:-9999;
 
 }
 
@@ -1800,8 +1793,12 @@ body{
 
   height: 30vw;
   width: 30vw;
+  transition: transform 2s ease;
   transform-style: preserve-3d;
   transform-origin: center center;
+  transform: rotate(0deg);
+
+
 
 }
 

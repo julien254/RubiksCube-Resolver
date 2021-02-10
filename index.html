@@ -21,6 +21,7 @@
 
 		<div id="containerAxeX">
 			<div id="containerAxeY" >
+				<div id="divTurn"></div>
 
 	<!-- --------------------------- Cube 1 ----------------------------- -->
 
@@ -309,12 +310,12 @@
 				<div id="cube9" class="cube cubeAvant">
 					<select id="choiceFA0" class="liste_couleurs" name="color_choiceFA0" onChange="color_switch('choiceFA0', 'cube1fA0', 'fA[0]')">
 
-					<option value="bla">Blanc</option>
-					<option selected="selected" value="r">Rouge</option>
-					<option value="ble">Bleu</option>
-					<option value="o">Orange</option>
-					<option value="v">Vert</option>
-					<option value="j">Jaune</option>
+						<option value="bla">Blanc</option>
+						<option selected="selected" value="r">Rouge</option>
+						<option value="ble">Bleu</option>
+						<option value="o">Orange</option>
+						<option value="v">Vert</option>
+						<option value="j">Jaune</option>
 
 					</select>
 					<div id="cube9fA8" class="cube9" >
@@ -893,7 +894,7 @@
 		</div>
 
 		<button onclick="turnLeftCube()" type="button">Gauche</button>
-		<button onclick="switchCube()" id="btnSwitch" type="button">Switch</button>
+		<button onclick="animeFaceRotateAiguille(cube1, fC1, cube2, fC2, cube3, fC3, cube4, fC4, cube5, cube6, fC6, cube7, fC7, cube8, fC8, cube9, fC9)" id="btnSwitch" type="button">Switch</button>
 		<button onclick="turnRightCube()" type="button">Droite</button>
 
 		<script src="index.js"></script>
