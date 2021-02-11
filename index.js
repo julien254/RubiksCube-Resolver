@@ -838,17 +838,17 @@ function test(){
 	var time = 0;
 
 	setTimeout(tFDAig,time);
-	time += 1100;
+	time += 1200;
 	setTimeout(tFAAig,time);
-	time += 1100;
+	time += 1200;
 	setTimeout(tFHAig,time);
-	time += 1100;
+	time += 1200;
 	setTimeout(tFDAig,time);
-	time += 1100;
+	time += 1200;
 	setTimeout(tFAAig,time);
-	time += 1100;
+	time += 1200;
 	setTimeout(tFHAig,time);
-	time += 1100;
+	time += 1200;
 
 console.log(fA, fH, fD, fP, fG, fB);
 
