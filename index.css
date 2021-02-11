@@ -16,6 +16,7 @@ body{
 
   margin-top: 50vw;
   margin-bottom: 50vw;
+  background: grey;
 
 }
 
@@ -1793,10 +1794,10 @@ body{
 
   height: 30vw;
   width: 30vw;
-  transition: transform 2s ease;
+  transition: transform 1s ease;
   transform-style: preserve-3d;
   transform-origin: center center;
-  transform: rotate(0deg);
+  transform: rotate(0deg) rotateY(0deg) rotateX(0deg);
 
 
 

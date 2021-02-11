@@ -138,14 +138,14 @@ var fC21 = [document.getElementById("cube21fH2"), fH[2], document.getElementById
 var cube22 = document.getElementById("cube22");
 var fC22 = [document.getElementById("cube22fG3"), fG[3], document.getElementById("cube22fP5"), fP[5]];
 var cube23 = document.getElementById("cube23");
-var cube24 = document.getElementById("cube24");cube24fD5
+var cube24 = document.getElementById("cube24");
 var fC24 = [document.getElementById("cube24fD5"), fD[5], document.getElementById("cube24fP3"), fP[3]];
 var cube25 = document.getElementById("cube25");
 var fC25 = [document.getElementById("cube25fG6"), fG[6], document.getElementById("cube25fP8"), fP[8], document.getElementById("cube25fB6"), fB[6]];
 var cube26 = document.getElementById("cube26");
 var fC26 = [document.getElementById("cube26fP7"), fP[7], document.getElementById("cube26fB7"), fB[7]];
 var cube27 = document.getElementById("cube27");
-var fC27 = [document.getElementById("cube27fB7"), fB[7], document.getElementById("cube27fP6"), fP[6], document.getElementById("cube27fB8"), fB[8]];
+var fC27 = [document.getElementById("cube27fD8"), fD[8], document.getElementById("cube27fP6"), fP[6], document.getElementById("cube27fB8"), fB[8]];
 
 
 
@@ -203,15 +203,11 @@ function returnFcInOrder(fC1,fC2,fC3,fC4,fC6,fC7,fC8,fC9,order1,order2,order3,or
 		for (var i = 0; i < tableau.length; i++) {
 			var bonneOrdre = [];
 			var fCs = tableau[i];
-			if (fCs.length === 4) {
-				var x = 1;
-				for (var j = 0; j < ordre.length; j++) {
-					for (var k = 1; k < fCs.length; k+=2) {
-						if (fCs[k] === ordre[j]) {
-							bonneOrdre.push(fCs[k-1]);
-							bonneOrdre.push(fCs[k]);
-							x += 2;
-						}
+			for (var j = 0; j < ordre.length; j++) {
+				for (var k = 1; k < fCs.length; k+=2) {
+					if (fCs[k].face === ordre[j]) {
+						bonneOrdre.push(fCs[k-1]);
+						bonneOrdre.push(fCs[k]);
 					}
 				}
 			}
@@ -324,7 +320,7 @@ function turnRightCube() {
 
 // fonction Animations des faces du cube ====>
 
-function animeFaceRotateAiguille(c1, fC1, c2, fC2, c3, fC3, c4, fC4, c5, c6, fC6, c7, fC7, c8, fC8, c9, fC9) {
+function animeFaceRotateAiguille(c1, fC1, c2, fC2, c3, fC3, c4, fC4, c5, c6, fC6, c7, fC7, c8, fC8, c9, fC9, rotateDebut, rotateFin) {
 
 	// creation de la div à animer et ajout des face concerner
 
@@ -342,7 +338,7 @@ function animeFaceRotateAiguille(c1, fC1, c2, fC2, c3, fC3, c4, fC4, c5, c6, fC6
 	divTurn.appendChild(c9);
 
 	// rotation de la divTurn
-	divTurn.style.transform = "rotate(90deg)";
+	divTurn.style.transform = rotateFin;
 
 	// recuperation des la couleur des faces
 	var couleurs = [fC7[1].color, fC7[3].color, fC7[5].color, fC4[1].color, fC4[3].color, fC1[1].color, fC1[5].color, fC1[3].color,
@@ -381,7 +377,7 @@ function animeFaceRotateAiguille(c1, fC1, c2, fC2, c3, fC3, c4, fC4, c5, c6, fC6
 	fC3[3].color = couleursTemp[6];
 	fC3[5].color = couleursTemp[7];
 	// et on reinitialise le tous
-	divTurn.style.transform = "rotate(0deg)";
+	divTurn.style.transform = rotateDebut;
 	divTurn.style.transition = "none";
 	container.appendChild(c1);
 	container.appendChild(c2);
@@ -404,7 +400,8 @@ function animeFaceRotateAiguille(c1, fC1, c2, fC2, c3, fC3, c4, fC4, c5, c6, fC6
 
 function tFHAig() {
 
-	animeFaceRotateAiguille(cube19, fC19, cube20, fC20, cube21, fC21, cube10, fC10, cube11, cube12, fC12, cube1, fC1, cube2, fC2, cube3, fC3);
+	returnFcInOrder(fC19,fC20,fC21,fC10,fC12,fC1,fC2,fC3,"fH","fP","fD","fB","fG","fA");
+	animeFaceRotateAiguille(cube19, fC19, cube20, fC20, cube21, fC21, cube10, fC10, cube11, cube12, fC12, cube1, fC1, cube2, fC2, cube3, fC3, "rotate(0deg) rotateY(0deg) rotateX(0deg)", "rotate(0deg) rotateY(-90deg) rotateX(0deg)");
 
 }
 
@@ -459,7 +456,7 @@ function tFHInv() {
 function tFAAig() {
 
 			returnFcInOrder(fC1,fC2,fC3,fC4,fC6,fC7,fC8,fC9,"fA","fH","fD","fP","fG","fB");
-			animeFaceRotateAiguille(cube1, fC1, cube2, fC2, cube3, fC3, cube4, fC4, cube5, cube6, fC6, cube7, fC7, cube8, fC8, cube9, fC9);
+			animeFaceRotateAiguille(cube1, fC1, cube2, fC2, cube3, fC3, cube4, fC4, cube5, cube6, fC6, cube7, fC7, cube8, fC8, cube9, fC9, "rotate(0deg) rotateY(0deg) rotateX(0deg)", "rotate(90deg) rotateY(0deg) rotateX(0deg)");
 }
 
 function tFAInv() {
@@ -511,7 +508,8 @@ function tFAInv() {
 
 function tFDAig() {
 
-	animeFaceRotateAiguille(cube1, fC1, cube2, fC2, cube3, fC3, cube4, fC4, cube5, cube6, fC6, cube7, fC7, cube8, fC8, cube9, fC9);
+	returnFcInOrder(fC3,fC12,fC21,fC6,fC24,fC9,fC18,fC27,"fD","fH","fP","fG","fA","fB");
+	animeFaceRotateAiguille(cube3, fC3, cube12, fC12, cube21, fC21, cube6, fC6, cube15, cube24, fC24, cube9, fC9, cube18, fC18, cube27, fC27, "rotate(0deg) rotateY(0deg) rotateX(0deg)", "rotate(0deg) rotateY(0deg) rotateX(90deg)");
 
 }
 
@@ -837,78 +835,22 @@ function tFBInv() {
 }
 
 function test(){
-var time = 0;
-	setTimeout(tFAAig, time);
-	time += 10;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
-	setTimeout(tFAAig, time);
-	time += 1060;
+	var time = 0;
 
+	setTimeout(tFDAig,time);
+	time += 1100;
+	setTimeout(tFAAig,time);
+	time += 1100;
+	setTimeout(tFHAig,time);
+	time += 1100;
+	setTimeout(tFDAig,time);
+	time += 1100;
+	setTimeout(tFAAig,time);
+	time += 1100;
+	setTimeout(tFHAig,time);
+	time += 1100;
+
+console.log(fA, fH, fD, fP, fG, fB);
 
 }
 
