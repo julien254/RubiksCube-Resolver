@@ -1,5 +1,4 @@
 
-
 ///////////////////////// Déclarations et récuperations ////////////////////
 
 //////////// Déclarations
@@ -198,7 +197,6 @@ function Melanger(nombre) {
 		}
 
 	}
-	deleteUsless(tab);
 	lunchAnimation(tab.length, tab);
 }
 
@@ -243,7 +241,7 @@ function deleteUsless(tab) {
 																		tab.splice((i - 4), 10);
 																		i--;
 																		youCan = false;
-																		console.log(10);
+																		
 																	}
 																	break;
 																	
@@ -259,7 +257,7 @@ function deleteUsless(tab) {
 															tab.splice((i - 3), 8);
 															i--;
 															youCan = false;
-															console.log(8);
+															
 														}
 														break;
 														
@@ -277,7 +275,7 @@ function deleteUsless(tab) {
 												tab.splice((i - 2), 6);
 												i--;
 												youCan = false;
-												console.log(6);
+												
 											}
 											break;
 											
@@ -294,7 +292,7 @@ function deleteUsless(tab) {
 									tab.splice((i - 1), 4);
 									i--;
 									youCan = false;
-									console.log(4);
+									
 								}
 								break;
 								
@@ -311,7 +309,7 @@ function deleteUsless(tab) {
 						tab.splice((i), 2);
 						i--;
 						youCan = false;
-						console.log(2);
+					
 					}
 					break;
 					
@@ -324,19 +322,7 @@ function deleteUsless(tab) {
 
 
 
-function montreMoi(){
 
-console.log(fH[0].color, fH[1].color, fH[2].color, fH[3].color, fH[4].color, fH[5].color, fH[6].color, fH[7].color, fH[8].color, fA[0].color, fA[1].color, fA[2].color, fD[0].color, fD[1].color, fD[2].color, fP[0].color, fP[1].color, fP[2].color, fG[0].color, fG[1].color, fG[2].color);
-console.log(fHT[0].color, fHT[1].color, fHT[2].color, fHT[3].color, fHT[4].color, fHT[5].color, fHT[6].color, fHT[7].color, fHT[8].color, fAT[0].color, fAT[1].color, fAT[2].color, fDT[0].color, fDT[1].color, fDT[2].color, fPT[0].color, fPT[1].color, fPT[2].color, fGT[0].color, fGT[1].color, fGT[2].color);
-console.log(fHT[0].color, fHT[1].color, fHT[2].color, fHT[3].color, fHT[4].color, fHT[5].color, fHT[6].color, fHT[7].color, fHT[8].color);
-console.log(fAT[0].color, fAT[1].color, fAT[2].color, fAT[3].color, fAT[4].color, fAT[5].color, fAT[6].color, fAT[7].color, fAT[8].color);
-console.log(fDT[0].color, fDT[1].color, fDT[2].color, fDT[3].color, fDT[4].color, fDT[5].color, fDT[6].color, fDT[7].color, fDT[8].color);
-console.log(fPT[0].color, fPT[1].color, fPT[2].color, fPT[3].color, fPT[4].color, fPT[5].color, fPT[6].color, fPT[7].color, fPT[8].color);
-console.log(fGT[0].color, fGT[1].color, fGT[2].color, fGT[3].color, fGT[4].color, fGT[5].color, fGT[6].color, fGT[7].color, fGT[8].color);
-console.log(fBT[0].color, fBT[1].color, fBT[2].color, fBT[3].color, fBT[4].color, fBT[5].color, fBT[6].color, fBT[7].color, fBT[8].color);
-console.log(bestResult);
-
-}
 function sleep(milliseconds) {
   const date = Date.now();
   var currentDate = null;
@@ -519,9 +505,8 @@ var animeRotateFace = function animeRotateFace(sens, c1, fC1b, c2, fC2b, c3, fC3
 
 	// Creation de la div à animer et ajout des faces concernées. 
 	isReady = false;
-	console.log("ouvert");
 	var divTurn = document.getElementById('divTurn');
-	divTurn.style.transition = "transform 1s ease";
+	divTurn.style.transition = "transform 100ms ease";
 	divTurn.appendChild(c1);
 	divTurn.appendChild(c2);
 	divTurn.appendChild(c3);
@@ -592,7 +577,6 @@ var animeRotateFace = function animeRotateFace(sens, c1, fC1b, c2, fC2b, c3, fC3
 		container.appendChild(c8);
 		container.appendChild(c9);
 		isReady = true;
-		console.log("fermer");
 		divTurn.removeEventListener('transitionend',Transitionend);
 
 	}
@@ -612,14 +596,14 @@ var tfaaig = function tFAAig() {
 	returnFcInOrder(fC1,fC2,fC3,fC4,fC6,fC7,fC8,fC9,"fA","fH","fD","fP","fG","fB");
 
 	animeRotateFace("aig", cube1, fC1, cube2, fC2, cube3, fC3, cube4, fC4, cube5, cube6, fC6, cube7, fC7, cube8, fC8, cube9, fC9, "rotate(0deg) rotateY(0deg) rotateX(0deg)", "rotate(90deg) rotateY(0deg) rotateX(0deg)");
-	console.log("tfaaig");
+	
 }
 
 var tfainv = function tFAInv() {
 
 	returnFcInOrder(fC1,fC2,fC3,fC4,fC6,fC7,fC8,fC9,"fA","fH","fD","fP","fG","fB");
 	animeRotateFace("inv", cube1, fC1, cube2, fC2, cube3, fC3, cube4, fC4, cube5, cube6, fC6, cube7, fC7, cube8, fC8, cube9, fC9, "rotate(0deg) rotateY(0deg) rotateX(0deg)", "rotate(-90deg) rotateY(0deg) rotateX(0deg)");
-	console.log("tfainv");
+	
 
 }
 
@@ -631,7 +615,7 @@ var tfainv = function tFAInv() {
 	returnFcInOrder(fC19,fC20,fC21,fC10,fC12,fC1,fC2,fC3,"fH","fP","fD","fB","fG","fA");
 
 	animeRotateFace("aig", cube19, fC19, cube20, fC20, cube21, fC21, cube10, fC10, cube11, cube12, fC12, cube1, fC1, cube2, fC2, cube3, fC3, "rotate(0deg) rotateY(0deg) rotateX(0deg)", "rotate(0deg) rotateY(-90deg) rotateX(0deg)");
-	console.log("tfhaig");
+	
 
 }
 
@@ -639,7 +623,7 @@ var tfhinv = function tFHInv() {
 
 	returnFcInOrder(fC19,fC20,fC21,fC10,fC12,fC1,fC2,fC3,"fH","fP","fD","fB","fG","fA");
 	animeRotateFace("inv", cube19, fC19, cube20, fC20, cube21, fC21, cube10, fC10, cube11, cube12, fC12, cube1, fC1, cube2, fC2, cube3, fC3, "rotate(0deg) rotateY(0deg) rotateX(0deg)", "rotate(0deg) rotateY(90deg) rotateX(0deg)");
-	console.log("tfhinv");
+	
 
 }
 
@@ -649,7 +633,7 @@ var tfdaig = function tFDAig() {
 
 	returnFcInOrder(fC3,fC12,fC21,fC6,fC24,fC9,fC18,fC27,"fD","fH","fP","fG","fA","fB");
 	animeRotateFace("aig", cube3, fC3, cube12, fC12, cube21, fC21, cube6, fC6, cube15, cube24, fC24, cube9, fC9, cube18, fC18, cube27, fC27, "rotate(0deg) rotateY(0deg) rotateX(0deg)", "rotate(0deg) rotateY(0deg) rotateX(90deg)");
-	console.log("tfdaig");
+	
 
 }
 
@@ -657,7 +641,7 @@ var tfdinv = function tFDInv() {
 
 	returnFcInOrder(fC3,fC12,fC21,fC6,fC24,fC9,fC18,fC27,"fD","fH","fP","fG","fA","fB");
 	animeRotateFace("inv", cube3, fC3, cube12, fC12, cube21, fC21, cube6, fC6, cube15, cube24, fC24, cube9, fC9, cube18, fC18, cube27, fC27, "rotate(0deg) rotateY(0deg) rotateX(0deg)", "rotate(0deg) rotateY(0deg) rotateX(-90deg)");
-	console.log("tfdinv");
+
 
 
 }
@@ -668,7 +652,7 @@ var tfpaig = function tFPAig() {
 
 	returnFcInOrder(fC21,fC20,fC19,fC24,fC22,fC27,fC26,fC25,"fP","fH","fG","fA","fD","fB");
 	animeRotateFace("aig", cube21, fC21, cube20, fC20, cube19, fC19, cube24, fC24, cube23, cube22, fC22, cube27, fC27, cube26, fC26, cube25, fC25, "rotate(0deg) rotateY(0deg) rotateX(0deg)", "rotate(-90deg) rotateY(0deg) rotateX(0deg)");
-	console.log("tfpaig");
+	
 
 
 }
@@ -677,7 +661,7 @@ var tfpinv = function tFPInv() {
 
 	returnFcInOrder(fC21,fC20,fC19,fC24,fC22,fC27,fC26,fC25,"fP","fH","fG","fA","fD","fB");
 	animeRotateFace("inv", cube21, fC21, cube20, fC20, cube19, fC19, cube24, fC24, cube23, cube22, fC22, cube27, fC27, cube26, fC26, cube25, fC25, "rotate(0deg) rotateY(0deg) rotateX(0deg)", "rotate(90deg) rotateY(0deg) rotateX(0deg)");
-	console.log("tfpinv");
+
 
 }
 
@@ -687,7 +671,7 @@ var tfgaig = function tFGAig() {
 
 	returnFcInOrder(fC19,fC10,fC1,fC22,fC4,fC25,fC16,fC7,"fG","fH","fA","fD","fP","fB");
 	animeRotateFace("aig", cube19, fC19, cube10, fC10, cube1, fC1, cube22, fC22, cube13, cube4, fC4, cube25, fC25, cube16, fC16, cube7, fC7, "rotate(0deg) rotateY(0deg) rotateX(0deg)", "rotate(0deg) rotateY(0deg) rotateX(-90deg)");
-	console.log("tfgaig");
+	
 
 }
 
@@ -695,7 +679,7 @@ var tfginv = function tFGInv() {
 
 	returnFcInOrder(fC19,fC10,fC1,fC22,fC4,fC25,fC16,fC7,"fG","fH","fA","fD","fP","fB");
 	animeRotateFace("inv", cube19, fC19, cube10, fC10, cube1, fC1, cube22, fC22, cube13, cube4, fC4, cube25, fC25, cube16, fC16, cube7, fC7, "rotate(0deg) rotateY(0deg) rotateX(0deg)", "rotate(0deg) rotateY(0deg) rotateX(90deg)");
-	console.log("tfginv");
+	
 
 
 }
@@ -706,7 +690,7 @@ var tfginv = function tFGInv() {
 
 	returnFcInOrder(fC7,fC8,fC9,fC16,fC18,fC25,fC26,fC27,"fB","fA","fD","fH","fG","fP");
 	animeRotateFace("aig", cube7, fC7, cube8, fC8, cube9, fC9, cube16, fC16, cube17, cube18, fC18, cube25, fC25, cube26, fC26, cube27, fC27, "rotate(0deg) rotateY(0deg) rotateX(0deg)", "rotate(0deg) rotateY(90deg) rotateX(0deg)");
-	console.log("tfbaig");
+	
 
 
 }
@@ -715,7 +699,7 @@ var tfbinv = function tFBInv() {
 
 	returnFcInOrder(fC7,fC8,fC9,fC16,fC18,fC25,fC26,fC27,"fB","fA","fD","fH","fG","fP");
 	animeRotateFace("inv", cube7, fC7, cube8, fC8, cube9, fC9, cube16, fC16, cube17, cube18, fC18, cube25, fC25, cube26, fC26, cube27, fC27, "rotate(0deg) rotateY(0deg) rotateX(0deg)", "rotate(0deg) rotateY(-90deg) rotateX(0deg)");
-	console.log("tfbinv");
+	
 
 }
 
@@ -747,13 +731,14 @@ function lunchAnimation(nombreAnimation, tableauAction){
 				
 			
 			}
-		}, 500);
+		}, 50);
 	}
 }
 
 // Fonction de permutation universel =======>
 var resultCroixBlanche = [];
 var resultCoinBlanc = [];
+var resultArreteSecondEtage = [];
 var ind = 0;
 function allPermutation(Arr, level, tableau)
 {
@@ -788,7 +773,8 @@ allPermutation(["searchC2", "searchC10", "searchC12", "searchC20"], 0, resultCro
 ind = 0;
 allPermutation(["searchCoin1", "searchCoin3", "searchCoin19", "searchCoin21"], 0, resultCoinBlanc);
 ind = 0;
-
+allPermutation(["searchArrete4", "searchArrete6", "searchArrete22", "searchArrete24"], 0, resultArreteSecondEtage);
+ind = 0;
 
 ////////// fonction de calcul de la meilleur resolution possible ///////////
 
@@ -866,8 +852,9 @@ var reset = function reset() {
 	fBT[8].color = fB[8].color;
 
 }
-var tableauSauvegarde = [];
-var sauvegarde = function sauvegarde() {
+var tableauSauvegarde1 = [];
+var tableauSauvegarde2 = [];
+var sauvegarde = function sauvegarde(tableauSauvegarde) {
 
 	tableauSauvegarde[0] = fHT[0].color;
 	tableauSauvegarde[1] = fHT[1].color;
@@ -919,7 +906,7 @@ var sauvegarde = function sauvegarde() {
 	tableauSauvegarde[47] = fBT[8].color;
 
 }
-var restore = function restore() {
+var restore = function restore(tableauSauvegarde) {
 
 	fHT[0].color = tableauSauvegarde[0];
 	fHT[1].color = tableauSauvegarde[1];
@@ -1775,6 +1762,590 @@ var searchCoinBlanc = function searchCoinBlanc(f1, f2, f3, f4, f5, f6, f7, f8, f
 
 }
 
+var searchArreteSecondEtage = function searchArreteSecondEtage(f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11,f12,f13,f14,f15,f16,c1,c2, fonction1, fonction2, fonction3, fonction4, fonction5, fonction6, fonction7, fonction8, fonction9, fonction10){
+	// fAT[3].color, fGT[5].color, fAT[5].color, fDT[3].color, fDT[5].color, fPT[3].color, fGT[3].color, fPT[5].color, fAT[7].color, fBT[1].color, fGT[7].color, fBT[3].color, fPT[7].color, fBT[7].color, fGT[7].color, fBT[5].color , "r", "v", tfbaigt, tfgaigt, tfbinvt, tfginvt, tfainvt, tfaaigt, tfdinvt, tfdaigt, tfpinvt, tfpaigt, 
+	if (f1 !== c1 || f2 !== c2) {
+		
+		if(f1 === c2 && f2 === c1){
+			
+			fonction1();
+			fonction2();
+			fonction3();
+			fonction4();
+			fonction3();
+			fonction5();
+			fonction1(); 
+			fonction6();
+			
+			fonction1();
+			fonction1();
+			
+			fonction1();
+			fonction2();
+			fonction3();
+			fonction4();
+			fonction3();
+			fonction5();
+			fonction1();
+			fonction6();
+		}else if(f3 === c2 && f4 === c1){
+			
+			fonction1();
+			fonction6();
+			fonction3();
+			fonction5();
+			fonction3();
+			fonction7();
+			fonction1();
+			fonction8();
+			
+			fonction3();
+			fonction5();
+			fonction1();
+			fonction6();
+			fonction1();
+			fonction2();
+			fonction3();
+			fonction4();
+		}else if(f3 === c1 && f4 === c2){
+			
+			fonction1();
+			fonction6();
+			fonction3();
+			fonction5();
+			fonction3();
+			fonction7();
+			fonction1();
+			fonction8();
+			
+			fonction1();
+			
+			fonction1();
+			fonction2();
+			fonction3();
+			fonction4();
+			fonction3();
+			fonction5();
+			fonction1();
+			fonction6();
+		}else if(f5 === c2 && f6 === c1){
+			
+			fonction1();
+			fonction8();
+			fonction3();
+			fonction7();
+			fonction3();
+			fonction9();
+			fonction1();
+			fonction10();
+			
+			fonction3();
+			
+			fonction3();
+			fonction5();
+			fonction1();
+			fonction6();
+			fonction1();
+			fonction2();
+			fonction3();
+			fonction4();
+		}else if(f5 === c1 && f6 === c2){
+			
+			fonction1();
+			fonction8();
+			fonction3();
+			fonction7();
+			fonction3();
+			fonction9();
+			fonction1();
+			fonction10();
+			
+			fonction1();
+			fonction2();
+			fonction3();
+			fonction4();
+			fonction3();//1 tfbaigt, 2 tfgaigt, 3 tfbinvt,  4 tfginvt, 5 tfainvt, 6 tfaaigt,  7 tfdinvt, 8 tfdaigt,  9 tfpinvt, 10 tfpaigt, j v , v r
+			fonction5();
+			fonction1();
+			fonction6();
+			
+		
+		}else if(f7 === c2 && f8 === c1){
+			
+			fonction1();
+			fonction10();
+			fonction3();
+			fonction9();
+			fonction3();
+			fonction4();
+			fonction1();
+			fonction2();
+			
+			fonction3();
+			
+			fonction1();
+			fonction2();
+			fonction3();
+			fonction4();
+			fonction3();
+			fonction5();
+			fonction1();
+			fonction6();
+		}else if(f7 === c1 && f8 === c2){
+			
+			fonction1();
+			fonction10();
+			fonction3();
+			fonction9();
+			fonction3();
+			fonction4();
+			fonction1();
+			fonction2();
+			
+			fonction1();
+			fonction1();
+			
+			fonction3();
+			fonction5();
+			fonction1();
+			fonction6();
+			fonction1();
+			fonction2();
+			fonction3();
+			fonction4();
+		}else if(f9 === c1 && f10 === c2){
+			
+			fonction1();
+			fonction2();
+			fonction3();
+			fonction4();
+			fonction3();
+			fonction5();
+			fonction1();
+			fonction6();
+		}else if(f9 === c2 && f10 === c1){
+			
+			fonction3();
+			
+			fonction3();
+			fonction5();
+			fonction1();
+			fonction6();
+			fonction1();
+			fonction2();
+			fonction3();
+			fonction4();
+		}else if(f11 === c1 && f12 === c2){
+			
+			fonction1();
+			
+			fonction1();
+			fonction2();
+			fonction3();
+			fonction4();
+			fonction3();
+			fonction5();
+			fonction1();
+			fonction6();
+		}else if(f11 === c2 && f12 === c1){
+			
+			fonction3();
+			fonction5();
+			fonction1();
+			fonction6();
+			fonction1();
+			fonction2();
+			fonction3();
+			fonction4();
+		}else if(f13 === c1 && f14 === c2){
+			
+			fonction1();
+			fonction1();
+			
+			fonction1();
+			fonction2();
+			fonction3();
+			fonction4();
+			fonction3();
+			fonction5();
+			fonction1();
+			fonction6();
+		}else if(f13 === c2 && f14 === c1){
+			
+			fonction1();
+			
+			fonction3();
+			fonction5();
+			fonction1();
+			fonction6();
+			fonction1();
+			fonction2();
+			fonction3();
+			fonction4();
+		}else if(f15 === c1 && f16 === c2){
+			
+			fonction3();
+			
+			
+			fonction1();
+			fonction2();
+			fonction3();
+			fonction4();
+			fonction3();
+			fonction5();
+			fonction1();
+			fonction6();
+		}else if(f15 === c2 && f16 === c1){
+			
+			fonction1();
+			fonction1();
+			
+			fonction3();
+			fonction5();
+			fonction1();
+			fonction6();
+			fonction1();
+			fonction2();
+			fonction3();
+			fonction4();
+		}
+	}
+}
+
+var createCroixJaune = function createCroixJaune(){
+	
+	while (fBT[1].color !== "j" || fBT[3].color !== "j" || fBT[5].color !== "j" || fBT[7].color !== "j"){
+		if (fBT[1].color === "j" && fBT[7].color === "j") {
+			
+			tfgaigt();
+			tfpaigt();
+			tfbaigt();
+			tfpinvt();
+			tfbinvt();
+			tfginvt();
+		}else if (fBT[3].color === "j" && fBT[5].color === "j") {
+			
+			tfbaigt();
+			tfgaigt();
+			tfpaigt();
+			tfbaigt();
+			tfpinvt();
+			tfbinvt();
+			tfginvt();
+		}else if (fBT[1].color === "j" && fBT[5].color === "j") {
+			
+			
+			tfgaigt();
+			tfpaigt();
+			tfbaigt();
+			tfpinvt();
+			tfbinvt();
+			tfginvt();
+		}else if (fBT[5].color === "j" && fBT[7].color === "j") {
+			
+			tfbinvt();
+			tfgaigt();
+			tfbaigt();
+			tfpaigt();
+			tfbinvt();
+			tfpinvt();
+			tfginvt();
+			
+		}else if (fBT[7].color === "j" && fBT[3].color === "j") {
+			
+			tfbinvt();
+			tfbinvt();
+			tfgaigt();
+			tfpaigt();
+			tfbaigt();
+			tfpinvt();
+			tfbinvt();
+			tfginvt();
+		}else if (fBT[3].color === "j" && fBT[1].color === "j") {
+			
+			tfbaigt();
+			tfgaigt();
+			tfpaigt();
+			tfbaigt();
+			tfpinvt();
+			tfbinvt();
+			tfginvt();
+		}else {
+			
+		
+			tfgaigt();
+			tfpaigt();
+			tfbaigt();
+			tfpinvt();
+			tfbinvt();
+			tfginvt();
+		}
+	}
+	
+	
+}
+
+var rangeCroixJaune = function rangeCroixJaune(){
+	if (fAT[7].color !== "r" || fDT[7].color !== "ble" || fPT[7].color !== "o" || fGT[7].color !== "v" ){
+		var inverseArrete = function inverseArrete(fonction1 , fonction2 , fonction3) {
+			//tfdaigt, tfbaigt ,tfdinvt
+			fonction1();
+			fonction2();
+			fonction3();
+			fonction2();
+			fonction1();
+			fonction2();
+			fonction2();
+			fonction3();
+			fonction2();
+		
+		}
+		
+		var e = 0;
+		while (e !== 2) {
+			var cA = fAT[7].color;
+			var cD = fDT[7].color;
+			var cP = fPT[7].color;
+			var cG = fGT[7].color;
+			e = 0;
+			if (cA === "r"){
+				e++;
+			}
+			if (cD === "ble"){
+				e++;
+			}
+			if (cP === "o"){
+				e++;
+			}
+			if (cG === "v"){
+				e++;
+			}
+			if (e === 4) {
+				
+				break;
+			}
+			
+			if (e === 2) {
+				if (fAT[7].color === "r" && fPT[7].color === "o") {
+			
+					inverseArrete(tfpaigt, tfbaigt ,tfpinvt);
+					inverseArrete(tfgaigt, tfbaigt ,tfginvt);
+					
+				}else if (fDT[7].color === "ble" && fGT[7].color === "v") {
+					
+					inverseArrete(tfdaigt, tfbaigt ,tfdinvt);
+					inverseArrete(tfpaigt, tfbaigt ,tfpinvt);
+			
+				}
+				if (fGT[7].color === "v" && fPT[7].color === "o") {
+				
+					inverseArrete(tfgaigt, tfbaigt ,tfginvt);
+				}else if (fPT[7].color === "o" && fDT[7].color === "ble") {
+				
+					inverseArrete(tfpaigt, tfbaigt ,tfpinvt);
+				}else if (fDT[7].color === "ble" && fAT[7].color === "r") {
+				
+					inverseArrete(tfdaigt, tfbaigt ,tfdinvt);
+				}else if (fAT[7].color === "r" && fGT[7].color === "v") {
+				
+					inverseArrete(tfaaigt, tfbaigt ,tfainvt);
+				}
+			}else {
+				tfbaigt();
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+var searchCoinBas = function searchCoinBas(){
+	var goodCoin = 0;
+	
+	if ((fBT[0].color === "j" && fAT[6].color === "r" && fGT[8].color === "v") || (fBT[0].color === "v" && fAT[6].color === "j" && fGT[8].color === "r") || (fBT[0].color === "r" && fAT[6].color === "v" && fGT[8].color === "j")) {
+		
+		goodCoin++;
+		
+	}
+	if ((fBT[8].color === "j" && fPT[6].color === "o" && fDT[8].color === "ble") || (fBT[8].color === "ble" && fPT[6].color === "j" && fDT[8].color === "o") || (fBT[8].color === "o" && fPT[6].color === "ble" && fDT[8].color === "j")) {
+		
+		goodCoin++;
+
+		
+	}
+	if ((fBT[2].color === "j" && fDT[6].color === "ble" && fAT[8].color === "r") || (fBT[2].color === "r" && fDT[6].color === "j" && fAT[8].color === "ble") || (fBT[2].color === "ble" && fDT[6].color === "r" && fAT[8].color === "j")) {
+		
+		goodCoin++;
+	
+	}
+	if ((fBT[6].color === "j" && fGT[6].color === "v" && fPT[8].color === "o") || (fBT[6].color === "o" && fGT[6].color === "j" && fPT[8].color === "v") || (fBT[6].color === "v" && fGT[6].color === "o" && fPT[8].color === "j")) {
+		
+		goodCoin++;
+		
+	}
+	if (goodCoin === 4){
+		return;
+	}
+	if (goodCoin === 0) {
+		tfbaigt();
+		tfpaigt();
+		tfbinvt();
+		tfainvt();
+		tfbaigt();
+		tfpinvt();
+		tfbinvt();
+		tfaaigt();
+		
+	}
+	if ((fBT[0].color === "j" && fAT[6].color === "r" && fGT[8].color === "v") || (fBT[0].color === "v" && fAT[6].color === "j" && fGT[8].color === "r") || (fBT[0].color === "r" && fAT[6].color === "v" && fGT[8].color === "j")) {
+		
+		if ((fBT[2].color === "j" && fDT[6].color === "v" && fAT[8].color === "o") || (fBT[2].color === "o" && fDT[6].color === "j" && fAT[8].color === "v") || (fBT[2].color === "v" && fDT[6].color === "o" && fAT[8].color === "j")) {
+			
+			tfbaigt();
+			tfgaigt();
+			tfbinvt();
+			tfdinvt();
+			tfbaigt();
+			tfginvt();
+			tfbinvt();
+			tfdaigt();
+		
+		}else{
+			
+			tfdinvt();
+			tfbaigt();
+			tfgaigt();
+			tfbinvt();
+			tfdaigt();
+			tfbaigt();
+			tfginvt();
+			tfbinvt();
+		}
+		
+	}else if ((fBT[6].color === "j" && fGT[6].color === "v" && fPT[8].color === "o") || (fBT[6].color === "o" && fGT[6].color === "j" && fPT[8].color === "v") || (fBT[6].color === "v" && fGT[6].color === "o" && fPT[8].color === "j")) {
+
+		
+		if ((fBT[0].color === "j" && fAT[6].color === "o" && fGT[8].color === "ble") || (fBT[0].color === "ble" && fAT[6].color === "j" && fGT[8].color === "o") || (fBT[0].color === "o" && fAT[6].color === "ble" && fGT[8].color === "j")) {
+			
+			tfbaigt();
+			tfpaigt();
+			tfbinvt();
+			tfainvt();
+			tfbaigt();
+			tfpinvt();
+			tfbinvt();
+			tfaaigt();
+		
+		}else{
+			
+			tfainvt();
+			tfbaigt();
+			tfpaigt();
+			tfbinvt();
+			tfaaigt();
+			tfbaigt();
+			tfpinvt();
+			tfbinvt();
+		}
+		
+	}else if ((fBT[8].color === "j" && fPT[6].color === "o" && fDT[8].color === "ble") || (fBT[8].color === "ble" && fPT[6].color === "j" && fDT[8].color === "o") || (fBT[8].color === "o" && fPT[6].color === "ble" && fDT[8].color === "j")) {
+
+		
+		if ((fBT[6].color === "j" && fGT[6].color === "ble" && fPT[8].color === "r") || (fBT[6].color === "r" && fGT[6].color === "j" && fPT[8].color === "ble") || (fBT[6].color === "ble" && fGT[6].color === "r" && fPT[8].color === "j")) {
+				
+			tfbaigt();
+			tfdaigt();
+			tfbinvt();
+			tfginvt();
+			tfbaigt();
+			tfdinvt();
+			tfbinvt();
+			tfgaigt();
+			
+		}else{
+				
+			tfginvt();
+			tfbaigt();
+			tfdaigt();
+			tfbinvt();
+			tfgaigt();
+			tfbaigt();
+			tfdinvt();
+			tfbinvt();
+		}
+	}else if ((fBT[2].color === "j" && fDT[6].color === "ble" && fAT[8].color === "r") || (fBT[2].color === "r" && fDT[6].color === "j" && fAT[8].color === "ble") || (fBT[2].color === "ble" && fDT[6].color === "r" && fAT[8].color === "j")) {
+
+		
+		if ((fBT[8].color === "j" && fPT[6].color === "r" && fDT[8].color === "v") || (fBT[8].color === "v" && fPT[6].color === "j" && fDT[8].color === "r") || (fBT[8].color === "r" && fPT[6].color === "v" && fDT[8].color === "j")) {
+			
+			tfbaigt();
+			tfaaigt();
+			tfbinvt();
+			tfpinvt();
+			tfbaigt();
+			tfainvt();
+			tfbinvt();
+			tfpaigt();
+		
+		}else{
+			
+			tfpinvt();
+			tfbaigt();
+			tfaaigt();
+			tfbinvt();
+			tfpaigt();
+			tfbaigt();
+			tfainvt();
+			tfbinvt();
+		}
+		
+	}
+
+}
+
+var turnCoinBas = function turnCoinBas(){
+	if ((fBT[0].color !== "j" && fAT[6].color !== "r" && fGT[8].color !== "v") || (fBT[8].color !== "j" && fPT[6].color !== "o" && fDT[8].color !== "ble") || (fBT[2].color !== "j" && fDT[6].color !== "ble" && fAT[8].color !== "r") || (fBT[6].color !== "j" && fGT[6].color !== "v" && fPT[8].color !== "o")) {
+		while (fBT[0].color !== "j" || fAT[6].color !== "r" || fGT[8].color !== "v") {
+			
+			tfginvt();
+			tfhinvt();
+			tfgaigt();
+			tfhaigt();
+		}
+		
+		tfbaigt();
+		while (fBT[0].color !== "j" || fAT[6].color !== "v" || fGT[8].color !== "o") {
+			
+			tfginvt();
+			tfhinvt();
+			tfgaigt();
+			tfhaigt();
+		}
+		
+		tfbaigt();
+		while (fBT[0].color !== "j" || fAT[6].color !== "o" || fGT[8].color !== "ble") {
+			
+			tfginvt();
+			tfhinvt();
+			tfgaigt();
+			tfhaigt();
+		}
+		
+		tfbaigt();
+		while (fBT[0].color !== "j" || fAT[6].color !== "ble" || fGT[8].color !== "r") {
+			
+			tfginvt();
+			tfhinvt();
+			tfgaigt();
+			tfhaigt();
+		}
+		
+		tfbaigt();	
+	}
+}
+			
 var searchC2 = function searchC2() {
 	
 	searchCubeCroixBlanche(fAT[1].color, fHT[7].color, fHT[3].color, fGT[1].color, fHT[5].color, fDT[1].color, fHT[1].color, fPT[1].color, fAT[3].color, fGT[5].color, fAT[5].color, fDT[3].color, fGT[3].color, fPT[5].color, fDT[5].color, fPT[3].color, fAT[7].color, fBT[1].color, fGT[7].color, fBT[3].color, fDT[7].color, fBT[5].color, fPT[7].color, fBT[7].color, "r", "bla", "v", "ble", "o", tfaaigt, tfhinvt, tfdaigt, tfhaigt, tfgaigt, tfginvt, tfdinvt, tfainvt, tfpaigt, tfbaigt, tfpinvt, tfbinvt);
@@ -1823,13 +2394,40 @@ var searchCoin21 = function searchCoin21() {
 
 }
 
+var searchArrete4 = function searchArrete4() {
+	
+	searchArreteSecondEtage(fAT[3].color, fGT[5].color, fAT[5].color, fDT[3].color, fDT[5].color, fPT[3].color, fGT[3].color, fPT[5].color, fAT[7].color, fBT[1].color, fGT[7].color, fBT[3].color, fPT[7].color, fBT[7].color, fDT[7].color, fBT[5].color , "r", "v", tfbaigt, tfgaigt, tfbinvt, tfginvt, tfainvt, tfaaigt, tfdinvt, tfdaigt, tfpinvt, tfpaigt);
+	
+}
+
+var searchArrete6 = function searchArrete6() {
+	
+	searchArreteSecondEtage(fDT[3].color, fAT[5].color, fDT[5].color, fPT[3].color, fPT[5].color, fGT[3].color, fAT[3].color, fGT[5].color, fDT[7].color, fBT[5].color, fAT[7].color, fBT[1].color, fGT[7].color, fBT[3].color, fPT[7].color, fBT[7].color , "ble", "r", tfbaigt, tfaaigt, tfbinvt, tfainvt, tfdinvt, tfdaigt, tfpinvt, tfpaigt, tfginvt, tfgaigt);
+							
+}
+
+var searchArrete22 = function searchArrete22() {
+							
+	searchArreteSecondEtage(fGT[3].color, fPT[5].color, fGT[5].color, fAT[3].color, fAT[5].color, fDT[3].color, fPT[3].color, fDT[5].color, fGT[7].color, fBT[3].color, fPT[7].color, fBT[7].color, fDT[7].color, fBT[5].color, fAT[7].color, fBT[1].color , "v", "o", tfbaigt, tfpaigt, tfbinvt, tfpinvt, tfginvt, tfgaigt, tfainvt, tfaaigt, tfdinvt, tfdaigt);
+	
+}
+
+var searchArrete24 = function searchArrete24() {
+	
+	searchArreteSecondEtage(fPT[3].color, fDT[5].color, fPT[5].color, fGT[3].color, fGT[5].color, fAT[3].color, fDT[3].color, fAT[5].color, fPT[7].color, fBT[7].color, fDT[7].color, fBT[5].color, fAT[7].color, fBT[1].color, fGT[7].color, fBT[3].color , "o", "ble", tfbaigt, tfdaigt, tfbinvt, tfdinvt, tfpinvt, tfpaigt, tfginvt, tfgaigt, tfainvt, tfaaigt);
+
+}
+
+
+
 var listBestFunction = [];
 var tableauFonction = [];
 var tableauParti1 = [];
-var bestResult = ["", "", 9999999];
-var chooseBestMethod = function chooseBestMethod(tableauDeResultat, tableauDeResultat2) {
+var tableauParti2 = [];
+var bestResult = ["", "", "",9999999];
+var chooseBestMethod = function chooseBestMethod(tableauDeResultat, tableauDeResultat2, tableauDeResultat3) {
 			
-	bestResult = ["", "", 9999999];	
+	bestResult = ["", "", "", 9999999];	
 	for ( var i = 0; i < tableauDeResultat.length; i++){
 		reset();
 		tableauFonction = [];
@@ -1856,16 +2454,17 @@ var chooseBestMethod = function chooseBestMethod(tableauDeResultat, tableauDeRes
 			
 		}
 
-		sauvegarde();
+		sauvegarde(tableauSauvegarde1);
 		for(z = 0; z < tableauFonction.length; z++){
 			
 			tableauParti1.push(tableauFonction[z]);
 
 		}
 		for ( var l = 0; l < tableauDeResultat2.length; l++){
-			
-			restore();
+			tableauParti2 = [];
+			restore(tableauSauvegarde1);
 			tableauFonction = [];
+			
 			for(y = 0; y < tableauParti1.length; y++){
 			
 				tableauFonction.push(tableauParti1[y]);
@@ -1876,6 +2475,7 @@ var chooseBestMethod = function chooseBestMethod(tableauDeResultat, tableauDeRes
 				if (tableauDeResultat2[l][m] === "searchCoin1") {
 		
 					searchCoin1();
+
 		
 				}else if (tableauDeResultat2[l][m] === "searchCoin3") {
 		
@@ -1893,33 +2493,313 @@ var chooseBestMethod = function chooseBestMethod(tableauDeResultat, tableauDeRes
 		
 			}
 			
-			deleteUsless(tableauFonction);
-			if ( tableauFonction.length < bestResult[2]) {
+			sauvegarde(tableauSauvegarde2);
+			for(z2 = 0; z2 < tableauFonction.length; z2++){
+				
+				tableauParti2.push(tableauFonction[z2]);
+
+			}
+			for ( var l2 = 0; l2 < tableauDeResultat3.length; l2++){
+				
+				restore(tableauSauvegarde2);
+				tableauFonction = [];
+				
+				for(h2 = 0; h2 < tableauParti2.length; h2++){
+				
+					tableauFonction.push(tableauParti2[h2]);
+
+				}
+				for(var m2 = 0; m2 < tableauDeResultat3[l2].length; m2++){
 			
-				bestResult[0] = tableauDeResultat[i];
-				bestResult[1] = tableauDeResultat2[l];
-				bestResult[2] = tableauFonction.length;
-				listBestFunction = [];
-				for(x = 0; x < tableauFonction.length; x++){
+					if (tableauDeResultat3[l2][m2] === "searchArrete4") {
 			
-					listBestFunction.push(tableauFonction[x]);
+						searchArrete4();
+
+			
+					}else if (tableauDeResultat3[l2][m2] === "searchArrete6") {
+			
+						searchArrete6();
+			
+					}else if (tableauDeResultat3[l2][m2] === "searchArrete22") {
+			
+						searchArrete22();
+			
+					}else if (tableauDeResultat3[l2][m2] === "searchArrete24") {
+			
+						searchArrete24();
+			
+					}
+			
 				}
 				
+				createCroixJaune(); 
+				rangeCroixJaune();
+				searchCoinBas();
+				turnCoinBas();
 				
 			
+				deleteUsless(tableauFonction);
+				
+				if ( tableauFonction.length < bestResult[3]) {
+			
+					bestResult[0] = tableauDeResultat[i];
+					bestResult[1] = tableauDeResultat2[l];
+					bestResult[2] = tableauDeResultat3[l2];
+					bestResult[3] = tableauFonction.length;
+					listBestFunction = [];
+					for(x = 0; x < tableauFonction.length; x++){
+			
+						listBestFunction.push(tableauFonction[x]);
+					}
+				
+				}	
+			
 			}
-			console.log(tableauDeResultat[i], tableauDeResultat2[l], tableauFonction.length, listBestFunction);
 			
 			
 		}	
 			
 	}
-	reset();
-	console.log(tableauFonction);		
+	reset();		
 	lunchAnimation(listBestFunction.length , listBestFunction);
 	
 	
 	
+}
+
+//////////////////////////// Ultime resolver Alpha ////////////////////
+
+var tableau = [0,1,2,3,4,5,6,7,8,9,10,11];
+var resultat = [];
+var resultatFinal = [];
+var niveau = [0,0,0,0,0];
+var SauvegardeResult = [];
+var solution = [];
+
+
+
+var returnAllCombinaison = function returnAllCombinaison() {
+	while (niveau[0] !== tableau.length){
+		
+		for(i=0;i<niveau.length;i++){
+			
+			for(j=0;j<niveau.length;j++){
+				if (i === j){
+					
+					resultat.push(tableau[niveau[j]]);
+					if ( j === niveau.length - 1){
+					
+						niveau[j]++;
+						for(k = (niveau.length - 1);k >= 0;k--){
+					
+							if (niveau[k] === tableau.length && k !== 0){
+							
+								niveau[k] = 0;
+								niveau[k-1]++;
+							
+							}
+							
+						}
+					}else{
+			
+						break;
+					}	
+				}
+				
+			}
+			
+		}
+		resultatFinal.push(resultat);
+		resultat = [];
+	
+	}
+	console.log("fini");
+}
+
+
+function RangeResult() {
+	sauvegarde(tableauSauvegarde1);
+	
+	for(i= 0; i< resultatFinal.length;i++){ 
+		restore();
+		for(j= 0; j< resultatFinal[i].length;j++){ 
+			if ( resultatFinal[i][j] === 0) {
+				tfaaigt();
+			}else if( resultatFinal[i][j] === 1) {
+				tfainvt();
+			}else if( resultatFinal[i][j] === 2) {
+				tfhaigt();
+			}else if( resultatFinal[i][j] === 3) {
+				tfhinvt();
+			}else if( resultatFinal[i][j] === 4) {
+				tfdaigt();
+			}else if( resultatFinal[i][j] === 5) {
+				tfdinvt();
+			}else if( resultatFinal[i][j] === 6) {
+				tfpaigt();
+			}else if( resultatFinal[i][j] === 7) {
+				tfpinvt();
+			}else if( resultatFinal[i][j] === 8) {
+				tfgaigt();
+			}else if( resultatFinal[i][j] === 9) {
+				tfginvt();
+			}else if( resultatFinal[i][j] === 10) {
+				tfbaigt();
+			}else if( resultatFinal[i][j] === 11) {
+				tfbinvt();
+			}
+		}
+		
+		SauvegardeResult[i] = [];
+		SauvegardeResult[i][0] = fHT[0].color;
+	SauvegardeResult[i][1] = fHT[1].color;
+	SauvegardeResult[i][2] = fHT[2].color;
+	SauvegardeResult[i][3] = fHT[3].color;
+	SauvegardeResult[i][4] = fHT[5].color;
+	SauvegardeResult[i][5] = fHT[6].color;
+	SauvegardeResult[i][6] = fHT[7].color;
+	SauvegardeResult[i][7] = fHT[8].color;
+	SauvegardeResult[i][8] = fAT[0].color;
+	SauvegardeResult[i][9] = fAT[1].color;
+	SauvegardeResult[i][10] = fAT[2].color;
+	SauvegardeResult[i][11] = fAT[3].color;
+	SauvegardeResult[i][12] = fAT[5].color;
+	SauvegardeResult[i][13] = fAT[6].color;
+	SauvegardeResult[i][14] = fAT[7].color;
+	SauvegardeResult[i][15] = fAT[8].color;
+	SauvegardeResult[i][16] = fDT[0].color;
+	SauvegardeResult[i][17] = fDT[1].color;
+	SauvegardeResult[i][18] = fDT[2].color;
+	SauvegardeResult[i][19] = fDT[3].color;
+	SauvegardeResult[i][20] = fDT[5].color;
+	SauvegardeResult[i][21] = fDT[6].color;
+	SauvegardeResult[i][22] = fDT[7].color;
+	SauvegardeResult[i][23] = fDT[8].color;
+	SauvegardeResult[i][24] = fPT[0].color;
+	SauvegardeResult[i][25] = fPT[1].color;
+	SauvegardeResult[i][26] = fPT[2].color;
+	SauvegardeResult[i][27] = fPT[3].color;
+	SauvegardeResult[i][28] = fPT[5].color;
+	SauvegardeResult[i][29] = fPT[6].color;
+	SauvegardeResult[i][30] = fPT[7].color;
+	SauvegardeResult[i][31] = fPT[8].color;
+	SauvegardeResult[i][32] = fGT[0].color;
+	SauvegardeResult[i][33] = fGT[1].color;
+	SauvegardeResult[i][34] = fGT[2].color;
+	SauvegardeResult[i][35] = fGT[3].color;
+	SauvegardeResult[i][36] = fGT[5].color;
+	SauvegardeResult[i][37] = fGT[6].color;
+	SauvegardeResult[i][38] = fGT[7].color;
+	SauvegardeResult[i][39] = fGT[8].color;
+	SauvegardeResult[i][40] = fBT[0].color;
+	SauvegardeResult[i][41] = fBT[1].color;
+	SauvegardeResult[i][42] = fBT[2].color;
+	SauvegardeResult[i][43] = fBT[3].color;
+	SauvegardeResult[i][44] = fBT[5].color;
+	SauvegardeResult[i][45] = fBT[6].color;
+	SauvegardeResult[i][46] = fBT[7].color;
+	SauvegardeResult[i][47] = fBT[8].color;
+	}
+	console.log("Fini !!");
+
+}
+
+function retrouve(){
+	reset();
+	solution = [];
+	var tabCompare = [];
+	tabCompare[0] = fHT[0].color;
+	tabCompare[1] = fHT[1].color;
+	tabCompare[2] = fHT[2].color;
+	tabCompare[3] = fHT[3].color;
+	tabCompare[4] = fHT[5].color;
+	tabCompare[5] = fHT[6].color;
+	tabCompare[6] = fHT[7].color;
+	tabCompare[7] = fHT[8].color;
+	tabCompare[8] = fAT[0].color;
+	tabCompare[9] = fAT[1].color;
+	tabCompare[10] = fAT[2].color;
+	tabCompare[11] = fAT[3].color;
+	tabCompare[12] = fAT[5].color;
+	tabCompare[13] = fAT[6].color;
+	tabCompare[14] = fAT[7].color;
+	tabCompare[15] = fAT[8].color;
+	tabCompare[16] = fDT[0].color;
+	tabCompare[17] = fDT[1].color;
+	tabCompare[18] = fDT[2].color;
+	tabCompare[19] = fDT[3].color;
+	tabCompare[20] = fDT[5].color;
+	tabCompare[21] = fDT[6].color;
+	tabCompare[22] = fDT[7].color;
+	tabCompare[23] = fDT[8].color;
+	tabCompare[24] = fPT[0].color;
+	tabCompare[25] = fPT[1].color;
+	tabCompare[26] = fPT[2].color;
+	tabCompare[27] = fPT[3].color;
+	tabCompare[28] = fPT[5].color;
+	tabCompare[29] = fPT[6].color;
+	tabCompare[30] = fPT[7].color;
+	tabCompare[31] = fPT[8].color;
+	tabCompare[32] = fGT[0].color;
+	tabCompare[33] = fGT[1].color;
+	tabCompare[34] = fGT[2].color;
+	tabCompare[35] = fGT[3].color;
+	tabCompare[36] = fGT[5].color;
+	tabCompare[37] = fGT[6].color;
+	tabCompare[38] = fGT[7].color;
+	tabCompare[39] = fGT[8].color;
+	tabCompare[40] = fBT[0].color;
+	tabCompare[41] = fBT[1].color;
+	tabCompare[42] = fBT[2].color;
+	tabCompare[43] = fBT[3].color;
+	tabCompare[44] = fBT[5].color;
+	tabCompare[45] = fBT[6].color;
+	tabCompare[46] = fBT[7].color;
+	tabCompare[47] = fBT[8].color;
+	for (i=0; i< resultatFinal.length; i++){
+	var ok = true;
+			for (i1=0; i1< SauvegardeResult[i].length; i1++){
+				if ( SauvegardeResult[i][i1] === tabCompare[i1]){
+					continue;
+				}else{
+					ok = false;
+					break;
+				}
+			}
+			if (ok){
+				for (k = resultatFinal[i].length - 1; k >= 0; k--){
+					if (resultatFinal[i][k] === 0) {
+						solution.push(tfainv);
+					}else if (resultatFinal[i][k] === 1) {
+						solution.push(tfaaig);
+					}else if (resultatFinal[i][k] === 2) {
+						solution.push(tfhinv);
+					}else if (resultatFinal[i][k] === 3) {
+						solution.push(tfhaig);
+					}else if (resultatFinal[i][k] === 4) {
+						solution.push(tfdinv);
+					}else if (resultatFinal[i][k] === 5) {
+						solution.push(tfdaig);
+					}else if (resultatFinal[i][k] === 6) {
+						solution.push(tfpinv);
+					}else if (resultatFinal[i][k] === 7) {
+						solution.push(tfpaig);
+					}else if (resultatFinal[i][k] === 8) {
+						solution.push(tfginv);
+					}else if (resultatFinal[i][k] === 9) {
+						solution.push(tfgaig);
+					}else if (resultatFinal[i][k] === 10) {
+						solution.push(tfbinv);
+					}else if (resultatFinal[i][k] === 11) {
+						solution.push(tfbaig);
+					}
+				}
+				i = resultatFinal.length;
+			}
+		
+	}
+	lunchAnimation(solution.length, solution);
+
 }
 
 
@@ -1992,3 +2872,7 @@ if ("serviceWorker" in navigator) {
 
 //	}
 //}
+
+var m = function m(){
+	lunchAnimation(tablol.length, tablol);
+}
