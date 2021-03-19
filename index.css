@@ -14,7 +14,7 @@
 
 body{
 
-  margin-top: 50vw;
+  margin-top: 100px;
   margin-bottom: 50vw;
   background: grey;
 
@@ -26,10 +26,9 @@ body{
 	width: 30vw;
 	height:30vw;
 	margin:auto;
-  will-change: transform;
 	transform-style: preserve-3d;
 	transform: rotateY(-47deg) rotateX(0);
-  transition: transform 2s ease;
+  	transition: transform 2s ease;
 
 }
 
@@ -40,13 +39,14 @@ body{
 	margin:auto;
 	transform-style: preserve-3d;
 	transform: rotateX(-25deg);
+	margin-bottom: 20vw;
 
 }
 
 .cube {
 
-  transform-style: preserve-3d;
-  width:10vw;
+ 	 transform-style: preserve-3d;
+	  width:10vw;
 	height:10vw;
 	position:absolute;
 	top:0;
