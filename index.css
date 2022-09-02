@@ -35,11 +35,12 @@ body{
 #containerAxeX {
 
 	width: 30vw;
-	height:30vw;
+	height: 30vw;
 	margin:auto;
 	transform-style: preserve-3d;
 	transform: rotateX(-25deg);
 	margin-bottom: 20vw;
+	margin-top: 10vw;
 
 }
 
@@ -77,6 +78,7 @@ body{
 	height : 100%;
 	width : 100%;
 	opacity : 0;
+	z-index:999999;
 }
 
 
@@ -98,6 +100,7 @@ body{
 #cube1fA0 {
 
 	background:#f00202 ;
+	z-index:-999999;
 
 }
 
@@ -174,6 +177,7 @@ body{
 #cube2fA1 {
 
 	background:#f00202 ;
+	z-index:-999999;
 
 }
 
@@ -242,6 +246,7 @@ body{
 #cube3fA2 {
 
 	background: #f00202;
+	z-index:-999999;
 
 }
 
@@ -318,6 +323,7 @@ body{
 #cube4fA3 {
 
 	background: #f00202;
+	z-index:-999999;
 
 }
 
@@ -446,6 +452,7 @@ body{
 #cube6fA5 {
 
 	background: #f00202;
+	z-index:-999999;
 
 }
 
@@ -514,6 +521,7 @@ body{
 #cube7fA6 {
 
 	background:#f00202 ;
+	z-index:-999999;
 
 }
 
@@ -590,6 +598,7 @@ body{
 #cube8fA7 {
 
 	background:#f00202 ;
+	z-index:-999999;
 
 }
 
@@ -659,6 +668,7 @@ body{
 #cube9fA8 {
 
 	background: #f00202;
+	z-index:-999999;
 
 }
 
@@ -1805,4 +1815,16 @@ body{
 
 #btnSwitch {
 
+}
+
+#cont {
+	margin-top: 10em;
+}
+
+#melange {
+	height: 4vw;
+    width: 17vw;
+    position: absolute;
+    left: 40vw;
+    bottom: 5vh;
 }
