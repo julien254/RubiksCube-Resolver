@@ -88,8 +88,11 @@ var degX = 0;
 
 var isReady = true;
 var allIsReady = true;
+var ms = 100;
+var vitesse = 6;
 
 /////////// Récupérations
+var infoVitesse = document.getElementById("p1");
 var container = document.getElementById("containerAxeY");
 var cube1 = document.getElementById("cube1");
 var fC1 = [document.getElementById("cube1fA0"), fA[0], document.getElementById("cube1fH6"), fH[6], document.getElementById("cube1fG2"), fG[2]];
@@ -506,7 +509,7 @@ var animeRotateFace = function animeRotateFace(sens, c1, fC1b, c2, fC2b, c3, fC3
 	// Creation de la div à animer et ajout des faces concernées. 
 	isReady = false;
 	var divTurn = document.getElementById('divTurn');
-	divTurn.style.transition = "transform 100ms ease";
+	divTurn.style.transition = "transform " + ms + "ms ease";
 	divTurn.appendChild(c1);
 	divTurn.appendChild(c2);
 	divTurn.appendChild(c3);
@@ -2875,4 +2878,22 @@ if ("serviceWorker" in navigator) {
 
 var m = function m(){
 	lunchAnimation(tablol.length, tablol);
+}
+
+function augmenteVitesse() {
+
+	if (vitesse < 6) {
+		vitesse++;
+		ms -= 500;
+		infoVitesse.textContent = "Vitesse d'animation : " + vitesse;
+	}
+}
+
+function diminueVitesse() {
+
+	if (vitesse > 1) {
+		vitesse--;
+		ms += 500;
+		infoVitesse.textContent = "Vitesse d'animation : " +  vitesse;
+	}
 }

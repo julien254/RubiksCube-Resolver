@@ -1,3 +1,15 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- index.html                                         :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: julien <marvin@42.fr>                      +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2022/09/04 01:14:21 by julien            #+#    #+#            -->
+<!-- Updated: 2022/09/04 03:44:08 by julien           ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
 <!doctype html>
 
 <html lang="fr">
@@ -893,11 +905,14 @@
 			</div>
 
 		</div>
-		<button onclick="turnLeftCube()" type="button">Gauche</button>
-		<button onclick="switchCube()" id="btnSwitch" type="button">Switch</button>
-		<button onclick="turnRightCube()" type="button">Droite</button>
-		<button onclick="chooseBestMethod(resultCroixBlanche , resultCoinBlanc , resultArreteSecondEtage)" type="button">Lancer !</button>
+		<button id="gauche" onclick="turnLeftCube()" type="button">&#10158;&#10158;</button>
+		<button id="retourner" onclick="switchCube()" id="btnSwitch" type="button">&#9738;</button>
+		<button id="droite" onclick="turnRightCube()" type="button">&#10157;&#10157;</button>
+		<button id="lancer" onclick="chooseBestMethod(resultCroixBlanche , resultCoinBlanc , resultArreteSecondEtage)" type="button">Resoudre !</button>
 		<button id="melange" onclick="Melanger(23)" type="button">Mélanger !</button>
+		<p id="p1">Vitesse d'animation : 6</p>
+		<button id="plus" onclick="augmenteVitesse()" type="button">+</button>
+		<button id="moin" onclick="diminueVitesse()" type="button">-</button>
 </div>
 <script src="index.js"></script>
 	</body>

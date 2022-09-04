@@ -1803,7 +1803,7 @@ body{
 
   height: 30vw;
   width: 30vw;
-  transition: transform 1s ease;
+  transition: transform 100ms ease;
   transform-style: preserve-3d;
   transform-origin: center center;
   transform: rotate(0deg) rotateY(0deg) rotateX(0deg);
@@ -1817,14 +1817,84 @@ body{
 }
 
 #cont {
-	margin-top: 10em;
+	margin-top: 200px;
 }
 
 #melange {
+	font-size: 2vw;
 	height: 4vw;
     width: 17vw;
     position: absolute;
-    left: 40vw;
-    bottom: 5vh;
+    right: 2vw;
+    bottom: 13vh;
+}
+
+#gauche {
+	transform: rotate(180deg);
+	font-size: 4vw;
+	height: 4vw;
+    width: 14vw;
+    position: absolute;
+    left: 2vw;
+    top: 32vh;
+	padding-bottom: 5.3vw;
+}
+
+#droite {
+	font-size: 4vw;
+	height: 4vw;
+    width: 14vw;
+    position: absolute;
+    right: 2vw;
+    top: 32vh;
+	padding-bottom: 5.3vw;
+}
+
+#retourner {
+	font-size: 3vw;
+	font-weight:bold;
+	height: 4vw;
+    width: 6vw;
+    position: absolute;
+    left: 47vw;
+    top: 2vh;
+}
+
+#lancer {
+	font-size: 2vw;
+	height: 4vw;
+    width: 17vw;
+    position: absolute;
+    right: 2vw;
+    bottom: 3vh;
+}
+
+#plus {
+	font-size: 4vw;
+	font-weight:bold;
+	height: 4vw;
+    width: 5vw;
+    position: absolute;
+    left: 10vw;
+    bottom: 3vh;
+	padding-bottom: 4.5vw;
+}
+
+#moin {
+	font-size: 4vw;
+	font-weight:bold;
+	height: 4vw;
+    width: 5vw;
+    position: absolute;
+    left: 4vw;
+    bottom: 3vh;
+	padding-bottom: 4.5vw;
+}
+
+#p1 {
+	font-size: 2.1vw;
+    position: absolute;
+    left: 2vw;
+    bottom: 9vh;
 }
 
